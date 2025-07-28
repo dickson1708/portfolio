@@ -1,6 +1,6 @@
 ---
-import ArrowRightIcon from '../components/icons/ArrowRightIcon.astro';
-import Layout from '../layouts/Layout.astro';
+import ArrowRightIcon from "../components/icons/ArrowRightIcon.astro";
+import Layout from "../layouts/Layout.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -9,15 +9,87 @@ import Layout from '../layouts/Layout.astro';
 <Layout>
     <main>
         <section id="home">
-            <h5 class="flex justify-center font-extralight text-lg text-gray-400 tracking-widest">WEB DEVELOPER WITH ANGULAR & JAVA</h5>
-            <div class="text-center mt-5 text-7xl font-semibold">
+            <img src="/logo_portfolio.png" alt="Memoji de Dickson Celauro" width="250" class="mx-auto hover:scale-110" />
+            <h5
+                class="flex justify-center font-extralight text-lg text-gray-400 tracking-widest"
+            >
+                WEB DEVELOPER WITH ANGULAR & JAVA
+            </h5>
+            <div class="text-center mt-5 text-6xl font-semibold">
                 <h1>Transforming Applications into</h1>
-                <h1><span class="text-[#CBACF9]">Security</span> and <span class="text-[#CBACF9]">Robustness</span></h1>
+                <h1>
+                    <span class="text-[#CBACF9]">Security</span> and <span
+                        class="text-[#CBACF9]">Robustness</span>
+                </h1>
             </div>
-            <h3 class="text-center mt-6 text-3xl font-extralight text-gray-300">Hi, I'm Dickson, Full Stack Developer based in Spain</h3>
-            <a href="" class="flex justify-center mt-10 bg-[#141428] p-5 px-10 max-w-max mx-auto rounded-lg border border-gray-700 hover:border-[#CBACF9] transition duration-300">See my work
-                <ArrowRightIcon></ArrowRightIcon>
+            <h3 class="text-center mt-6 text-3xl font-extralight text-gray-300">
+                Hi, I'm Dickson, Full Stack Developer based in Spain 🇪🇸
+            </h3>
+            <a
+                href=""
+                class="glow-button"
+            >
+                <span class="glow-content">
+                    See my work
+                    <ArrowRightIcon />
+                </span>
+                <span class="glow-overlay"></span>
             </a>
         </section>
     </main>
 </Layout>
+
+<style>
+    .glow-button {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 2.5rem;
+        padding: 1.25rem 2.5rem;
+        max-width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 0.5rem;
+        background-color: #141428;
+        border: 1px solid #4b5563; /* gray-700 */
+        overflow: hidden;
+        transition: border-color 0.3s;
+        text-decoration: none;
+        color: white;
+    }
+
+    .glow-button:hover {
+        border-color: #cbacf9;
+    }
+
+    .glow-content {
+        position: relative;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .glow-overlay {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        background: rgba(203, 172, 249, 0.2); /* violeta translúcido */
+        filter: blur(24px);
+        animation: glow-slide 2s linear infinite;
+        pointer-events: none;
+    }
+
+    @keyframes glow-slide {
+        0% {
+            left: 100%;
+        }
+        100% {
+            left: -100%;
+        }
+    }
+</style>
