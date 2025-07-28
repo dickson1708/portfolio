@@ -1,4 +1,5 @@
 ---
+import Card from "../components/Card.astro";
 import ArrowRightIcon from "../components/icons/ArrowRightIcon.astro";
 import Layout from "../layouts/Layout.astro";
 
@@ -23,7 +24,7 @@ import Layout from "../layouts/Layout.astro";
                 </h1>
             </div>
             <h3 class="text-center mt-6 text-3xl font-extralight text-gray-300">
-                Hi, I'm Dickson, Full Stack Developer based in Spain 🇪🇸
+                Hi, I am Dickson, Full Stack Developer based in Spain 🇪🇸
             </h3>
             <a
                 href=""
@@ -35,6 +36,32 @@ import Layout from "../layouts/Layout.astro";
                 </span>
                 <span class="glow-overlay"></span>
             </a>
+        </section>
+
+        <section id="projects">
+            <div class="text-center mt-30 text-5xl font-semibold">
+                <h2>Some recent <span class="text-[#CBACF9]">projects</span></h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-20 justify-items-center">
+                <Card
+                    title="Car Rental App"
+                    description="This portfolio is built with Astro, showcasing my skills and projects."
+                    image="/portfolio.png"
+                    link="/portfolio"
+                />
+                <Card
+                    title="Car Dealership App"
+                    description="A sample Angular application demonstrating my frontend skills."
+                    image="/angular-app.png"
+                    link="/angular-app"
+                />
+                <Card
+                    title="Kickingball Team"
+                    description="A robust Java backend service that powers web applications."
+                    image="/gladiadoras_project.png"
+                    link="https://www.gladiadoraskickingball.com/"
+                />
+            </div>
         </section>
     </main>
 </Layout>
