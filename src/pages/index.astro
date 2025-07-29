@@ -27,7 +27,7 @@ import Layout from "../layouts/Layout.astro";
                 Hi, I am Dickson, Full Stack Developer based in Spain 🇪🇸
             </h3>
             <a
-                href=""
+                href="#projects"
                 class="glow-button"
             >
                 <span class="glow-content">
@@ -45,7 +45,7 @@ import Layout from "../layouts/Layout.astro";
             <div class="grid grid-cols-1 md:grid-cols-2 2xl:px-50 gap-6 mt-20 justify-items-center">
                 <Card
                     title="Car Rental App"
-                    description="This is a Rental Car App for book diferents vehicles, built with JHipster, Angular and Java."
+                    description="This is a Rental Car App for book different vehicles, built with JHipster, Angular and Java."
                     image="/rentalcar_project.png"
                     link="/rental-car-app"
                     skills={[
@@ -53,6 +53,9 @@ import Layout from "../layouts/Layout.astro";
                         "/skills/springboot.png",
                         "/skills/typescript.png",
                         "/skills/java.png",
+                        "/skills/sass.png",
+                        "/skills/bootstrap.png",
+                        "/skills/mysql.png",
                     ]}
                 />
                 <Card
@@ -60,12 +63,28 @@ import Layout from "../layouts/Layout.astro";
                     description="A full-stack application for managing car dealerships, built with JHipster, Angular and Java."
                     image="/dealership_project.png"
                     link="/car-dealership-app"
+                    skills={[
+                        "/skills/angular.png",
+                        "/skills/springboot.png",
+                        "/skills/typescript.png",
+                        "/skills/java.png",
+                        "/skills/sass.png",
+                        "/skills/bootstrap.png",
+                        "/skills/mysql.png",
+                    ]},
+                    githubLink="https://bitbucket.org/dicksons-personal-projects/dealerapp/commits/branch/develop"
                 />
                 <Card
                     title="Kickingball Team"
                     description="Frontend web application for a Spanish sport team, built with HTML, CSS, JS and Bootstrap."
                     image="/gladiadoras_project.png"
                     link="https://www.gladiadoraskickingball.com/"
+                    skills={[
+                        "/skills/html.png",
+                        "/skills/css-3.png",
+                        "/skills/javascript.png",
+                    ]},
+                    githubLink="https://github.com/dickson1708/GladiadorasKickingball"
                 />
             </div>
         </section>
