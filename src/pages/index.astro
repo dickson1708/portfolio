@@ -42,12 +42,18 @@ import Layout from "../layouts/Layout.astro";
             <div class="text-center mt-30 text-5xl font-semibold">
                 <h2>Some recent <span class="text-[#CBACF9]">projects</span></h2>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-20 justify-items-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 2xl:px-50 gap-6 mt-20 justify-items-center">
                 <Card
                     title="Car Rental App"
                     description="This is a Rental Car App for book diferents vehicles, built with JHipster, Angular and Java."
                     image="/rentalcar_project.png"
                     link="/rental-car-app"
+                    skills={[
+                        "/skills/angular.png",
+                        "/skills/springboot.png",
+                        "/skills/typescript.png",
+                        "/skills/java.png",
+                    ]}
                 />
                 <Card
                     title="Car Dealership App"
