@@ -1,6 +1,7 @@
 ---
 import Card from "../components/Card.astro";
 import ArrowRightIcon from "../components/icons/ArrowRightIcon.astro";
+import Tooltip from "../components/Tooltip.astro";
 import Layout from "../layouts/Layout.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -36,6 +37,33 @@ import Layout from "../layouts/Layout.astro";
                 </span>
                 <span class="glow-overlay"></span>
             </a>
+        </section>
+
+        <section id="skills">
+            <div class="text-center mt-30 text-5xl font-semibold">
+                <h2>My <span class="text-[#CBACF9]">Stack</span></h2>
+            </div>
+            <div class="flex bg-gray-700 p-10 mt-20 gap-10 justify-center items-center flex-wrap">
+                <img data-tooltip-target="html-tooltip" src="/skills/html.png" alt="html" width="60">
+                <Tooltip
+                    id="html-tooltip"
+                    content="HTML" />
+                <img src="/skills/css-3.png" alt="css" width="60">
+                <img src="/skills/sass.png" alt="sass" width="60">
+                <img src="/skills/tailwindCss.png" alt="tailwindCss" width="60">
+                <img src="/skills/javascript.png" alt="javascript" width="60">
+                <img src="/skills/typescript.png" alt="typescript" width="60">
+                <img src="/skills/angular.png" alt="angular" width="60">
+                <img src="/skills/java.png" alt="java" width="60">
+                <img src="/skills/springboot.png" alt="springboot" width="60">
+                <img src="/skills/mysql.png" alt="mysql" width="60">
+                <img src="/skills/jhipster.png" alt="jhipster" width="60">
+                <img src="/skills/git.png" alt="git" width="60">
+                <img src="/skills/github.png" alt="github" width="60">
+                <img src="/skills/bitbucket.webp" alt="bitbucket" width="60">
+                <img src="/skills/jira.png" alt="jira" width="60">
+                <img src="/skills/sourcetree.webp" alt="sourcetree" width="80">
+            </div>
         </section>
 
         <section id="projects">
