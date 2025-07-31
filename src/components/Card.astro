@@ -41,7 +41,7 @@ const {
       </a>
     </div>
     <p class="mb-3 font-normal text-gray-400">{description}</p>
-    <div class="flex flex-wrap justify-between items-center mt-5 gap-4">
+    <div class="flex flex-wrap flex-col mt-5 gap-4">
       <div class="flex flex-wrap gap-2">
         {
           skills.map((skill: string) => (
@@ -55,6 +55,7 @@ const {
       </div>
       <a
         href={link}
+        target="_blank"
         class="inline-flex items-center text-lg font-medium text-[#CBACF9] hover:text-gray-300"
       >
         Check Live Project

@@ -1,6 +1,7 @@
 ---
 import Card from "../components/Card.astro";
 import ArrowRightIcon from "../components/icons/ArrowRightIcon.astro";
+import Tooltip from "../components/Tooltip.astro";
 import Layout from "../layouts/Layout.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -38,11 +39,87 @@ import Layout from "../layouts/Layout.astro";
             </a>
         </section>
 
+        <section id="skills">
+            <div class="text-center mt-30 text-5xl font-semibold">
+                <h2>My <span class="text-[#CBACF9]">Stack</span></h2>
+            </div>
+            <div class="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-9 2xl:grid-cols-17 justify-center items-center bg-gray-700 p-10 mt-20 gap-6">
+                <img data-tooltip-target="html-tooltip" src="/skills/html.png" alt="html" width="60">
+                <Tooltip
+                    id="html-tooltip"
+                    content="HTML" />
+                <img data-tooltip-target="css-tooltip" src="/skills/css-3.png" alt="css" width="60">
+                <Tooltip
+                    id="css-tooltip"
+                    content="CSS" />
+                <img data-tooltip-target="sass-tooltip" src="/skills/sass.png" alt="sass" width="60">
+                <Tooltip
+                    id="sass-tooltip"
+                    content="SASS" />
+                <img data-tooltip-target="tailwind-tooltip" src="/skills/tailwindCss.png" alt="tailwindCss" width="60">
+                <Tooltip
+                    id="tailwind-tooltip"
+                    content="Tailwind CSS" />
+                <img data-tooltip-target="bootstrap-tooltip" src="/skills/bootstrap.png" alt="bootstrap" width="60">
+                <Tooltip
+                    id="bootstrap-tooltip"
+                    content="Bootstrap" />
+                <img data-tooltip-target="js-tooltip" src="/skills/javascript.png" alt="javascript" width="60">
+                <Tooltip
+                    id="js-tooltip"
+                    content="Javascript" />
+                <img data-tooltip-target="ts-tooltip" src="/skills/typescript.png" alt="typescript" width="60">
+                <Tooltip
+                    id="ts-tooltip"
+                    content="Typescript" />
+                <img data-tooltip-target="angular-tooltip" src="/skills/angular.png" alt="angular" width="60">
+                <Tooltip
+                    id="angular-tooltip"
+                    content="Angular" />
+                <img data-tooltip-target="java-tooltip" src="/skills/java.png" alt="java" width="60">
+                <Tooltip
+                    id="java-tooltip"
+                    content="Java" />
+                <img data-tooltip-target="spring-tooltip" src="/skills/springboot.png" alt="springboot" width="60">
+                <Tooltip
+                    id="spring-tooltip"
+                    content="Springboot" />
+                <img data-tooltip-target="mysql-tooltip" src="/skills/mysql.png" alt="mysql" width="60">
+                <Tooltip
+                    id="mysql-tooltip"
+                    content="MySQL" />
+                <img data-tooltip-target="jhipster-tooltip" src="/skills/jhipster.png" alt="jhipster" width="60">
+                <Tooltip
+                    id="jhipster-tooltip"
+                    content="JHipster" />
+                <img data-tooltip-target="git-tooltip" src="/skills/git.png" alt="git" width="60">
+                <Tooltip
+                    id="git-tooltip"
+                    content="Git" />
+                <img data-tooltip-target="github-tooltip" src="/skills/github.png" alt="github" width="60">
+                <Tooltip
+                    id="github-tooltip"
+                    content="Github" />
+                <img data-tooltip-target="bitbucket-tooltip" src="/skills/bitbucket.webp" alt="bitbucket" width="60">
+                <Tooltip
+                    id="bitbucket-tooltip"
+                    content="Bitbucket" />
+                <img data-tooltip-target="jira-tooltip" src="/skills/jira.png" alt="jira" width="60">
+                <Tooltip
+                    id="jira-tooltip"
+                    content="Jira" />
+                <img data-tooltip-target="sourcetree-tooltip" src="/skills/sourcetree.webp" alt="sourcetree" width="80">
+                <Tooltip
+                    id="sourcetree-tooltip"
+                    content="Sourcetree" />
+            </div>
+        </section>
+
         <section id="projects">
             <div class="text-center mt-30 text-5xl font-semibold">
                 <h2>Some recent <span class="text-[#CBACF9]">projects</span></h2>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 2xl:px-50 gap-6 mt-20 justify-items-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 2xl:mx-10 gap-10 place-items-center mt-20">
                 <Card
                     title="Car Rental App"
                     description="This is a Rental Car App for book different vehicles, built with JHipster, Angular and Java."
