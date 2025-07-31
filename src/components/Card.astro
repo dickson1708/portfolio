@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+
 const {
   title,
   description,
@@ -10,45 +12,46 @@ const {
 ---
 
 <div class="max-w-2xl bg-[#141428] border border-gray-200 rounded-lg shadow-sm">
-  <img class="rounded-t-lg w-full h-auto" src={image} alt={title} />
+  <Image class="rounded-t-lg w-full h-auto" src={image} alt={title} width={50} height={50} />
   <div class="p-5">
     <div class="flex justify-between items-center mb-2">
       <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-200">
         {title}
       </h5>
-      <a href={githubLink} target="_blank">
-        <button
-          type="button"
-          class="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 me-2 mb-2"
+      <a
+        href={githubLink}
+        target="_blank"
+        class="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 me-2 mb-2"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-code"
+          ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+            d="M7 8l-4 4l4 4"></path><path d="M17 8l4 4l-4 4"></path><path
+            d="M14 4l-4 16"></path></svg
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="icon icon-tabler icons-tabler-outline icon-tabler-code"
-            ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-              d="M7 8l-4 4l4 4"></path><path d="M17 8l4 4l-4 4"></path><path
-              d="M14 4l-4 16"></path></svg
-          >
-          Code
-        </button>
+        Code
       </a>
     </div>
     <p class="mb-3 font-normal text-gray-400">{description}</p>
     <div class="flex flex-wrap flex-col mt-5 gap-4">
-      <div class="flex flex-wrap gap-2">
+      <div class="flex items-center flex-wrap gap-2">
         {
           skills.map((skill: string) => (
-            <img
+            <Image
               src={skill}
               alt="skill"
-              class="w-12 border border-gray-700 rounded-3xl p-2"
+              class="border border-gray-800 rounded-3xl p-2"
+              width={50}
+              height={50}
             />
           ))
         }

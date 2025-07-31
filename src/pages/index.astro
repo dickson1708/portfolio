@@ -1,8 +1,10 @@
 ---
+import { Image } from "astro:assets";
 import Card from "../components/Card.astro";
 import ArrowRightIcon from "../components/icons/ArrowRightIcon.astro";
 import Tooltip from "../components/Tooltip.astro";
 import Layout from "../layouts/Layout.astro";
+import Carousel from "../components/Carousel.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -11,7 +13,7 @@ import Layout from "../layouts/Layout.astro";
 <Layout>
     <main>
         <section id="home">
-            <img src="/logo_portfolio.png" alt="Memoji de Dickson Celauro" width="250" class="mx-auto hover:scale-110" />
+            <Image src="/src/assets/logo_portfolio.png" alt="Memoji de Dickson Celauro" loading="eager" width={250} height={250} class="mx-auto hover:scale-110" />
             <h5
                 class="flex justify-center font-extralight text-lg text-gray-400 tracking-widest"
             >
@@ -43,72 +45,72 @@ import Layout from "../layouts/Layout.astro";
             <div class="text-center mt-30 text-5xl font-semibold">
                 <h2>My <span class="text-[#CBACF9]">Stack</span></h2>
             </div>
-            <div class="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-9 2xl:grid-cols-17 justify-center items-center bg-gray-700 p-10 mt-20 gap-6">
-                <img data-tooltip-target="html-tooltip" src="/skills/html.png" alt="html" width="60">
+            <div class="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-9 2xl:grid-cols-17 justify-center items-center bg-gray-700 p-10 mt-10 gap-6">
+                <img data-tooltip-target="html-tooltip" src="./src/assets/skills/html.png" alt="html" width="60">
                 <Tooltip
                     id="html-tooltip"
                     content="HTML" />
-                <img data-tooltip-target="css-tooltip" src="/skills/css-3.png" alt="css" width="60">
+                <img data-tooltip-target="css-tooltip" src="./src/assets/skills/css-3.png" alt="css" width="60">
                 <Tooltip
                     id="css-tooltip"
                     content="CSS" />
-                <img data-tooltip-target="sass-tooltip" src="/skills/sass.png" alt="sass" width="60">
+                <img data-tooltip-target="sass-tooltip" src="./src/assets/skills/sass.png" alt="sass" width="60">
                 <Tooltip
                     id="sass-tooltip"
                     content="SASS" />
-                <img data-tooltip-target="tailwind-tooltip" src="/skills/tailwindCss.png" alt="tailwindCss" width="60">
+                <img data-tooltip-target="tailwind-tooltip" src="./src/assets/skills/tailwindCss.png" alt="tailwindCss" width="60">
                 <Tooltip
                     id="tailwind-tooltip"
                     content="Tailwind CSS" />
-                <img data-tooltip-target="bootstrap-tooltip" src="/skills/bootstrap.png" alt="bootstrap" width="60">
+                <img data-tooltip-target="bootstrap-tooltip" src="./src/assets/skills/bootstrap.png" alt="bootstrap" width="60">
                 <Tooltip
                     id="bootstrap-tooltip"
                     content="Bootstrap" />
-                <img data-tooltip-target="js-tooltip" src="/skills/javascript.png" alt="javascript" width="60">
+                <img data-tooltip-target="js-tooltip" src="./src/assets/skills/javascript.png" alt="javascript" width="60">
                 <Tooltip
                     id="js-tooltip"
                     content="Javascript" />
-                <img data-tooltip-target="ts-tooltip" src="/skills/typescript.png" alt="typescript" width="60">
+                <img data-tooltip-target="ts-tooltip" src="./src/assets/skills/typescript.png" alt="typescript" width="60">
                 <Tooltip
                     id="ts-tooltip"
                     content="Typescript" />
-                <img data-tooltip-target="angular-tooltip" src="/skills/angular.png" alt="angular" width="60">
+                <img data-tooltip-target="angular-tooltip" src="./src/assets/skills/angular.png" alt="angular" width="60">
                 <Tooltip
                     id="angular-tooltip"
                     content="Angular" />
-                <img data-tooltip-target="java-tooltip" src="/skills/java.png" alt="java" width="60">
+                <img data-tooltip-target="java-tooltip" src="./src/assets/skills/java.png" alt="java" width="60">
                 <Tooltip
                     id="java-tooltip"
                     content="Java" />
-                <img data-tooltip-target="spring-tooltip" src="/skills/springboot.png" alt="springboot" width="60">
+                <img data-tooltip-target="spring-tooltip" src="./src/assets/skills/springboot.png" alt="springboot" width="60">
                 <Tooltip
                     id="spring-tooltip"
                     content="Springboot" />
-                <img data-tooltip-target="mysql-tooltip" src="/skills/mysql.png" alt="mysql" width="60">
+                <img data-tooltip-target="mysql-tooltip" src="./src/assets/skills/mysql.png" alt="mysql" width="60">
                 <Tooltip
                     id="mysql-tooltip"
                     content="MySQL" />
-                <img data-tooltip-target="jhipster-tooltip" src="/skills/jhipster.png" alt="jhipster" width="60">
+                <img data-tooltip-target="jhipster-tooltip" src="./src/assets/skills/jhipster.png" alt="jhipster" width="60">
                 <Tooltip
                     id="jhipster-tooltip"
                     content="JHipster" />
-                <img data-tooltip-target="git-tooltip" src="/skills/git.png" alt="git" width="60">
+                <img data-tooltip-target="git-tooltip" src="./src/assets/skills/git.png" alt="git" width="60">
                 <Tooltip
                     id="git-tooltip"
                     content="Git" />
-                <img data-tooltip-target="github-tooltip" src="/skills/github.png" alt="github" width="60">
+                <img data-tooltip-target="github-tooltip" src="./src/assets/skills/github.png" alt="github" width="60">
                 <Tooltip
                     id="github-tooltip"
                     content="Github" />
-                <img data-tooltip-target="bitbucket-tooltip" src="/skills/bitbucket.webp" alt="bitbucket" width="60">
+                <img data-tooltip-target="bitbucket-tooltip" src="./src/assets/skills/bitbucket.webp" alt="bitbucket" width="60">
                 <Tooltip
                     id="bitbucket-tooltip"
                     content="Bitbucket" />
-                <img data-tooltip-target="jira-tooltip" src="/skills/jira.png" alt="jira" width="60">
+                <img data-tooltip-target="jira-tooltip" src="./src/assets/skills/jira.png" alt="jira" width="60">
                 <Tooltip
                     id="jira-tooltip"
                     content="Jira" />
-                <img data-tooltip-target="sourcetree-tooltip" src="/skills/sourcetree.webp" alt="sourcetree" width="80">
+                <img data-tooltip-target="sourcetree-tooltip" src="./src/assets/skills/sourcetree.webp" alt="sourcetree" width="80">
                 <Tooltip
                     id="sourcetree-tooltip"
                     content="Sourcetree" />
@@ -116,53 +118,63 @@ import Layout from "../layouts/Layout.astro";
         </section>
 
         <section id="projects">
-            <div class="text-center mt-30 text-5xl font-semibold">
+            <div class="text-center mt-50 text-5xl font-semibold">
                 <h2>Some recent <span class="text-[#CBACF9]">projects</span></h2>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 2xl:mx-10 gap-10 place-items-center mt-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 2xl:mx-10 gap-10 place-items-center mt-10">
                 <Card
                     title="Car Rental App"
                     description="This is a Rental Car App for book different vehicles, built with JHipster, Angular and Java."
-                    image="/rentalcar_project.png"
+                    image="/src/assets/projects/rentalcar_project.png"
                     link="/rental-car-app"
                     skills={[
-                        "/skills/angular.png",
-                        "/skills/springboot.png",
-                        "/skills/typescript.png",
-                        "/skills/java.png",
-                        "/skills/sass.png",
-                        "/skills/bootstrap.png",
-                        "/skills/mysql.png",
-                    ]}
+                        "/src/assets/skills/angular.png",
+                        "/src/assets/skills/springboot.png",
+                        "/src/assets/skills/typescript.png",
+                        "/src/assets/skills/java.png",
+                        "/src/assets/skills/sass.png",
+                        "/src/assets/skills/bootstrap.png",
+                        "/src/assets/skills/mysql.png",
+                    ]},
+                    githubLink="https://google.com/"
                 />
                 <Card
                     title="Car Dealership App"
                     description="A full-stack application for managing car dealerships, built with JHipster, Angular and Java."
-                    image="/dealership_project.png"
+                    image="/src/assets/projects/dealership_project.png"
                     link="/car-dealership-app"
                     skills={[
-                        "/skills/angular.png",
-                        "/skills/springboot.png",
-                        "/skills/typescript.png",
-                        "/skills/java.png",
-                        "/skills/sass.png",
-                        "/skills/bootstrap.png",
-                        "/skills/mysql.png",
+                        "/src/assets/skills/angular.png",
+                        "/src/assets/skills/springboot.png",
+                        "/src/assets/skills/typescript.png",
+                        "/src/assets/skills/java.png",
+                        "/src/assets/skills/sass.png",
+                        "/src/assets/skills/bootstrap.png",
+                        "/src/assets/skills/mysql.png",
                     ]},
                     githubLink="https://bitbucket.org/dicksons-personal-projects/dealerapp/commits/branch/develop"
                 />
                 <Card
                     title="Kickingball Team"
                     description="Frontend web application for a Spanish sport team, built with HTML, CSS, JS and Bootstrap."
-                    image="/gladiadoras_project.png"
+                    image="/src/assets/projects/gladiadoras_project.png"
                     link="https://www.gladiadoraskickingball.com/"
                     skills={[
-                        "/skills/html.png",
-                        "/skills/css-3.png",
-                        "/skills/javascript.png",
+                        "/src/assets/skills/html.png",
+                        "/src/assets/skills/css-3.png",
+                        "/src/assets/skills/javascript.png",
                     ]},
                     githubLink="https://github.com/dickson1708/GladiadorasKickingball"
                 />
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="text-center mt-50 text-5xl font-semibold">
+                <h2>Educ<span class="text-[#CBACF9]">ation</span></h2>
+            </div>
+            <div class="mt-10">
+                <Carousel>
             </div>
         </section>
     </main>
