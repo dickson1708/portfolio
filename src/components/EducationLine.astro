@@ -1,0 +1,31 @@
+---
+const { estudio, fechas } = Astro.props;
+---
+
+<div class="w-full max-w-3xl mx-auto px-4">
+  <div class="grid grid-cols-1 sm:grid-cols-[auto_1fr] gap-x-4 items-center mb-4">
+
+    <div class="flex justify-center sm:justify-end">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-6 h-6 text-[#CBACF9]"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" />
+        <path d="M9 4v6l-2 4v2h10v-2l-2 -4v-6" />
+        <path d="M12 16l0 5" />
+        <path d="M8 4l8 0" />
+      </svg>
+    </div>
+
+    <div class="flex flex-col sm:flex-row justify-between text-left">
+      <h4 class="text-xl font-medium">{estudio}</h4>
+      <span class="text-md text-gray-300 sm:ml-4">{fechas}</span>
+    </div>
+  </div>
+
+  <hr class="border-t border-[#CBACF9] mb-6" />
+</div>
