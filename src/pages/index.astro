@@ -5,6 +5,7 @@ import ArrowRightIcon from "../components/icons/ArrowRightIcon.astro";
 import Tooltip from "../components/Tooltip.astro";
 import Layout from "../layouts/Layout.astro";
 import Carousel from "../components/Carousel.astro";
+import MaiIcon from "../components/icons/MaiIcon.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -13,7 +14,14 @@ import Carousel from "../components/Carousel.astro";
 <Layout>
     <main>
         <section id="home">
-            <Image src="/src/assets/logo_portfolio.png" alt="Memoji de Dickson Celauro" loading="eager" width={250} height={250} class="mx-auto hover:scale-110" />
+            <Image
+                src="/src/assets/logo_portfolio.png"
+                alt="Memoji de Dickson Celauro"
+                loading="eager"
+                width={250}
+                height={250}
+                class="mx-auto hover:scale-110"
+            />
             <h5
                 class="flex justify-center font-extralight text-lg text-gray-400 tracking-widest"
             >
@@ -23,16 +31,14 @@ import Carousel from "../components/Carousel.astro";
                 <h1>Transforming Applications into</h1>
                 <h1>
                     <span class="text-[#CBACF9]">Security</span> and <span
-                        class="text-[#CBACF9]">Robustness</span>
+                        class="text-[#CBACF9]">Robustness</span
+                    >
                 </h1>
             </div>
             <h3 class="text-center mt-6 text-3xl font-extralight text-gray-300">
                 Hi, I am Dickson, Full Stack Developer based in Spain 🇪🇸
             </h3>
-            <a
-                href="#projects"
-                class="glow-button"
-            >
+            <a href="#projects" class="glow-button">
                 <span class="glow-content">
                     See my work
                     <ArrowRightIcon />
@@ -45,83 +51,140 @@ import Carousel from "../components/Carousel.astro";
             <div class="text-center mt-30 text-5xl font-semibold">
                 <h2>My <span class="text-[#CBACF9]">Stack</span></h2>
             </div>
-            <div class="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-9 2xl:grid-cols-17 justify-center items-center bg-gray-700 p-10 mt-10 gap-6">
-                <img data-tooltip-target="html-tooltip" src="./src/assets/skills/html.png" alt="html" width="60">
-                <Tooltip
-                    id="html-tooltip"
-                    content="HTML" />
-                <img data-tooltip-target="css-tooltip" src="./src/assets/skills/css-3.png" alt="css" width="60">
-                <Tooltip
-                    id="css-tooltip"
-                    content="CSS" />
-                <img data-tooltip-target="sass-tooltip" src="./src/assets/skills/sass.png" alt="sass" width="60">
-                <Tooltip
-                    id="sass-tooltip"
-                    content="SASS" />
-                <img data-tooltip-target="tailwind-tooltip" src="./src/assets/skills/tailwindCss.png" alt="tailwindCss" width="60">
-                <Tooltip
-                    id="tailwind-tooltip"
-                    content="Tailwind CSS" />
-                <img data-tooltip-target="bootstrap-tooltip" src="./src/assets/skills/bootstrap.png" alt="bootstrap" width="60">
-                <Tooltip
-                    id="bootstrap-tooltip"
-                    content="Bootstrap" />
-                <img data-tooltip-target="js-tooltip" src="./src/assets/skills/javascript.png" alt="javascript" width="60">
-                <Tooltip
-                    id="js-tooltip"
-                    content="Javascript" />
-                <img data-tooltip-target="ts-tooltip" src="./src/assets/skills/typescript.png" alt="typescript" width="60">
-                <Tooltip
-                    id="ts-tooltip"
-                    content="Typescript" />
-                <img data-tooltip-target="angular-tooltip" src="./src/assets/skills/angular.png" alt="angular" width="60">
-                <Tooltip
-                    id="angular-tooltip"
-                    content="Angular" />
-                <img data-tooltip-target="java-tooltip" src="./src/assets/skills/java.png" alt="java" width="60">
-                <Tooltip
-                    id="java-tooltip"
-                    content="Java" />
-                <img data-tooltip-target="spring-tooltip" src="./src/assets/skills/springboot.png" alt="springboot" width="60">
-                <Tooltip
-                    id="spring-tooltip"
-                    content="Springboot" />
-                <img data-tooltip-target="mysql-tooltip" src="./src/assets/skills/mysql.png" alt="mysql" width="60">
-                <Tooltip
-                    id="mysql-tooltip"
-                    content="MySQL" />
-                <img data-tooltip-target="jhipster-tooltip" src="./src/assets/skills/jhipster.png" alt="jhipster" width="60">
-                <Tooltip
-                    id="jhipster-tooltip"
-                    content="JHipster" />
-                <img data-tooltip-target="git-tooltip" src="./src/assets/skills/git.png" alt="git" width="60">
-                <Tooltip
-                    id="git-tooltip"
-                    content="Git" />
-                <img data-tooltip-target="github-tooltip" src="./src/assets/skills/github.png" alt="github" width="60">
-                <Tooltip
-                    id="github-tooltip"
-                    content="Github" />
-                <img data-tooltip-target="bitbucket-tooltip" src="./src/assets/skills/bitbucket.webp" alt="bitbucket" width="60">
-                <Tooltip
-                    id="bitbucket-tooltip"
-                    content="Bitbucket" />
-                <img data-tooltip-target="jira-tooltip" src="./src/assets/skills/jira.png" alt="jira" width="60">
-                <Tooltip
-                    id="jira-tooltip"
-                    content="Jira" />
-                <img data-tooltip-target="sourcetree-tooltip" src="./src/assets/skills/sourcetree.webp" alt="sourcetree" width="80">
-                <Tooltip
-                    id="sourcetree-tooltip"
-                    content="Sourcetree" />
+            <div
+                class="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-9 2xl:grid-cols-17 justify-center items-center bg-gray-700 p-10 mt-10 gap-6"
+            >
+                <img
+                    data-tooltip-target="html-tooltip"
+                    src="./src/assets/skills/html.png"
+                    alt="html"
+                    width="60"
+                />
+                <Tooltip id="html-tooltip" content="HTML" />
+                <img
+                    data-tooltip-target="css-tooltip"
+                    src="./src/assets/skills/css-3.png"
+                    alt="css"
+                    width="60"
+                />
+                <Tooltip id="css-tooltip" content="CSS" />
+                <img
+                    data-tooltip-target="sass-tooltip"
+                    src="./src/assets/skills/sass.png"
+                    alt="sass"
+                    width="60"
+                />
+                <Tooltip id="sass-tooltip" content="SASS" />
+                <img
+                    data-tooltip-target="tailwind-tooltip"
+                    src="./src/assets/skills/tailwindCss.png"
+                    alt="tailwindCss"
+                    width="60"
+                />
+                <Tooltip id="tailwind-tooltip" content="Tailwind CSS" />
+                <img
+                    data-tooltip-target="bootstrap-tooltip"
+                    src="./src/assets/skills/bootstrap.png"
+                    alt="bootstrap"
+                    width="60"
+                />
+                <Tooltip id="bootstrap-tooltip" content="Bootstrap" />
+                <img
+                    data-tooltip-target="js-tooltip"
+                    src="./src/assets/skills/javascript.png"
+                    alt="javascript"
+                    width="60"
+                />
+                <Tooltip id="js-tooltip" content="Javascript" />
+                <img
+                    data-tooltip-target="ts-tooltip"
+                    src="./src/assets/skills/typescript.png"
+                    alt="typescript"
+                    width="60"
+                />
+                <Tooltip id="ts-tooltip" content="Typescript" />
+                <img
+                    data-tooltip-target="angular-tooltip"
+                    src="./src/assets/skills/angular.png"
+                    alt="angular"
+                    width="60"
+                />
+                <Tooltip id="angular-tooltip" content="Angular" />
+                <img
+                    data-tooltip-target="java-tooltip"
+                    src="./src/assets/skills/java.png"
+                    alt="java"
+                    width="60"
+                />
+                <Tooltip id="java-tooltip" content="Java" />
+                <img
+                    data-tooltip-target="spring-tooltip"
+                    src="./src/assets/skills/springboot.png"
+                    alt="springboot"
+                    width="60"
+                />
+                <Tooltip id="spring-tooltip" content="Springboot" />
+                <img
+                    data-tooltip-target="mysql-tooltip"
+                    src="./src/assets/skills/mysql.png"
+                    alt="mysql"
+                    width="60"
+                />
+                <Tooltip id="mysql-tooltip" content="MySQL" />
+                <img
+                    data-tooltip-target="jhipster-tooltip"
+                    src="./src/assets/skills/jhipster.png"
+                    alt="jhipster"
+                    width="60"
+                />
+                <Tooltip id="jhipster-tooltip" content="JHipster" />
+                <img
+                    data-tooltip-target="git-tooltip"
+                    src="./src/assets/skills/git.png"
+                    alt="git"
+                    width="60"
+                />
+                <Tooltip id="git-tooltip" content="Git" />
+                <img
+                    data-tooltip-target="github-tooltip"
+                    src="./src/assets/skills/github.png"
+                    alt="github"
+                    width="60"
+                />
+                <Tooltip id="github-tooltip" content="Github" />
+                <img
+                    data-tooltip-target="bitbucket-tooltip"
+                    src="./src/assets/skills/bitbucket.webp"
+                    alt="bitbucket"
+                    width="60"
+                />
+                <Tooltip id="bitbucket-tooltip" content="Bitbucket" />
+                <img
+                    data-tooltip-target="jira-tooltip"
+                    src="./src/assets/skills/jira.png"
+                    alt="jira"
+                    width="60"
+                />
+                <Tooltip id="jira-tooltip" content="Jira" />
+                <img
+                    data-tooltip-target="sourcetree-tooltip"
+                    src="./src/assets/skills/sourcetree.webp"
+                    alt="sourcetree"
+                    width="80"
+                />
+                <Tooltip id="sourcetree-tooltip" content="Sourcetree" />
             </div>
         </section>
 
         <section id="projects">
             <div class="text-center mt-50 text-5xl font-semibold">
-                <h2>Some recent <span class="text-[#CBACF9]">projects</span></h2>
+                <h2>
+                    Some recent <span class="text-[#CBACF9]">projects</span>
+                </h2>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 2xl:mx-10 gap-10 place-items-center mt-10">
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 2xl:mx-10 gap-10 place-items-center mt-10"
+            >
                 <Card
                     title="Car Rental App"
                     description="This is a Rental Car App for book different vehicles, built with JHipster, Angular and Java."
@@ -135,7 +198,8 @@ import Carousel from "../components/Carousel.astro";
                         "/src/assets/skills/sass.png",
                         "/src/assets/skills/bootstrap.png",
                         "/src/assets/skills/mysql.png",
-                    ]},
+                    ]}
+                    ,
                     githubLink="https://google.com/"
                 />
                 <Card
@@ -151,7 +215,8 @@ import Carousel from "../components/Carousel.astro";
                         "/src/assets/skills/sass.png",
                         "/src/assets/skills/bootstrap.png",
                         "/src/assets/skills/mysql.png",
-                    ]},
+                    ]}
+                    ,
                     githubLink="https://bitbucket.org/dicksons-personal-projects/dealerapp/commits/branch/develop"
                 />
                 <Card
@@ -163,7 +228,8 @@ import Carousel from "../components/Carousel.astro";
                         "/src/assets/skills/html.png",
                         "/src/assets/skills/css-3.png",
                         "/src/assets/skills/javascript.png",
-                    ]},
+                    ]}
+                    ,
                     githubLink="https://github.com/dickson1708/GladiadorasKickingball"
                 />
             </div>
@@ -174,63 +240,97 @@ import Carousel from "../components/Carousel.astro";
                 <h2>Educ<span class="text-[#CBACF9]">ation</span></h2>
             </div>
             <div class="mt-10">
-                <Carousel>
+                <Carousel />
             </div>
+
+            <section
+                id="contact"
+                class="py-24 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white"
+            >
+                <div class="text-center mb-12">
+                    <h2
+                        class="text-5xl font-extrabold tracking-tight text-[#CBACF9]"
+                    >
+                        Let’s Work Together
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-300">
+                        I'm currently open to new opportunities — let's talk!
+                    </p>
+                </div>
+
+                <div class="flex justify-center">
+                    <a
+                        href="mailto:dickson17081999@gmail.com"
+                        class="group flex items-center gap-4 bg-gray-800 border border-[#CBACF9]/30 hover:border-[#CBACF9] hover:bg-[#CBACF9]/10 transition-all rounded-xl p-6 shadow-lg"
+                    >
+                        <div
+                            class="w-8 h-8 flex items-center justify-center text-[#EA4335] group-hover:text-white transition"
+                        >
+                            <MaiIcon />
+                        </div>
+                        <span
+                            class="text-lg font-medium text-white group-hover:text-[#CBACF9] transition"
+                        >
+                            dickson17081999@gmail.com
+                        </span>
+                    </a>
+                </div>
+            </section>
         </section>
     </main>
-</Layout>
 
-<style>
-    .glow-button {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 0.5rem;
-        margin-top: 2.5rem;
-        padding: 1.25rem 2.5rem;
-        max-width: max-content;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 0.5rem;
-        background-color: #141428;
-        border: 1px solid #4b5563; /* gray-700 */
-        overflow: hidden;
-        transition: border-color 0.3s;
-        text-decoration: none;
-        color: white;
-    }
+    <style>
+        .glow-button {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 2.5rem;
+            padding: 1.25rem 2.5rem;
+            max-width: max-content;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 0.5rem;
+            background-color: #141428;
+            border: 1px solid #4b5563; /* gray-700 */
+            overflow: hidden;
+            transition: border-color 0.3s;
+            text-decoration: none;
+            color: white;
+        }
 
-    .glow-button:hover {
-        border-color: #cbacf9;
-    }
+        .glow-button:hover {
+            border-color: #cbacf9;
+        }
 
-    .glow-content {
-        position: relative;
-        z-index: 10;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-    }
+        .glow-content {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
 
-    .glow-overlay {
-        position: absolute;
-        top: 0;
-        left: 100%;
-        width: 100%;
-        height: 100%;
-        background: rgba(203, 172, 249, 0.2); /* violeta translúcido */
-        filter: blur(24px);
-        animation: glow-slide 2s linear infinite;
-        pointer-events: none;
-    }
-
-    @keyframes glow-slide {
-        0% {
+        .glow-overlay {
+            position: absolute;
+            top: 0;
             left: 100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(203, 172, 249, 0.2); /* violeta translúcido */
+            filter: blur(24px);
+            animation: glow-slide 2s linear infinite;
+            pointer-events: none;
         }
-        100% {
-            left: -100%;
+
+        @keyframes glow-slide {
+            0% {
+                left: 100%;
+            }
+            100% {
+                left: -100%;
+            }
         }
-    }
-</style>
+    </style></Layout
+>
