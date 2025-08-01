@@ -6,6 +6,10 @@ import Tooltip from "../components/Tooltip.astro";
 import Layout from "../layouts/Layout.astro";
 import Carousel from "../components/Carousel.astro";
 import MaiIcon from "../components/icons/MaiIcon.astro";
+import CardIcon from "../components/icons/CardIcon.astro";
+import LinkedinIcon from "../components/icons/LinkedinIcon.astro";
+import GithubIcon from "../components/icons/GithubIcon.astro";
+import EducationLine from "../components/EducationLine.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -38,6 +42,29 @@ import MaiIcon from "../components/icons/MaiIcon.astro";
             <h3 class="text-center mt-6 text-3xl font-extralight text-gray-300">
                 Hi, I am Dickson, Full Stack Developer based in Spain 🇪🇸
             </h3>
+            <div class="flex justify-center mt-10">
+                <a
+                    href="mailto:dickson17081999@gmail.com"
+                    target="_blank"
+                    class="flex justify-center items-center gap-2 text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-8 py-2.5 me-2 mb-2"
+                    >Mail
+                    <CardIcon />
+                </a>
+                <a
+                    href="https://es.linkedin.com/in/dicksoncelauropena"
+                    target="_blank"
+                    class="flex justify-center items-center gap-2 text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-8 py-2.5 me-2 mb-2"
+                    >LinkedIn
+                    <LinkedinIcon />
+                </a>
+                <a
+                    href="https://github.com/dickson1708"
+                    target="_blank"
+                    class="flex justify-center items-center gap-2 text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-8 py-2.5 me-2 mb-2"
+                    >GitHub
+                    <GithubIcon />
+                </a>
+            </div>
             <a href="#projects" class="glow-button">
                 <span class="glow-content">
                     See my work
@@ -240,42 +267,56 @@ import MaiIcon from "../components/icons/MaiIcon.astro";
                 <h2>Educ<span class="text-[#CBACF9]">ation</span></h2>
             </div>
             <div class="mt-10">
+                <EducationLine
+                    estudio="Bachelor's Degree in Computer Engineering"
+                    fechas="Sep 2025 - Present"
+                    />
+                <EducationLine
+                    estudio="Higher Degree in Web Application Development"
+                    fechas="Sep 2023 - Jun 2025" 
+                    />
+                <EducationLine
+                    estudio="Bachelor of Science"
+                    fechas="Sep 2011 - Jun 2016"
+                    />
+            </div>
+            <div class="mt-10">
                 <Carousel />
             </div>
+        </section>
 
-            <section
-                id="contact"
-                class="py-24 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white"
-            >
-                <div class="text-center mb-12">
-                    <h2
-                        class="text-5xl font-extrabold tracking-tight text-[#CBACF9]"
-                    >
-                        Let’s Work Together
-                    </h2>
-                    <p class="mt-4 text-lg text-gray-300">
-                        I'm currently open to new opportunities — let's talk!
-                    </p>
-                </div>
+        <section
+            id="contact"
+            class="py-24 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white"
+        >
+            <div class="text-center mb-12">
+                <h2
+                    class="text-5xl font-extrabold tracking-tight text-[#CBACF9]"
+                >
+                    Let’s Work Together
+                </h2>
+                <p class="mt-4 text-lg text-gray-300">
+                    I'm currently open to new opportunities — let's talk!
+                </p>
+            </div>
 
-                <div class="flex justify-center">
-                    <a
-                        href="mailto:dickson17081999@gmail.com"
-                        class="group flex items-center gap-4 bg-gray-800 border border-[#CBACF9]/30 hover:border-[#CBACF9] hover:bg-[#CBACF9]/10 transition-all rounded-xl p-6 shadow-lg"
+            <div class="flex justify-center">
+                <a
+                    href="mailto:dickson17081999@gmail.com"
+                    class="group flex items-center gap-4 bg-gray-800 border border-[#CBACF9]/30 hover:border-[#CBACF9] hover:bg-[#CBACF9]/10 transition-all rounded-xl p-6 shadow-lg"
+                >
+                    <div
+                        class="w-8 h-8 flex items-center justify-center text-[#EA4335] group-hover:text-white transition"
                     >
-                        <div
-                            class="w-8 h-8 flex items-center justify-center text-[#EA4335] group-hover:text-white transition"
-                        >
-                            <MaiIcon />
-                        </div>
-                        <span
-                            class="text-lg font-medium text-white group-hover:text-[#CBACF9] transition"
-                        >
-                            dickson17081999@gmail.com
-                        </span>
-                    </a>
-                </div>
-            </section>
+                        <MaiIcon />
+                    </div>
+                    <span
+                        class="text-lg font-medium text-white group-hover:text-[#CBACF9] transition"
+                    >
+                        dickson17081999@gmail.com
+                    </span>
+                </a>
+            </div>
         </section>
     </main>
 
