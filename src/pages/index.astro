@@ -17,9 +17,10 @@ import EducationLine from "../components/EducationLine.astro";
 
 <Layout>
     <main>
+        
         <section id="home">
             <div
-                class="max-w-8xl mx-auto p-20 mt-10
+                class="max-w-8xl mx-auto p-20 mt-30
            grid md:grid-cols-2 gap-10 items-center"
             >
                 <div>
@@ -33,8 +34,64 @@ import EducationLine from "../components/EducationLine.astro";
                     </h1>
 
                     <p class="mt-6 text-xl text-gray-400">
-                        Angular & Java Developer building modern full-stack solutions.
+                        Angular & Java Developer building modern full-stack
+                        solutions.
                     </p>
+                    <div class="flex mt-8 gap-4">
+                        <a
+                            href="mailto:dickson17081999@gmail.com"
+                            target="_blank"
+                            class="p-3 rounded-full
+           bg-white/5
+           border border-white/10
+           text-gray-300
+           hover:text-[#CBACF9]
+           hover:bg-white/20
+           hover:-translate-y-1
+           hover:shadow-[0_0_15px_rgba(203,172,249,0.25)]
+           transition-all duration-300"
+                        >
+                            <CardIcon />
+                        </a>
+                        <a
+                            href="https://es.linkedin.com/in/dicksoncelauropena"
+                            target="_blank"
+                            class="p-3 rounded-full
+           bg-white/5
+           border border-white/10
+           text-gray-300
+           hover:text-[#CBACF9]
+           hover:bg-white/20
+           hover:-translate-y-1
+           hover:shadow-[0_0_15px_rgba(203,172,249,0.25)]
+           transition-all duration-300"
+                        >
+                            <LinkedinIcon />
+                        </a>
+                        <a
+                            href="https://github.com/dickson1708"
+                            target="_blank"
+                            class="p-3 rounded-full
+           bg-white/5
+           border border-white/10
+           text-gray-300
+           hover:text-[#CBACF9]
+           hover:bg-white/20
+           hover:-translate-y-1
+           hover:shadow-[0_0_15px_rgba(203,172,249,0.25)]
+           transition-all duration-300"
+                        >
+                            <GithubIcon />
+                        </a>
+                    </div>
+
+                    <a href="#projects" class="glow-button">
+                        <span class="glow-content">
+                            See my work
+                            <ArrowRightIcon />
+                        </span>
+                        <span class="glow-overlay"></span>
+                    </a>
                 </div>
 
                 <div class="flex justify-center">
@@ -47,36 +104,6 @@ import EducationLine from "../components/EducationLine.astro";
                     />
                 </div>
             </div>
-            <div class="flex justify-center mt-10">
-                <a
-                    href="mailto:dickson17081999@gmail.com"
-                    target="_blank"
-                    class="flex justify-center items-center gap-2 text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-8 py-2.5 me-2 mb-2"
-                    >Mail
-                    <CardIcon />
-                </a>
-                <a
-                    href="https://es.linkedin.com/in/dicksoncelauropena"
-                    target="_blank"
-                    class="flex justify-center items-center gap-2 text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-8 py-2.5 me-2 mb-2"
-                    >LinkedIn
-                    <LinkedinIcon />
-                </a>
-                <a
-                    href="https://github.com/dickson1708"
-                    target="_blank"
-                    class="flex justify-center items-center gap-2 text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-8 py-2.5 me-2 mb-2"
-                    >GitHub
-                    <GithubIcon />
-                </a>
-            </div>
-            <a href="#projects" class="glow-button">
-                <span class="glow-content">
-                    See my work
-                    <ArrowRightIcon />
-                </span>
-                <span class="glow-overlay"></span>
-            </a>
         </section>
 
         <section id="skills">
@@ -335,8 +362,6 @@ import EducationLine from "../components/EducationLine.astro";
             margin-top: 2.5rem;
             padding: 1.25rem 2.5rem;
             max-width: max-content;
-            margin-left: auto;
-            margin-right: auto;
             border-radius: 0.5rem;
             background-color: #141428;
             border: 1px solid #4b5563; /* gray-700 */
