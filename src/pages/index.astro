@@ -17,25 +17,29 @@ import EducationLine from "../components/EducationLine.astro";
 
 <Layout>
     <main>
-        
         <section id="home">
             <div
-                class="max-w-8xl mx-auto p-20 mt-30
+                class="max-w-8xl mx-auto p-20 mt-40
            grid md:grid-cols-2 gap-10 items-center"
             >
                 <div>
-                    <h1
-                        class="text-4xl lg:text-6xl font-semibold leading-tight"
-                    >
-                        Building Secure &
-                        <span class="block text-[#CBACF9]">
-                            Scalable Applications
-                        </span>
+                    <h1 class="text-4xl lg:text-6xl font-bold leading-tight">
+                        👋🏻 Hi, I am <span class="text-[#CBACF9]">Dickson</span>
                     </h1>
 
-                    <p class="mt-6 text-xl text-gray-400">
-                        Angular & Java Developer building modern full-stack
-                        solutions.
+                    <p class="mt-2 text-2xl lg:text-3xl text-yellow-100">
+                        Full-Stack Developer
+                    </p>
+
+                    <h2
+                        class="mt-4 text-xl lg:text-3xl font-semibold text-[#CBACF9]"
+                    >
+                        Building Secure & Scalable Applications
+                    </h2>
+
+                    <p class="mt-2 text-lg text-gray-300 max-w-2xl">
+                        Specialized in Angular and Spring Boot, crafting robust
+                        web applications.
                     </p>
                     <div class="flex mt-8 gap-4">
                         <a
@@ -235,8 +239,8 @@ import EducationLine from "../components/EducationLine.astro";
             </div>
         </section>
 
-        <section id="projects">
-            <div class="text-center mt-50 text-5xl font-semibold">
+        <section id="projects" class="py-60">
+            <div class="text-center text-5xl font-semibold">
                 <h2>
                     Some recent <span class="text-[#CBACF9]">projects</span>
                 </h2>
@@ -294,15 +298,11 @@ import EducationLine from "../components/EducationLine.astro";
             </div>
         </section>
 
-        <section id="education">
-            <div class="text-center mt-50 text-5xl font-semibold">
-                <h2>Educ<span class="text-[#CBACF9]">ation</span></h2>
+        <section id="education" class="scroll-mt-46">
+            <div class="text-center text-5xl font-semibold">
+                <h2>Edu<span class="text-[#CBACF9]">cation</span></h2>
             </div>
             <div class="mt-10">
-                <EducationLine
-                    estudio="Bachelor's Degree in Computer Engineering"
-                    fechas="Sep 2025 - Present"
-                />
                 <EducationLine
                     estudio="Higher Degree in Web Application Development"
                     fechas="Sep 2023 - Jun 2025"
@@ -319,35 +319,115 @@ import EducationLine from "../components/EducationLine.astro";
 
         <section
             id="contact"
-            class="py-24 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white"
+            class="bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white"
         >
-            <div class="text-center mb-12">
+            <div class="py-60 gap-6 flex flex-col items-center justify-center">
                 <h2
                     class="text-5xl font-extrabold tracking-tight text-[#CBACF9]"
                 >
                     Let’s Work Together
                 </h2>
-                <p class="mt-4 text-lg text-gray-300">
+                <p class="text-lg text-gray-300">
                     I'm currently open to new opportunities — let's talk!
                 </p>
-            </div>
-
-            <div class="flex justify-center">
-                <a
-                    href="mailto:dickson17081999@gmail.com"
-                    class="group flex items-center gap-4 bg-gray-800 border border-[#CBACF9]/30 hover:border-[#CBACF9] hover:bg-[#CBACF9]/10 transition-all rounded-xl p-6 shadow-lg"
-                >
+                <div class="flex justify-center">
+                    <a
+                        href="mailto:dickson17081999@gmail.com"
+                        class="group flex items-center gap-4 bg-gray-800 border border-[#CBACF9]/30 hover:border-[#CBACF9] hover:bg-[#CBACF9]/10 transition-all rounded-xl p-6 shadow-lg"
+                    >
+                        <div
+                            class="w-8 h-8 flex items-center justify-center text-[#EA4335] group-hover:text-white transition"
+                        >
+                            <MaiIcon />
+                        </div>
+                        <span
+                            class="text-lg font-medium text-white group-hover:text-[#CBACF9] transition"
+                        >
+                            dickson17081999@gmail.com
+                        </span>
+                    </a>
+                </div>
+                <div class="max-w-3xl mx-auto px-6">
                     <div
-                        class="w-8 h-8 flex items-center justify-center text-[#EA4335] group-hover:text-white transition"
+                        class="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm p-8 lg:p-12"
                     >
-                        <MaiIcon />
+                        <div class="text-center mb-10">
+                            <h2 class="text-4xl font-bold">
+                                Let's <span class="text-[#CBACF9]">Connect</span
+                                >
+                            </h2>
+
+                            <p class="mt-4 text-gray-300 max-w-xl mx-auto">
+                                Have a project in mind, a job opportunity, or
+                                just want to say hello? Feel free to reach out.
+                            </p>
+                        </div>
+
+                        <form class="space-y-6" action="https://api.web3forms.com/submit" method="POST">
+                            <div>
+                                <input type="hidden" name="access_key" value="9459bb1a-5b01-4aa6-8ea6-38355ac480fc">
+                                <label
+                                    for="name"
+                                    class="block mb-2 text-sm text-gray-300"
+                                >
+                                    Name
+                                </label>
+
+                                <input
+                                    id="name"
+                                    name="name"
+                                    type="text"
+                                    placeholder="Dickson Celauro"
+                                    class="w-full rounded-xl border border-white/10 bg-black/20 px-4 py-3 text-white placeholder:text-gray-500 focus:outline-none focus:border-[#CBACF9] focus:ring-2 focus:ring-[#CBACF9]/20 transition"
+                                    required
+                                />
+                            </div>
+
+                            <div>
+                                <label
+                                    for="email"
+                                    class="block mb-2 text-sm text-gray-300"
+                                >
+                                    Email
+                                </label>
+
+                                <input
+                                    id="email"
+                                    name="email"
+                                    type="email"
+                                    placeholder="dickson@example.com"
+                                    class="w-full rounded-xl border border-white/10 bg-black/20 px-4 py-3 text-white placeholder:text-gray-500 focus:outline-none focus:border-[#CBACF9] focus:ring-2 focus:ring-[#CBACF9]/20 transition"
+                                    required
+                                />
+                            </div>
+
+                            <div>
+                                <label
+                                    for="message"
+                                    class="block mb-2 text-sm text-gray-300"
+                                >
+                                    Message
+                                </label>
+
+                                <textarea
+                                    id="message"
+                                    rows="6"
+                                    placeholder="Tell me about your project..."
+                                    name="message"
+                                    class="w-full rounded-xl border border-white/10 bg-black/20 px-4 py-3 text-white placeholder:text-gray-500 focus:outline-none focus:border-[#CBACF9] focus:ring-2 focus:ring-[#CBACF9]/20 transition resize-none"
+                                    required
+                                ></textarea>
+                            </div>
+
+                            <button
+                                type="submit"
+                                class="w-full rounded-xl bg-[#CBACF9] px-6 py-3 font-medium text-black transition hover:scale-[1.02] hover:shadow-lg hover:shadow-[#CBACF9]/20"
+                            >
+                                Send Message
+                            </button>
+                        </form>
                     </div>
-                    <span
-                        class="text-lg font-medium text-white group-hover:text-[#CBACF9] transition"
-                    >
-                        dickson17081999@gmail.com
-                    </span>
-                </a>
+                </div>
             </div>
         </section>
     </main>
