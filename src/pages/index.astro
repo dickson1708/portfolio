@@ -9,7 +9,7 @@ import MaiIcon from "../components/icons/MaiIcon.astro";
 import CardIcon from "../components/icons/CardIcon.astro";
 import LinkedinIcon from "../components/icons/LinkedinIcon.astro";
 import GithubIcon from "../components/icons/GithubIcon.astro";
-import EducationLine from "../components/EducationLine.astro";
+import EducationCard from "../components/EducationCard.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -118,6 +118,41 @@ import EducationLine from "../components/EducationLine.astro";
                 class="flex flex-wrap justify-center items-center gap-6 bg-gray-800 p-10 mt-10 max-w-4xl mx-auto rounded-2xl shadow-xl"
             >
                 <img
+                    data-tooltip-target="angular-tooltip"
+                    src="/assets/skills/angular.png"
+                    alt="angular"
+                    width="60"
+                />
+                <Tooltip id="angular-tooltip" content="Angular" />
+                <img
+                    data-tooltip-target="spring-tooltip"
+                    src="/assets/skills/springboot.png"
+                    alt="springboot"
+                    width="60"
+                />
+                <Tooltip id="spring-tooltip" content="Springboot" />
+                <img
+                    data-tooltip-target="java-tooltip"
+                    src="/assets/skills/java.png"
+                    alt="java"
+                    width="60"
+                />
+                <Tooltip id="java-tooltip" content="Java" />
+                <img
+                    data-tooltip-target="ts-tooltip"
+                    src="/assets/skills/typescript.png"
+                    alt="typescript"
+                    width="60"
+                />
+                <Tooltip id="ts-tooltip" content="Typescript" />
+                <img
+                    data-tooltip-target="js-tooltip"
+                    src="/assets/skills/javascript.png"
+                    alt="javascript"
+                    width="60"
+                />
+                <Tooltip id="js-tooltip" content="Javascript" />
+                <img
                     data-tooltip-target="html-tooltip"
                     src="/assets/skills/html.png"
                     alt="html"
@@ -153,40 +188,19 @@ import EducationLine from "../components/EducationLine.astro";
                 />
                 <Tooltip id="bootstrap-tooltip" content="Bootstrap" />
                 <img
-                    data-tooltip-target="js-tooltip"
-                    src="/assets/skills/javascript.png"
-                    alt="javascript"
+                    data-tooltip-target="astro-tooltip"
+                    src="/assets/skills/astro.png"
+                    alt="astro"
                     width="60"
                 />
-                <Tooltip id="js-tooltip" content="Javascript" />
+                <Tooltip id="astro-tooltip" content="Astro" />
                 <img
-                    data-tooltip-target="ts-tooltip"
-                    src="/assets/skills/typescript.png"
-                    alt="typescript"
+                    data-tooltip-target="jhipster-tooltip"
+                    src="/assets/skills/jhipster.png"
+                    alt="jhipster"
                     width="60"
                 />
-                <Tooltip id="ts-tooltip" content="Typescript" />
-                <img
-                    data-tooltip-target="angular-tooltip"
-                    src="/assets/skills/angular.png"
-                    alt="angular"
-                    width="60"
-                />
-                <Tooltip id="angular-tooltip" content="Angular" />
-                <img
-                    data-tooltip-target="java-tooltip"
-                    src="/assets/skills/java.png"
-                    alt="java"
-                    width="60"
-                />
-                <Tooltip id="java-tooltip" content="Java" />
-                <img
-                    data-tooltip-target="spring-tooltip"
-                    src="/assets/skills/springboot.png"
-                    alt="springboot"
-                    width="60"
-                />
-                <Tooltip id="spring-tooltip" content="Springboot" />
+                <Tooltip id="jhipster-tooltip" content="JHipster" />
                 <img
                     data-tooltip-target="mysql-tooltip"
                     src="/assets/skills/mysql.png"
@@ -195,12 +209,12 @@ import EducationLine from "../components/EducationLine.astro";
                 />
                 <Tooltip id="mysql-tooltip" content="MySQL" />
                 <img
-                    data-tooltip-target="jhipster-tooltip"
-                    src="/assets/skills/jhipster.png"
-                    alt="jhipster"
+                    data-tooltip-target="postgresql-tooltip"
+                    src="/assets/skills/postgresql.png"
+                    alt="postgresql"
                     width="60"
                 />
-                <Tooltip id="jhipster-tooltip" content="JHipster" />
+                <Tooltip id="postgresql-tooltip" content="PostgreSQL" />
                 <img
                     data-tooltip-target="git-tooltip"
                     src="/assets/skills/git.png"
@@ -302,14 +316,18 @@ import EducationLine from "../components/EducationLine.astro";
             <div class="text-center text-4xl lg:text-5xl font-semibold">
                 <h2>Edu<span class="text-[#CBACF9]">cation</span></h2>
             </div>
-            <div class="mt-10">
-                <EducationLine
+            <div class="py-10">
+                <EducationCard
                     estudio="Higher Degree in Web Application Development"
+                    centro="Cesur, Madrid"
                     fechas="Sep 2023 - Jun 2025"
+                    diplomaUrl="/public/certificates/FP.png"
                 />
-                <EducationLine
+                <EducationCard
                     estudio="Bachelor of Science"
+                    centro="U.E.P Colegio Belagua, Caracas"
                     fechas="Sep 2011 - Jun 2016"
+                    diplomaUrl="/public/certificates/bachillerato.png"
                 />
             </div>
             <div class="mt-10">
@@ -367,7 +385,7 @@ import EducationLine from "../components/EducationLine.astro";
                                 <input type="hidden" name="access_key" value="9459bb1a-5b01-4aa6-8ea6-38355ac480fc">
                                 <label
                                     for="name"
-                                    class="block mb-2 text-sm text-yellow-100"
+                                    class="block mb-2 text-sm text-gray-300"
                                 >
                                     Name
                                 </label>
@@ -385,7 +403,7 @@ import EducationLine from "../components/EducationLine.astro";
                             <div>
                                 <label
                                     for="email"
-                                    class="block mb-2 text-sm text-yellow-100"
+                                    class="block mb-2 text-sm text-gray-300"
                                 >
                                     Email
                                 </label>
@@ -403,7 +421,7 @@ import EducationLine from "../components/EducationLine.astro";
                             <div>
                                 <label
                                     for="message"
-                                    class="block mb-2 text-sm text-yellow-100"
+                                    class="block mb-2 text-sm text-gray-300"
                                 >
                                     Message
                                 </label>
