@@ -10,6 +10,7 @@ import CardIcon from "../components/icons/CardIcon.astro";
 import LinkedinIcon from "../components/icons/LinkedinIcon.astro";
 import GithubIcon from "../components/icons/GithubIcon.astro";
 import EducationCard from "../components/EducationCard.astro";
+import DownloadIcon from "../components/icons/DownloadIcon.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -28,7 +29,7 @@ import EducationCard from "../components/EducationCard.astro";
                     </h1>
 
                     <p class="mt-2 text-2xl lg:text-3xl text-yellow-100">
-                        Full-Stack Developer
+                        Full-Stack Developer 🇪🇸
                     </p>
 
                     <h2
@@ -88,14 +89,23 @@ import EducationCard from "../components/EducationCard.astro";
                             <GithubIcon />
                         </a>
                     </div>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <!-- CTA principal -->
+                        <a href="#projects" class="glow-button">
+                            <span class="glow-content">
+                                See my work
+                                <ArrowRightIcon />
+                            </span>
+                            <span class="glow-overlay"></span>
+                        </a>
 
-                    <a href="#projects" class="glow-button">
-                        <span class="glow-content">
-                            See my work
-                            <ArrowRightIcon />
-                        </span>
-                        <span class="glow-overlay"></span>
-                    </a>
+                        <!-- CTA secundario -->
+                        <a href="/cv.pdf" download class="cv-button">
+                            <span class="flex items-center gap-1"> Download CV
+                                <DownloadIcon />
+                                 </span>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="flex justify-center">
@@ -260,7 +270,7 @@ import EducationCard from "../components/EducationCard.astro";
                 </h2>
             </div>
             <div
-                class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 2xl:mx-10 gap-10 place-items-center mt-20"
+                class="flex flex-wrap justify-center 2xl:mx-10 gap-10 place-items-center mt-20"
             >
                 <Card
                     title="Car Rental App"
@@ -339,9 +349,9 @@ import EducationCard from "../components/EducationCard.astro";
             id="contact"
             class="bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white"
         >
-            <div class="py-60 gap-6 flex flex-col items-center justify-center">
+            <div class="py-60 gap-6 flex flex-col justify-center items-center">
                 <h2
-                    class="text-5xl font-extrabold tracking-tight text-[#CBACF9]"
+                    class="text-center text-5xl font-extrabold tracking-tight text-[#CBACF9]"
                 >
                     Let’s Work Together
                 </h2>
@@ -376,13 +386,23 @@ import EducationCard from "../components/EducationCard.astro";
                             </h2>
 
                             <p class="mt-4 text-gray-300 max-w-xl mx-auto">
-                                Have a project in mind or job opportunity? Fill out the form below, and I'll get back to you as soon as possible!
+                                Have a project in mind or job opportunity? Fill
+                                out the form below, and I'll get back to you as
+                                soon as possible!
                             </p>
                         </div>
 
-                        <form class="space-y-6" action="https://api.web3forms.com/submit" method="POST">
+                        <form
+                            class="space-y-6"
+                            action="https://api.web3forms.com/submit"
+                            method="POST"
+                        >
                             <div>
-                                <input type="hidden" name="access_key" value="9459bb1a-5b01-4aa6-8ea6-38355ac480fc">
+                                <input
+                                    type="hidden"
+                                    name="access_key"
+                                    value="9459bb1a-5b01-4aa6-8ea6-38355ac480fc"
+                                />
                                 <label
                                     for="name"
                                     class="block mb-2 text-sm text-gray-300"
@@ -432,8 +452,7 @@ import EducationCard from "../components/EducationCard.astro";
                                     placeholder="Tell me about your project..."
                                     name="message"
                                     class="w-full rounded-xl border border-white/10 bg-black/20 px-4 py-3 text-white placeholder:text-gray-500 focus:outline-none focus:border-[#CBACF9] focus:ring-2 focus:ring-[#CBACF9]/20 transition resize-none"
-                                    required
-                                ></textarea>
+                                    required></textarea>
                             </div>
 
                             <button
@@ -490,6 +509,30 @@ import EducationCard from "../components/EducationCard.astro";
             filter: blur(24px);
             animation: glow-slide 2s linear infinite;
             pointer-events: none;
+        }
+
+        .cv-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 2.5rem;
+            padding: 1.25rem 2.5rem;
+            max-width: max-content;
+            border-radius: 0.5rem;
+            background-color: #CBACF9;
+            border: 1px solid #4b5563; /* gray-700 */
+            overflow: hidden;
+            transition: border-color 0.3s;
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+        }
+
+        .cv-button:hover {
+            border-color: #CBACF9;
+            background-color: #A67BC0;
+            color: white;
         }
 
         @keyframes glow-slide {

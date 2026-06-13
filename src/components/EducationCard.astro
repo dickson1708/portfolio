@@ -1,4 +1,8 @@
 ---
+import CalendarIcon from "./icons/CalendarIcon.astro";
+import MapIcon from "./icons/MapIcon.astro";
+import SchoolIcon from "./icons/SchoolIcon.astro";
+
 const { estudio, centro, fechas, diplomaUrl } = Astro.props;
 ---
 
@@ -15,17 +19,26 @@ const { estudio, centro, fechas, diplomaUrl } = Astro.props;
         >
         </div>
 
-        <h3 class="text-xl font-semibold text-center">
-            {estudio}
-        </h3>
+        <span class="flex justify-center items-center gap-2 py-2">
+            <SchoolIcon />
+            <h3 class="text-xl font-semibold text-center">
+                {estudio}
+            </h3>
+        </span>
 
-        <p class="mt-2 text-gray-400 text-center">
-            {centro}
-        </p>
+        <span class="flex justify-center items-center gap-2 py-2">
+            <MapIcon />
+            <p class="text-gray-400 text-center">
+                {centro}
+            </p>
+        </span>
 
-        <p class="mt-4 text-sm text-[#CBACF9] text-center">
-            {fechas}
-        </p>
+        <span class="flex justify-center items-center gap-2 py-2">
+            <CalendarIcon />
+            <p class="text-md text-[#CBACF9] text-center">
+                {fechas}
+            </p>
+        </span>
 
         {
             diplomaUrl && (
