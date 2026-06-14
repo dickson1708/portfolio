@@ -23,7 +23,7 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                 class="max-w-8xl mx-auto p-20 mt-40
            grid md:grid-cols-2 gap-10 items-center"
             >
-                <div>
+                <div data-aos="fade-right">
                     <h1 class="text-4xl lg:text-6xl font-bold leading-tight">
                         👋🏻 Hi, I am <span class="text-[#CBACF9]">Dickson</span>
                     </h1>
@@ -46,6 +46,7 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                         <a
                             href="mailto:dickson17081999@gmail.com"
                             target="_blank"
+                            data-aos="fade-up" data-aos-delay="100"
                             class="p-3 rounded-full
            bg-white/5
            border border-white/10
@@ -61,6 +62,7 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                         <a
                             href="https://es.linkedin.com/in/dicksoncelauropena"
                             target="_blank"
+                            data-aos="fade-up" data-aos-delay="200"
                             class="p-3 rounded-full
            bg-white/5
            border border-white/10
@@ -76,6 +78,7 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                         <a
                             href="https://github.com/dickson1708"
                             target="_blank"
+                            data-aos="fade-up" data-aos-delay="300"
                             class="p-3 rounded-full
            bg-white/5
            border border-white/10
@@ -89,7 +92,7 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                             <GithubIcon />
                         </a>
                     </div>
-                    <div class="flex flex-col sm:flex-row gap-4">
+                    <div class="flex flex-col sm:flex-row gap-4" data-aos="fade-up" data-aos-delay="400">
                         <!-- CTA principal -->
                         <a href="#projects" class="glow-button">
                             <span class="glow-content">
@@ -108,7 +111,7 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                     </div>
                 </div>
 
-                <div class="flex justify-center">
+                <div class="flex justify-center" data-aos="fade-left">
                     <Image
                         src="/assets/logo_portfolio.png"
                         alt="Memoji de Dickson Celauro"
@@ -121,17 +124,19 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
         </section>
 
         <section id="skills">
-            <div class="text-center mt-30 text-4xl lg:text-5xl font-semibold">
+            <div class="text-center mt-30 text-4xl lg:text-5xl font-semibold" data-aos="fade-down">
                 <h2>My <span class="text-[#CBACF9]">Stack</span></h2>
             </div>
             <div
-                class="flex flex-wrap justify-center items-center gap-6 bg-gray-800 p-10 mt-10 max-w-4xl mx-auto rounded-2xl shadow-xl"
+                class="flex flex-wrap justify-center items-center gap-6 bg-gray-800 p-10 mt-10 max-w-4xl mx-auto rounded-2xl shadow-xl" data-aos="zoom-in"
             >
                 <img
                     data-tooltip-target="angular-tooltip"
                     src="/assets/skills/angular.png"
                     alt="angular"
                     width="60"
+                    data-aos="zoom-in"
+                    data-aos-delay="50"
                 />
                 <Tooltip id="angular-tooltip" content="Angular" />
                 <img
@@ -139,6 +144,8 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                     src="/assets/skills/springboot.png"
                     alt="springboot"
                     width="60"
+                    data-aos="zoom-in"
+                    data-aos-delay="100"
                 />
                 <Tooltip id="spring-tooltip" content="Springboot" />
                 <img
@@ -146,6 +153,8 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                     src="/assets/skills/java.png"
                     alt="java"
                     width="60"
+                    data-aos="zoom-in"
+                    data-aos-delay="150"
                 />
                 <Tooltip id="java-tooltip" content="Java" />
                 <img
@@ -153,6 +162,8 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                     src="/assets/skills/typescript.png"
                     alt="typescript"
                     width="60"
+                    data-aos="zoom-in"
+                    data-aos-delay="200"
                 />
                 <Tooltip id="ts-tooltip" content="Typescript" />
                 <img
@@ -160,6 +171,8 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                     src="/assets/skills/javascript.png"
                     alt="javascript"
                     width="60"
+                    data-aos="zoom-in"
+                    data-aos-delay="250"
                 />
                 <Tooltip id="js-tooltip" content="Javascript" />
                 <img
@@ -167,6 +180,8 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                     src="/assets/skills/html.png"
                     alt="html"
                     width="60"
+                    data-aos="zoom-in"
+                    data-aos-delay="300"
                 />
                 <Tooltip id="html-tooltip" content="HTML" />
                 <img
@@ -174,6 +189,8 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                     src="/assets/skills/css-3.png"
                     alt="css"
                     width="60"
+                    data-aos="zoom-in"
+                    data-aos-delay="350"
                 />
                 <Tooltip id="css-tooltip" content="CSS" />
                 <img
@@ -181,6 +198,8 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                     src="/assets/skills/sass.png"
                     alt="sass"
                     width="60"
+                    data-aos="zoom-in"
+                    data-aos-delay="400"
                 />
                 <Tooltip id="sass-tooltip" content="SASS" />
                 <img
@@ -188,6 +207,8 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                     src="/assets/skills/tailwindCss.png"
                     alt="tailwindCss"
                     width="60"
+                    data-aos="zoom-in"
+                    data-aos-delay="450"
                 />
                 <Tooltip id="tailwind-tooltip" content="Tailwind CSS" />
                 <img
@@ -195,6 +216,8 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                     src="/assets/skills/bootstrap.png"
                     alt="bootstrap"
                     width="60"
+                    data-aos="zoom-in"
+                    data-aos-delay="500"
                 />
                 <Tooltip id="bootstrap-tooltip" content="Bootstrap" />
                 <img
@@ -202,6 +225,8 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                     src="/assets/skills/astro.png"
                     alt="astro"
                     width="60"
+                    data-aos="zoom-in"
+                    data-aos-delay="550"
                 />
                 <Tooltip id="astro-tooltip" content="Astro" />
                 <img
@@ -209,6 +234,8 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                     src="/assets/skills/jhipster.png"
                     alt="jhipster"
                     width="60"
+                    data-aos="zoom-in"
+                    data-aos-delay="600"
                 />
                 <Tooltip id="jhipster-tooltip" content="JHipster" />
                 <img
@@ -216,6 +243,8 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                     src="/assets/skills/mysql.png"
                     alt="mysql"
                     width="60"
+                    data-aos="zoom-in"
+                    data-aos-delay="650"
                 />
                 <Tooltip id="mysql-tooltip" content="MySQL" />
                 <img
@@ -223,6 +252,8 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                     src="/assets/skills/postgresql.png"
                     alt="postgresql"
                     width="60"
+                    data-aos="zoom-in"
+                    data-aos-delay="700"
                 />
                 <Tooltip id="postgresql-tooltip" content="PostgreSQL" />
                 <img
@@ -230,6 +261,8 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                     src="/assets/skills/git.png"
                     alt="git"
                     width="60"
+                    data-aos="zoom-in"
+                    data-aos-delay="750"
                 />
                 <Tooltip id="git-tooltip" content="Git" />
                 <img
@@ -237,6 +270,8 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                     src="/assets/skills/github.png"
                     alt="github"
                     width="60"
+                    data-aos="zoom-in"
+                    data-aos-delay="800"
                 />
                 <Tooltip id="github-tooltip" content="Github" />
                 <img
@@ -244,6 +279,8 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                     src="/assets/skills/bitbucket.webp"
                     alt="bitbucket"
                     width="60"
+                    data-aos="zoom-in"
+                    data-aos-delay="850"
                 />
                 <Tooltip id="bitbucket-tooltip" content="Bitbucket" />
                 <img
@@ -251,6 +288,8 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                     src="/assets/skills/jira.png"
                     alt="jira"
                     width="60"
+                    data-aos="zoom-in"
+                    data-aos-delay="900"
                 />
                 <Tooltip id="jira-tooltip" content="Jira" />
                 <img
@@ -258,13 +297,15 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                     src="/assets/skills/sourcetree.webp"
                     alt="sourcetree"
                     width="80"
+                    data-aos="zoom-in"
+                    data-aos-delay="950"
                 />
                 <Tooltip id="sourcetree-tooltip" content="Sourcetree" />
             </div>
         </section>
 
         <section id="projects" class="py-60">
-            <div>
+            <div data-aos="fade-down">
                 <h2 class="text-center text-4xl lg:text-5xl font-semibold">
                     Recents <span class="text-[#CBACF9]">projects</span>
                 </h2>
@@ -273,6 +314,8 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                 class="flex flex-wrap justify-center 2xl:mx-10 gap-10 place-items-center mt-20"
             >
                 <Card
+                    data-aos="fade-up"
+                    data-aos-delay="100"
                     title="Car Rental App"
                     description="This is a Rental Car App for book different vehicles, built with JHipster, Angular and Java."
                     image="/assets/projects/rentalcar_project.png"
@@ -290,6 +333,8 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                     githubLink="https://github.com/dickson1708/RentACar"
                 />
                 <Card
+                    data-aos="fade-up"
+                    data-aos-delay="250"
                     title="Car Dealership App"
                     description="A full-stack application for managing car dealerships, built with JHipster, Angular and Java."
                     image="/assets/projects/dealership_project.png"
@@ -307,6 +352,8 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                     githubLink="https://bitbucket.org/dicksons-personal-projects/dealerapp/commits/branch/develop"
                 />
                 <Card
+                    data-aos="fade-up"
+                    data-aos-delay="400"
                     title="Kickingball Team"
                     description="Frontend web application for a Spanish sport team, built with HTML, CSS, JS and Bootstrap."
                     image="/assets/projects/gladiadoras_project.png"
@@ -323,17 +370,19 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
         </section>
 
         <section id="education" class="scroll-mt-46">
-            <div class="text-center text-4xl lg:text-5xl font-semibold">
+            <div class="text-center text-4xl lg:text-5xl font-semibold" data-aos="fade-down">
                 <h2>Edu<span class="text-[#CBACF9]">cation</span></h2>
             </div>
             <div class="py-10">
                 <EducationCard
+                    data-aos="fade-right"
                     estudio="Higher Degree in Web Application Development"
                     centro="Cesur, Madrid"
                     fechas="Sep 2023 - Jun 2025"
                     diplomaUrl="/public/certificates/FP.png"
                 />
                 <EducationCard
+                    data-aos="fade-left"
                     estudio="Bachelor of Science"
                     centro="U.E.P Colegio Belagua, Caracas"
                     fechas="Sep 2011 - Jun 2016"
@@ -347,18 +396,17 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
 
         <section
             id="contact"
-            class="bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white"
-        >
+            class="bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white">
             <div class="py-60 gap-6 flex flex-col justify-center items-center">
                 <h2
-                    class="text-center text-5xl font-extrabold tracking-tight text-[#CBACF9]"
+                    class="text-center text-5xl font-extrabold tracking-tight text-[#CBACF9]" data-aos="fade-down"
                 >
                     Let’s Work Together
                 </h2>
-                <p class="text-lg text-gray-300">
+                <p class="text-lg text-gray-300"   data-aos="fade-up" data-aos-delay="150">
                     I'm currently open to new opportunities — let's talk!
                 </p>
-                <div class="flex justify-center">
+                <div class="flex justify-center"   data-aos="zoom-in" data-aos-delay="250">
                     <a
                         href="mailto:dickson17081999@gmail.com"
                         class="group flex items-center gap-4 bg-gray-800 border border-[#CBACF9]/30 hover:border-[#CBACF9] hover:bg-[#CBACF9]/10 transition-all rounded-xl p-6 shadow-lg"
@@ -375,7 +423,7 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                         </span>
                     </a>
                 </div>
-                <div class="max-w-3xl mx-auto px-6">
+                <div class="max-w-3xl mx-auto px-6"   data-aos="fade-up" data-aos-delay="350">
                     <div
                         class="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm p-8 lg:p-12"
                     >

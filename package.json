@@ -11,8 +11,12 @@
   "dependencies": {
     "@fontsource-variable/onest": "^5.2.9",
     "@tailwindcss/vite": "^4.1.11",
+    "aos": "^2.3.4",
     "astro": "^5.12.3",
     "flowbite": "^3.1.2",
     "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "@types/aos": "^3.0.8"
   }
 }

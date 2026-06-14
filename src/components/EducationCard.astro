@@ -3,10 +3,10 @@ import CalendarIcon from "./icons/CalendarIcon.astro";
 import MapIcon from "./icons/MapIcon.astro";
 import SchoolIcon from "./icons/SchoolIcon.astro";
 
-const { estudio, centro, fechas, diplomaUrl } = Astro.props;
+const { estudio, centro, fechas, diplomaUrl, ...rest } = Astro.props;
 ---
 
-<div class="mt-5">
+<div class="mt-5" {...rest}>
     <div
         class="relative overflow-hidden flex flex-col justify-center items-center m-auto max-w-xl rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm hover:border-[#CBACF9]/50 transition-all duration-300"
     >
