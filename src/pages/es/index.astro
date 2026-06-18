@@ -1,27 +1,27 @@
 ---
 import { Image } from "astro:assets";
-import ProjectCard from "../components/ProjectCard.astro";
-import ArrowRightIcon from "../components/icons/ArrowRightIcon.astro";
-import Tooltip from "../components/Tooltip.astro";
-import Layout from "../layouts/Layout.astro";
-import Carousel from "../components/Carousel.astro";
-import MaiIcon from "../components/icons/MaiIcon.astro";
-import CardIcon from "../components/icons/CardIcon.astro";
-import LinkedinIcon from "../components/icons/LinkedinIcon.astro";
-import GithubIcon from "../components/icons/GithubIcon.astro";
-import EducationCard from "../components/EducationCard.astro";
-import DownloadIcon from "../components/icons/DownloadIcon.astro";
-import Navbar from "../components/Navbar.astro";
+import ProjectCard from "../../components/ProjectCard.astro";
+import ArrowRightIcon from "../../components/icons/ArrowRightIcon.astro";
+import Tooltip from "../../components/Tooltip.astro";
+import Layout from "../../layouts/Layout.astro";
+import Carousel from "../../components/Carousel.astro";
+import MaiIcon from "../../components/icons/MaiIcon.astro";
+import CardIcon from "../../components/icons/CardIcon.astro";
+import LinkedinIcon from "../../components/icons/LinkedinIcon.astro";
+import GithubIcon from "../../components/icons/GithubIcon.astro";
+import EducationCard from "../../components/EducationCard.astro";
+import DownloadIcon from "../../components/icons/DownloadIcon.astro";
+import Navbar from "../../components/Navbar.astro";
 ---
 
 <Layout>
     <main>
         <Navbar
-            homeText="Home"
-            aboutText="About Me"
-            projectsText="Projects"
-            educationText="Education"
-            contactText="Contact"
+            homeText="Inicio"
+            aboutText="Acerca de mí"
+            projectsText="Proyectos"
+            educationText="Educación"
+            contactText="Contacto"
         />
         <section id="home" class="scroll-mt-40">
             <div
@@ -32,22 +32,22 @@ import Navbar from "../components/Navbar.astro";
                     <h1
                         class="text-4xl lg:text-6xl font-extrabold leading-tight"
                     >
-                        👋🏻 Hi, I am <span class="text-[#CBACF9]">Dickson</span>
+                        👋🏻 Hola, soy <span class="text-[#CBACF9]">Dickson</span>
                     </h1>
 
                     <p class="mt-2 text-2xl lg:text-3xl text-yellow-100">
-                        Full-Stack Developer 🇪🇸
+                        Desarrollador Full-Stack 🇪🇸
                     </p>
 
                     <h2
                         class="mt-4 text-xl lg:text-3xl font-semibold text-[#CBACF9]"
                     >
-                        Building Secure & Scalable Applications
+                        Construyendo Aplicaciones Seguras y Escalables
                     </h2>
 
                     <p class="mt-2 text-lg text-gray-300 max-w-2xl">
-                        Specialized in Angular and Spring Boot, crafting robust
-                        web applications.
+                        Especializado en Angular y Spring Boot, creando
+                        aplicaciones web robustas.
                     </p>
                     <div class="flex mt-8 gap-4">
                         <a
@@ -110,7 +110,7 @@ import Navbar from "../components/Navbar.astro";
                         <!-- CTA principal -->
                         <a href="#projects" class="glow-button">
                             <span class="glow-content">
-                                See my work
+                                Ver mi trabajo
                                 <ArrowRightIcon />
                             </span>
                             <span class="glow-overlay"></span>
@@ -119,7 +119,7 @@ import Navbar from "../components/Navbar.astro";
                         <!-- CTA secundario -->
                         <a href="/cv.pdf" download class="cv-button">
                             <span class="flex items-center gap-1">
-                                Download CV
+                                Descargar CV
                                 <DownloadIcon />
                             </span>
                         </a>
@@ -143,7 +143,7 @@ import Navbar from "../components/Navbar.astro";
                 class="text-center text-4xl lg:text-5xl font-bold"
                 data-aos="fade-down"
             >
-                <h2>My <span class="text-[#CBACF9]">Stack</span></h2>
+                <h2>Mi <span class="text-[#CBACF9]">Stack</span></h2>
             </div>
             <div
                 class="flex flex-wrap justify-center items-center gap-6 bg-gray-800 p-10 mt-10 max-w-4xl mx-auto rounded-2xl shadow-xl"
@@ -329,30 +329,32 @@ import Navbar from "../components/Navbar.astro";
             >
                 <div data-aos="fade-right">
                     <h2 class="text-4xl lg:text-5xl font-bold">
-                        About <span class="text-[#CBACF9]">Me</span>
+                        Acerca <span class="text-[#CBACF9]">de Mí</span>
                     </h2>
 
                     <p class="mt-6 text-gray-300">
-                        I'm a Web Software Developer with a strong focus on
-                        Angular and Spring Boot technologies, dedicated to
-                        building secure, scalable and maintainable web
-                        applications.
+                        Soy un Desarrollador de Software Web con un fuerte
+                        enfoque en las tecnologías Angular y Spring Boot,
+                        dedicado a construir aplicaciones web seguras,
+                        escalables y fáciles de mantener.
                     </p>
 
                     <p class="mt-4 text-gray-300">
-                        After graduating with a Higher Degree in Web Application
-                        Development, I continued strengthening my skills through
-                        advanced training and specialized programs in modern
-                        frontend and backend development. My expertise covers
-                        the complete software development lifecycle, from
-                        designing responsive user interfaces to implementing
-                        business logic, APIs and database solutions.
+                        Tras graduarme en el Grado Superior de Desarrollo de
+                        Aplicaciones Web, continué potenciando mis habilidades a
+                        través de formación avanzada y programas especializados
+                        en desarrollo frontend y backend moderno. Mi experiencia
+                        abarca el ciclo completo de desarrollo de software,
+                        desde el diseño de interfaces de usuario adaptables
+                        hasta la implementación de lógica de negocio, APIs y
+                        soluciones de bases de datos.
                     </p>
 
                     <p class="mt-4 text-gray-300">
-                        Passionate about technology and continuous learning, I
-                        strive to create high-quality software that combines
-                        performance, usability and long-term maintainability.
+                        Apasionado por la tecnología y el aprendizaje continuo,
+                        me esfuerzo por crear software de alta calidad que
+                        combine rendimiento, usabilidad y mantenibilidad a largo
+                        plazo.
                     </p>
                 </div>
 
@@ -373,11 +375,11 @@ import Navbar from "../components/Navbar.astro";
                     <p
                         class="text-lg uppercase tracking-[0.3em] text-[#CBACF9]"
                     >
-                        Full-Stack Solutions
+                        Soluciones Full-Stack
                     </p>
 
                     <h3 class="mt-2 text-lg font-semibold text-white">
-                        How I turn ideas into software
+                        Cómo transformo ideas en software
                     </h3>
                 </div>
 
@@ -388,7 +390,7 @@ import Navbar from "../components/Navbar.astro";
                         data-aos-delay="100"
                     >
                         <h3 class="font-bold text-white text-center text-lg">
-                            Frontend Development
+                            Desarrollo Frontend
                         </h3>
                         <div
                             class="flex items-center gap-4 text-gray-300 text-sm"
@@ -399,8 +401,7 @@ import Navbar from "../components/Navbar.astro";
                                 class="w-12"
                             />
                             <strong>
-                                Building modern, responsive and reusable user
-                                interfaces.
+                                Creación de interfaces de usuario modernas, responsivas y reutilizables.
                             </strong>
                         </div>
                     </div>
@@ -411,7 +412,7 @@ import Navbar from "../components/Navbar.astro";
                         data-aos-delay="200"
                     >
                         <h3 class="font-bold text-white text-center text-lg">
-                            Backend Engineering
+                            Ingeniería Backend
                         </h3>
                         <div
                             class="flex items-center gap-4 text-gray-300 text-sm"
@@ -422,8 +423,7 @@ import Navbar from "../components/Navbar.astro";
                                 class="w-12"
                             />
                             <strong>
-                                Developing secure, scalable and maintainable
-                                backend services.
+                                Desarrollo de servicios backend seguros, escalables y mantenibles.
                             </strong>
                         </div>
                     </div>
@@ -434,7 +434,7 @@ import Navbar from "../components/Navbar.astro";
                         data-aos-delay="300"
                     >
                         <h3 class="font-bold text-white text-center text-lg">
-                            Database Design
+                            Diseño de Base de Datos
                         </h3>
                         <div
                             class="flex items-center gap-4 text-gray-300 text-sm"
@@ -445,8 +445,8 @@ import Navbar from "../components/Navbar.astro";
                                 class="w-12"
                             />
                             <strong>
-                                Designing efficient relational databases and
-                                RESTful APIs.
+                                Diseño de bases de datos relacionales eficientes y
+                                APIs RESTful.
                             </strong>
                         </div>
                     </div>
@@ -457,7 +457,7 @@ import Navbar from "../components/Navbar.astro";
                         data-aos-delay="400"
                     >
                         <h3 class="font-bold text-white text-center text-lg">
-                            AI & Automation
+                            IA & Automatización
                         </h3>
                         <div
                             class="flex items-center gap-4 text-gray-300 text-sm"
@@ -468,8 +468,7 @@ import Navbar from "../components/Navbar.astro";
                                 class="w-12"
                             />
                             <strong>
-                                Designing efficient relational databases and
-                                RESTful APIs.
+                                Integración de herramientas de Inteligencia Artificial para optimizar procesos y desarrollo.
                             </strong>
                         </div>
                     </div>
@@ -480,7 +479,7 @@ import Navbar from "../components/Navbar.astro";
         <section id="projects" class="py-15 scroll-mt-32">
             <div data-aos="fade-down">
                 <h2 class="text-center text-4xl lg:text-5xl font-bold">
-                    Recents <span class="text-[#CBACF9]">projects</span>
+                    Proyectos <span class="text-[#CBACF9]">recientes</span>
                 </h2>
             </div>
             <div
@@ -489,8 +488,8 @@ import Navbar from "../components/Navbar.astro";
                 <ProjectCard
                     data-aos="fade-up"
                     data-aos-delay="100"
-                    title="Car Rental App"
-                    description="Full-stack rental platform with authentication, CRUD management, role-based access and vehicle booking workflow."
+                    title="App de Alquiler de Autos"
+                    description="Plataforma de alquiler full-stack con autenticación, gestión CRUD, accesos basados en roles y flujo de trabajo para reserva de vehículos."
                     image="/assets/projects/rentalcar_project.png"
                     link="/rental-car-app"
                     skills={[
@@ -503,17 +502,15 @@ import Navbar from "../components/Navbar.astro";
                         "/assets/skills/mysql.png",
                     ]}
                     ,
-                    githubLink="https://github.com/dickson1708/RentACar"
-                    ,
-                    btnCode="Code"
-                    ,
-                    btnLiveProject="Check Live Project"
+                    githubLink="https://github.com/dickson1708/RentACar",
+                    btnCode="Código",
+                    btnLiveProject="Ver Proyecto"
                 />
                 <ProjectCard
                     data-aos="fade-up"
                     data-aos-delay="250"
-                    title="Car Dealership App"
-                    description="A full-stack application for managing car dealerships, built with JHipster, Angular and Java."
+                    title="App para Gestión de Concesionaria de Autos"
+                    description="Una aplicación full-stack para la gestión de concesionarias de autos, construida con JHipster, Angular y Java."
                     image="/assets/projects/dealership_project.png"
                     link="/car-dealership-app"
                     skills={[
@@ -528,15 +525,15 @@ import Navbar from "../components/Navbar.astro";
                     ,
                     githubLink="https://bitbucket.org/dicksons-personal-projects/dealerapp/commits/branch/develop"
                     ,
-                    btnCode="Code"
+                    btnCode="Código"
                     ,
-                    btnLiveProject="Check Live Project"
+                    btnLiveProject="Ver Proyecto"
                 />
                 <ProjectCard
                     data-aos="fade-up"
                     data-aos-delay="400"
-                    title="Kickingball Team"
-                    description="Frontend web application for a Spanish sport team, built with HTML, CSS, JS and Bootstrap."
+                    title="Equipo deportivo de Kickingball"
+                    description="Aplicación web frontend para un equipo de deporte español, construida con HTML, CSS, JS y Bootstrap."
                     image="/assets/projects/gladiadoras_project.png"
                     link="https://www.gladiadoraskickingball.com/"
                     skills={[
@@ -547,9 +544,9 @@ import Navbar from "../components/Navbar.astro";
                     ,
                     githubLink="https://github.com/dickson1708/GladiadorasKickingball"
                     ,
-                    btnCode="Code"
+                    btnCode="Código"
                     ,
-                    btnLiveProject="Check Live Project"
+                    btnLiveProject="Ver Proyecto"
                 />
             </div>
         </section>
@@ -559,24 +556,24 @@ import Navbar from "../components/Navbar.astro";
                 class="text-center text-4xl lg:text-5xl font-bold"
                 data-aos="fade-down"
             >
-                <h2>Edu<span class="text-[#CBACF9]">cation</span></h2>
+                <h2>Edu<span class="text-[#CBACF9]">cación</span></h2>
             </div>
             <div class="py-10">
                 <EducationCard
                     data-aos="fade-right"
-                    estudio="Higher Degree in Web Application Development"
+                    estudio="Grado Superior en Desarrollo de Aplicaciones Web"
                     centro="Cesur, Madrid"
                     fechas="Sep 2023 - Jun 2025"
                     diplomaUrl="/public/certificates/FP.png"
-                    btnViewDiploma="View Diploma"
+                    btnViewDiploma="Ver Diploma"
                 />
                 <EducationCard
                     data-aos="fade-left"
-                    estudio="Bachelor of Science"
+                    estudio="Bachillerato en Ciencias"
                     centro="U.E.P Colegio Belagua, Caracas"
                     fechas="Sep 2011 - Jun 2016"
                     diplomaUrl="/public/certificates/bachillerato.png"
-                    btnViewDiploma="View Diploma"
+                    btnViewDiploma="Ver Diploma"
                 />
             </div>
             <div class="mt-10">
@@ -593,14 +590,14 @@ import Navbar from "../components/Navbar.astro";
                     class="text-center text-5xl font-bold tracking-tight text-[#CBACF9]"
                     data-aos="fade-down"
                 >
-                    Let’s Work Together
+                    ¡Trabajemos juntos!
                 </h2>
                 <p
                     class="text-lg text-gray-300"
                     data-aos="fade-up"
                     data-aos-delay="150"
                 >
-                    I'm currently open to new opportunities — let's talk!
+                    ¡Estoy actualmente abierto a nuevas oportunidades — hablemos!
                 </p>
                 <div
                     class="flex justify-center"
@@ -633,14 +630,11 @@ import Navbar from "../components/Navbar.astro";
                     >
                         <div class="text-center mb-10">
                             <h2 class="text-4xl font-bold">
-                                Let's <span class="text-[#CBACF9]">Connect</span
-                                >
+                                Contacta <span class="text-[#CBACF9]">conmigo</span>
                             </h2>
 
                             <p class="mt-4 text-gray-300 max-w-xl mx-auto">
-                                Have a project in mind or job opportunity? Fill
-                                out the form below, and I'll get back to you as
-                                soon as possible!
+                                ¿Tienes un proyecto en mente o una oportunidad de trabajo? Rellena el formulario de abajo y te contactaré lo antes posible!
                             </p>
                         </div>
 
@@ -659,7 +653,7 @@ import Navbar from "../components/Navbar.astro";
                                     for="name"
                                     class="block mb-2 text-sm text-gray-300"
                                 >
-                                    Name
+                                    Nombre
                                 </label>
 
                                 <input
@@ -677,14 +671,14 @@ import Navbar from "../components/Navbar.astro";
                                     for="email"
                                     class="block mb-2 text-sm text-gray-300"
                                 >
-                                    Email
+                                    Correo Electrónico
                                 </label>
 
                                 <input
                                     id="email"
                                     name="email"
                                     type="email"
-                                    placeholder="dickson@example.com"
+                                    placeholder="dickson@ejemplo.com"
                                     class="w-full rounded-xl border border-white/10 bg-black/20 px-4 py-3 text-white placeholder:text-gray-500 focus:outline-none focus:border-[#CBACF9] focus:ring-2 focus:ring-[#CBACF9]/20 transition"
                                     required
                                 />
@@ -695,13 +689,13 @@ import Navbar from "../components/Navbar.astro";
                                     for="message"
                                     class="block mb-2 text-sm text-gray-300"
                                 >
-                                    Message
+                                    Mensaje
                                 </label>
 
                                 <textarea
                                     id="message"
                                     rows="6"
-                                    placeholder="Tell me about your project..."
+                                    placeholder="Dime sobre tu proyecto..."
                                     name="message"
                                     class="w-full rounded-xl border border-white/10 bg-black/20 px-4 py-3 text-white placeholder:text-gray-500 focus:outline-none focus:border-[#CBACF9] focus:ring-2 focus:ring-[#CBACF9]/20 transition resize-none"
                                     required></textarea>
@@ -711,7 +705,7 @@ import Navbar from "../components/Navbar.astro";
                                 type="submit"
                                 class="w-full rounded-xl bg-[#CBACF9] px-6 py-3 font-medium text-black transition hover:scale-[1.02] hover:shadow-lg hover:shadow-[#CBACF9]/20"
                             >
-                                Send Message
+                                Enviar
                             </button>
                         </form>
                     </div>

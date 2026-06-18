@@ -3,7 +3,7 @@ import CalendarIcon from "./icons/CalendarIcon.astro";
 import MapIcon from "./icons/MapIcon.astro";
 import SchoolIcon from "./icons/SchoolIcon.astro";
 
-const { estudio, centro, fechas, diplomaUrl, ...rest } = Astro.props;
+const { estudio, centro, fechas, diplomaUrl, btnViewDiploma, ...rest } = Astro.props;
 ---
 
 <div class="mt-5" {...rest}>
@@ -48,7 +48,7 @@ const { estudio, centro, fechas, diplomaUrl, ...rest } = Astro.props;
                     rel="noopener noreferrer"
                     class="mt-6 inline-flex items-center gap-2 rounded-lg border border-[#CBACF9]/30 px-4 py-2 text-sm font-medium text-[#CBACF9] transition-all duration-300 hover:bg-[#CBACF9] hover:text-black"
                 >
-                    View Diploma
+                    {btnViewDiploma}
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         class="h-4 w-4"

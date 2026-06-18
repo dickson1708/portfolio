@@ -1,0 +1,156 @@
+---
+interface Props {
+     homeText: string;
+     aboutText: string;
+     projectsText: string;
+     educationText: string;
+     contactText: string;
+}
+
+const { 
+     homeText, aboutText, projectsText, educationText, contactText
+} = Astro.props;
+---
+<header class="pt-6">
+     <nav
+          class="fixed top-6 left-1/2 -translate-x-1/2 z-50
+               px-8 py-3
+               rounded-full
+               bg-[#141428]/80
+               backdrop-blur-md
+               border border-[#CBACF9]/20
+               shadow-lg shadow-black/30"
+     >
+          <ul class="flex items-center gap-8 text-sm md:text-base font-medium">
+               <li>
+                    <a
+                         href="#home"
+                         class="relative text-[#CBACF9] hover:text-white transition-colors duration-300
+                           after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px]
+                           after:h-[2px] after:w-0 after:bg-[#CBACF9]
+                           after:transition-all after:duration-300
+                           hover:after:w-5"
+                         >{homeText}</a
+                    >
+               </li>
+               <li>
+                    <a
+                         href="#about"
+                         class="relative text-[#CBACF9] hover:text-white transition-colors duration-300
+                           after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px]
+                           after:h-[2px] after:w-0 after:bg-[#CBACF9]
+                           after:transition-all after:duration-300
+                           hover:after:w-5"
+                         >{aboutText}</a
+                    >
+               </li>
+               <li>
+                    <a
+                         href="#projects"
+                         class="relative text-[#CBACF9] hover:text-white transition-colors duration-300
+                           after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px]
+                           after:h-[2px] after:w-0 after:bg-[#CBACF9]
+                           after:transition-all after:duration-300
+                           hover:after:w-5"
+                         >{projectsText}</a
+                    >
+               </li>
+               <li>
+                    <a
+                         href="#education"
+                         class="relative text-[#CBACF9] hover:text-white transition-colors duration-300
+                           after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px]
+                           after:h-[2px] after:w-0 after:bg-[#CBACF9]
+                           after:transition-all after:duration-300
+                           hover:after:w-5"
+                         >{educationText}</a
+                    >
+               </li>
+               <li>
+                    <a
+                         href="#contact"
+                         class="relative text-[#CBACF9] hover:text-white transition-colors duration-300
+                           after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px]
+                           after:h-[2px] after:w-0 after:bg-[#CBACF9]
+                           after:transition-all after:duration-300
+                           hover:after:w-5"
+                         >{contactText}</a
+                    >
+               </li>
+               <li>
+                    <div class="w-px h-5 bg-[#CBACF9]/30"></div>
+               </li>
+               <li>
+                    <!-- SELECTOR DE IDIOMA -->
+                    <div class="flex items-center gap-2">
+                         <a
+                              href="/"
+                              class="flex items-center gap-1 text-[#CBACF9] hover:text-white transition"
+                         >
+                              🇬🇧 EN
+                         </a>
+
+                         <span class="text-white/20">|</span>
+
+                         <a
+                              href="/es"
+                              class="flex items-center gap-1 text-[#CBACF9] hover:text-white transition"
+                         >
+                              🇪🇸 ES
+                         </a>
+                    </div>
+               </li>
+          </ul>
+     </nav>
+</header>
+
+<script>
+     // Guardamos la posición del scroll actual en memoria antes de cambiar de idioma
+     let posicionScrollGuardada = 0;
+
+     document.addEventListener('astro:before-preparation', () => {
+          // Guardamos cuántos píxeles ha bajado el usuario
+          posicionScrollGuardada = window.scrollY;
+     });
+
+     document.addEventListener('astro:after-swap', () => {
+          // Justo cuando Astro intercambia el HTML de inglés/español,
+          // forzamos al navegador a volver a esa misma altura instantáneamente
+          window.scrollTo(0, posicionScrollGuardada);
+     });
+
+     // Mantén también la lógica básica para actualizar los hrefs por consistencia visual en la URL
+     function configurarBotonesIdioma() {
+          const btnEn = document.getElementById('btn-en') as HTMLAnchorElement;
+          const btnEs = document.getElementById('btn-es') as HTMLAnchorElement;
+
+          if (!btnEn || !btnEs) return;
+
+          function obtenerSeccionVisible() {
+               const secciones = ['home', 'about', 'projects', 'education', 'contact'];
+               let seccionActual = 'home';
+               for (const id of secciones) {
+                    const el = document.getElementById(id);
+                    if (el) {
+                         const rect = el.getBoundingClientRect();
+                         if (rect.top <= 200 && rect.bottom >= 200) {
+                              seccionActual = id;
+                              break;
+                         }
+                    }
+               }
+               return '#' + seccionActual;
+          }
+
+          function actualizarHrefs() {
+               const hash = obtenerSeccionVisible();
+               btnEn.href = `/` + hash;
+               btnEs.href = `/es` + hash;
+          }
+
+          window.addEventListener('scroll', actualizarHrefs);
+          actualizarHrefs();
+     }
+
+     document.addEventListener('astro:page-load', configurarBotonesIdioma);
+</script>
