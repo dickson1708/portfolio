@@ -15,7 +15,7 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
 
 <Layout>
     <main>
-        <section id="home">
+        <section id="home" class="scroll-mt-40">
             <div
                 class="mt-50 py-15 px-20 max-w-8xl mx-auto
            grid md:grid-cols-2 gap-10 items-center"
@@ -319,7 +319,7 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
             <div
                 class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center"
             >
-                <div>
+                <div data-aos="fade-right">
                     <h2 class="text-4xl lg:text-5xl font-bold">
                         About <span class="text-[#CBACF9]">Me</span>
                     </h2>
@@ -348,7 +348,7 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                     </p>
                 </div>
 
-                <div>
+                <div data-aos="fade-left" data-aos-delay="200">
                     <Image
                         src="/assets/portatil.png"
                         alt="About me"
@@ -357,7 +357,11 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                     />
                 </div>
 
-                <div class="md:col-span-2 text-center mt-4">
+                <div
+                    class="md:col-span-2 text-center mt-4"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                >
                     <p
                         class="text-lg uppercase tracking-[0.3em] text-[#CBACF9]"
                     >
@@ -372,6 +376,8 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
                 <div class="md:col-span-2 grid md:grid-cols-2 gap-4">
                     <div
                         class="rounded-xl bg-[#141428] border border-white/10 p-8"
+                        data-aos="zoom-in-up"
+                        data-aos-delay="100"
                     >
                         <h3 class="font-bold text-white text-center text-lg">
                             Frontend Development
@@ -393,6 +399,8 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
 
                     <div
                         class="rounded-xl bg-[#141428] border border-white/10 p-8"
+                        data-aos="zoom-in-up"
+                        data-aos-delay="200"
                     >
                         <h3 class="font-bold text-white text-center text-lg">
                             Backend Engineering
@@ -414,6 +422,8 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
 
                     <div
                         class="rounded-xl bg-[#141428] border border-white/10 p-8"
+                        data-aos="zoom-in-up"
+                        data-aos-delay="300"
                     >
                         <h3 class="font-bold text-white text-center text-lg">
                             Database Design
@@ -435,6 +445,8 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
 
                     <div
                         class="rounded-xl bg-[#141428] border border-white/10 p-8"
+                        data-aos="zoom-in-up"
+                        data-aos-delay="400"
                     >
                         <h3 class="font-bold text-white text-center text-lg">
                             AI & Automation
@@ -457,7 +469,7 @@ import DownloadIcon from "../components/icons/DownloadIcon.astro";
             </div>
         </section>
 
-        <section id="projects" class="py-15">
+        <section id="projects" class="py-15 scroll-mt-32">
             <div data-aos="fade-down">
                 <h2 class="text-center text-4xl lg:text-5xl font-bold">
                     Recents <span class="text-[#CBACF9]">projects</span>
