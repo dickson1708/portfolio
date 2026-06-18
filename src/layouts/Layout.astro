@@ -7,52 +7,52 @@ import { ClientRouter } from "astro:transitions";
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Dickson's Portfolio - Web Developer & Software Engineer.</title>
-		<link
-			href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
-			rel="stylesheet"
-		/>
-		<ClientRouter />
-	</head>
-	<body>
-		<div class="relative h-full w-full bg-slate-950">
-			<div
-				class="absolute inset-0 z-0 bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:150px_150px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"
-			>
-			</div>
-			<div class="relative z-10">
-				<Header />
-				<slot />
-			</div>
-		</div>
-		<script
-			src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"
-		></script>
-		<script>
-			import AOS from "aos";
-			import "aos/dist/aos.css";
 
-			document.addEventListener("DOMContentLoaded", () => {
-				AOS.init({
-					duration: 800,
-					easing: "ease-out-cubic",
-					once: true,
-					offset: 100
-				});
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<meta name="generator" content={Astro.generator} />
+	<meta name="description"
+		content="Full Stack Developer specialized in Angular and Spring Boot. Portfolio, projects and contact.">
+	<title>Dickson Celauro | Full Stack Developer</title>
+	<link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+	<ClientRouter />
+</head>
+
+<body>
+	<div class="relative h-full w-full bg-slate-950">
+		<div
+			class="absolute inset-0 z-0 bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:150px_150px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]">
+		</div>
+		<div class="relative z-10">
+			<Header />
+			<slot />
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+	<script>
+		import AOS from "aos";
+		import "aos/dist/aos.css";
+
+		document.addEventListener("DOMContentLoaded", () => {
+			AOS.init({
+				duration: 800,
+				easing: "ease-out-cubic",
+				once: true,
+				offset: 100
 			});
-		</script>
-	</body>
+		});
+	</script>
+</body>
+
 </html>
 
 <style is:global>
 	:root {
 		color-scheme: dark;
 	}
+
 	html,
 	body {
 		margin: 0;
