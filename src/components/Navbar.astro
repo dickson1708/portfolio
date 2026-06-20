@@ -5,12 +5,19 @@ interface Props {
      projectsText: string;
      educationText: string;
      contactText: string;
+     currentLang: "en" | "es";
 }
 
-const { 
-     homeText, aboutText, projectsText, educationText, contactText
+const {
+     homeText,
+     aboutText,
+     projectsText,
+     educationText,
+     contactText,
+     currentLang,
 } = Astro.props;
 ---
+
 <header class="pt-6">
      <nav
           class="fixed top-6 left-1/2 -translate-x-1/2 z-50
@@ -85,7 +92,11 @@ const {
                     <div class="flex items-center gap-2">
                          <a
                               href="/"
-                              class="flex items-center gap-1 text-[#CBACF9] hover:text-white transition"
+                              class={`px-2 py-1 rounded-md transition ${
+                                   currentLang === "en"
+                                        ? "bg-[#CBACF9] text-black"
+                                        : "text-[#CBACF9] hover:text-white"
+                              }`}
                          >
                               🇬🇧 EN
                          </a>
@@ -94,7 +105,11 @@ const {
 
                          <a
                               href="/es"
-                              class="flex items-center gap-1 text-[#CBACF9] hover:text-white transition"
+                              class={`px-2 py-1 rounded-md transition ${
+                                   currentLang === "es"
+                                        ? "bg-[#CBACF9] text-black"
+                                        : "text-[#CBACF9] hover:text-white"
+                              }`}
                          >
                               🇪🇸 ES
                          </a>
