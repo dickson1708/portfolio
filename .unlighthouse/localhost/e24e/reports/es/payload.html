@@ -1,0 +1,1721 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v5.18.2"><meta name="description" content="Full Stack Developer specialized in Angular and Spring Boot. Portfolio, projects and contact."><title>Dickson Celauro | Full Stack Developer</title><link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet"><style data-vite-dev-id="/Users/dickson/Workspace/portfolio/src/styles/global.css">/*! tailwindcss v4.1.11 | MIT License | https://tailwindcss.com */
+@layer properties;
+@layer theme, base, components, utilities;
+@layer theme {
+  :root, :host {
+    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
+    --color-yellow-100: oklch(97.3% 0.071 103.193);
+    --color-slate-950: oklch(12.9% 0.042 264.695);
+    --color-gray-200: oklch(92.8% 0.006 264.531);
+    --color-gray-300: oklch(87.2% 0.01 258.338);
+    --color-gray-400: oklch(70.7% 0.022 261.325);
+    --color-gray-500: oklch(55.1% 0.027 264.364);
+    --color-gray-700: oklch(37.3% 0.034 259.733);
+    --color-gray-800: oklch(27.8% 0.033 256.848);
+    --color-gray-900: oklch(21% 0.034 264.665);
+    --color-black: #000;
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --container-md: 28rem;
+    --container-xl: 36rem;
+    --container-2xl: 42rem;
+    --container-3xl: 48rem;
+    --container-4xl: 56rem;
+    --container-5xl: 64rem;
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
+    --text-6xl: 3.75rem;
+    --text-6xl--line-height: 1;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    --tracking-tight: -0.025em;
+    --leading-tight: 1.25;
+    --radius-md: 0.375rem;
+    --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
+    --radius-2xl: 1rem;
+    --radius-3xl: 1.5rem;
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --blur-sm: 8px;
+    --blur-md: 12px;
+    --blur-3xl: 64px;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+  }
+}
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+  }
+  html, :host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var(--default-font-variation-settings, normal);
+    -webkit-tap-highlight-color: transparent;
+  }
+  hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+  }
+  abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  a {
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+  }
+  b, strong {
+    font-weight: bolder;
+  }
+  code, kbd, samp, pre {
+    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+    font-feature-settings: var(--default-mono-font-feature-settings, normal);
+    font-variation-settings: var(--default-mono-font-variation-settings, normal);
+    font-size: 1em;
+  }
+  small {
+    font-size: 80%;
+  }
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  sup {
+    top: -0.5em;
+  }
+  table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+  }
+  :-moz-focusring {
+    outline: auto;
+  }
+  progress {
+    vertical-align: baseline;
+  }
+  summary {
+    display: list-item;
+  }
+  ol, ul, menu {
+    list-style: none;
+  }
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  button, input, select, optgroup, textarea, ::file-selector-button {
+    font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
+  :where(select:is([multiple], [size])) optgroup {
+    font-weight: bolder;
+  }
+  :where(select:is([multiple], [size])) optgroup option {
+    padding-inline-start: 20px;
+  }
+  ::file-selector-button {
+    margin-inline-end: 4px;
+  }
+  ::placeholder {
+    opacity: 1;
+  }
+  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+    ::placeholder {
+      color: currentcolor;
+      @supports (color: color-mix(in lab, red, red)) {
+        color: color-mix(in oklab, currentcolor 50%, transparent);
+      }
+    }
+  }
+  textarea {
+    resize: vertical;
+  }
+  ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  ::-webkit-date-and-time-value {
+    min-height: 1lh;
+    text-align: inherit;
+  }
+  ::-webkit-datetime-edit {
+    display: inline-flex;
+  }
+  ::-webkit-datetime-edit-fields-wrapper {
+    padding: 0;
+  }
+  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
+    padding-block: 0;
+  }
+  :-moz-ui-invalid {
+    box-shadow: none;
+  }
+  button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-selector-button {
+    appearance: button;
+  }
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    height: auto;
+  }
+  [hidden]:where(:not([hidden="until-found"])) {
+    display: none !important;
+  }
+}
+@layer utilities {
+  .invisible {
+    visibility: hidden;
+  }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  .absolute {
+    position: absolute;
+  }
+  .fixed {
+    position: fixed;
+  }
+  .relative {
+    position: relative;
+  }
+  .static {
+    position: static;
+  }
+  .inset-0 {
+    inset: calc(var(--spacing) * 0);
+  }
+  .start-0 {
+    inset-inline-start: calc(var(--spacing) * 0);
+  }
+  .end-0 {
+    inset-inline-end: calc(var(--spacing) * 0);
+  }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
+  .top-1\/2 {
+    top: calc(1/2 * 100%);
+  }
+  .top-6 {
+    top: calc(var(--spacing) * 6);
+  }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
+  .bottom-5 {
+    bottom: calc(var(--spacing) * 5);
+  }
+  .-left-10 {
+    left: calc(var(--spacing) * -10);
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
+  .left-1\/2 {
+    left: calc(1/2 * 100%);
+  }
+  .z-0 {
+    z-index: 0;
+  }
+  .z-10 {
+    z-index: 10;
+  }
+  .z-30 {
+    z-index: 30;
+  }
+  .z-50 {
+    z-index: 50;
+  }
+  .m-auto {
+    margin: auto;
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .me-2 {
+    margin-inline-end: calc(var(--spacing) * 2);
+  }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
+  }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
+  }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
+  }
+  .mt-50 {
+    margin-top: calc(var(--spacing) * 50);
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
+  }
+  .block {
+    display: block;
+  }
+  .flex {
+    display: flex;
+  }
+  .grid {
+    display: grid;
+  }
+  .hidden {
+    display: none;
+  }
+  .inline-block {
+    display: inline-block;
+  }
+  .inline-flex {
+    display: inline-flex;
+  }
+  .h-3 {
+    height: calc(var(--spacing) * 3);
+  }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
+  .h-5 {
+    height: calc(var(--spacing) * 5);
+  }
+  .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
+  .h-24 {
+    height: calc(var(--spacing) * 24);
+  }
+  .h-56 {
+    height: calc(var(--spacing) * 56);
+  }
+  .h-auto {
+    height: auto;
+  }
+  .h-full {
+    height: 100%;
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
+  .w-3 {
+    width: calc(var(--spacing) * 3);
+  }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
+  .w-8 {
+    width: calc(var(--spacing) * 8);
+  }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
+  .w-12 {
+    width: calc(var(--spacing) * 12);
+  }
+  .w-24 {
+    width: calc(var(--spacing) * 24);
+  }
+  .w-full {
+    width: 100%;
+  }
+  .w-px {
+    width: 1px;
+  }
+  .max-w-2xl {
+    max-width: var(--container-2xl);
+  }
+  .max-w-3xl {
+    max-width: var(--container-3xl);
+  }
+  .max-w-4xl {
+    max-width: var(--container-4xl);
+  }
+  .max-w-5xl {
+    max-width: var(--container-5xl);
+  }
+  .max-w-md {
+    max-width: var(--container-md);
+  }
+  .max-w-xl {
+    max-width: var(--container-xl);
+  }
+  .-translate-x-1\/2 {
+    --tw-translate-x: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-1\/2 {
+    --tw-translate-y: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .resize-none {
+    resize: none;
+  }
+  .scroll-mt-32 {
+    scroll-margin-top: calc(var(--spacing) * 32);
+  }
+  .scroll-mt-40 {
+    scroll-margin-top: calc(var(--spacing) * 40);
+  }
+  .scroll-mt-46 {
+    scroll-margin-top: calc(var(--spacing) * 46);
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .place-items-center {
+    place-items: center;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
+  }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
+  }
+  .space-y-6 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-x-3 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 3) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
+  .rounded-3xl {
+    border-radius: var(--radius-3xl);
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
+  .rounded-md {
+    border-radius: var(--radius-md);
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
+  }
+  .rounded-t-lg {
+    border-top-left-radius: var(--radius-lg);
+    border-top-right-radius: var(--radius-lg);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-\[\#CBACF9\]\/20 {
+    border-color: color-mix(in oklab, #CBACF9 20%, transparent);
+  }
+  .border-\[\#CBACF9\]\/30 {
+    border-color: color-mix(in oklab, #CBACF9 30%, transparent);
+  }
+  .border-gray-200 {
+    border-color: var(--color-gray-200);
+  }
+  .border-gray-800 {
+    border-color: var(--color-gray-800);
+  }
+  .border-white\/10 {
+    border-color: color-mix(in srgb, #fff 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+    }
+  }
+  .bg-\[\#24292F\] {
+    background-color: #24292F;
+  }
+  .bg-\[\#141428\] {
+    background-color: #141428;
+  }
+  .bg-\[\#141428\]\/80 {
+    background-color: color-mix(in oklab, #141428 80%, transparent);
+  }
+  .bg-\[\#CBACF9\] {
+    background-color: #CBACF9;
+  }
+  .bg-\[\#CBACF9\]\/10 {
+    background-color: color-mix(in oklab, #CBACF9 10%, transparent);
+  }
+  .bg-\[\#CBACF9\]\/30 {
+    background-color: color-mix(in oklab, #CBACF9 30%, transparent);
+  }
+  .bg-black\/20 {
+    background-color: color-mix(in srgb, #000 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 20%, transparent);
+    }
+  }
+  .bg-gray-800 {
+    background-color: var(--color-gray-800);
+  }
+  .bg-gray-900 {
+    background-color: var(--color-gray-900);
+  }
+  .bg-slate-950 {
+    background-color: var(--color-slate-950);
+  }
+  .bg-white\/5 {
+    background-color: color-mix(in srgb, #fff 5%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 5%, transparent);
+    }
+  }
+  .bg-white\/30 {
+    background-color: color-mix(in srgb, #fff 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 30%, transparent);
+    }
+  }
+  .bg-gradient-to-b {
+    --tw-gradient-position: to bottom in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .bg-\[linear-gradient\(to_right\,\#4f4f4f2e_1px\,transparent_1px\)\,linear-gradient\(to_bottom\,\#4f4f4f2e_1px\,transparent_1px\)\] {
+    background-image: linear-gradient(to right,#4f4f4f2e 1px,transparent 1px),linear-gradient(to bottom,#4f4f4f2e 1px,transparent 1px);
+  }
+  .from-gray-900 {
+    --tw-gradient-from: var(--color-gray-900);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .via-gray-800 {
+    --tw-gradient-via: var(--color-gray-800);
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+  .to-gray-900 {
+    --tw-gradient-to: var(--color-gray-900);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .\[mask-image\:radial-gradient\(ellipse_60\%_50\%_at_50\%_0\%\,\#000_70\%\,transparent_100\%\)\] {
+    mask-image: radial-gradient(ellipse 60% 50% at 50% 0%,#000 70%,transparent 100%);
+  }
+  .bg-\[size\:150px_150px\] {
+    background-size: 150px 150px;
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
+  }
+  .p-8 {
+    padding: calc(var(--spacing) * 8);
+  }
+  .p-10 {
+    padding: calc(var(--spacing) * 10);
+  }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+  .px-8 {
+    padding-inline: calc(var(--spacing) * 8);
+  }
+  .px-20 {
+    padding-inline: calc(var(--spacing) * 20);
+  }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .py-2\.5 {
+    padding-block: calc(var(--spacing) * 2.5);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
+  }
+  .py-15 {
+    padding-block: calc(var(--spacing) * 15);
+  }
+  .pt-6 {
+    padding-top: calc(var(--spacing) * 6);
+  }
+  .pt-15 {
+    padding-top: calc(var(--spacing) * 15);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .leading-tight {
+    --tw-leading: var(--leading-tight);
+    line-height: var(--leading-tight);
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-extrabold {
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .font-normal {
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .tracking-\[0\.3em\] {
+    --tw-tracking: 0.3em;
+    letter-spacing: 0.3em;
+  }
+  .tracking-tight {
+    --tw-tracking: var(--tracking-tight);
+    letter-spacing: var(--tracking-tight);
+  }
+  .text-\[\#CBACF9\] {
+    color: #CBACF9;
+  }
+  .text-\[\#EA4335\] {
+    color: #EA4335;
+  }
+  .text-black {
+    color: var(--color-black);
+  }
+  .text-gray-200 {
+    color: var(--color-gray-200);
+  }
+  .text-gray-300 {
+    color: var(--color-gray-300);
+  }
+  .text-gray-400 {
+    color: var(--color-gray-400);
+  }
+  .text-white {
+    color: var(--color-white);
+  }
+  .text-white\/20 {
+    color: color-mix(in srgb, #fff 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 20%, transparent);
+    }
+  }
+  .text-yellow-100 {
+    color: var(--color-yellow-100);
+  }
+  .uppercase {
+    text-transform: uppercase;
+  }
+  .opacity-0 {
+    opacity: 0%;
+  }
+  .shadow-lg {
+    --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-sm {
+    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-xl {
+    --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-xs {
+    --tw-shadow: 0 1px 2px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.05));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-black\/30 {
+    --tw-shadow-color: color-mix(in srgb, #000 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-black) 30%, transparent) var(--tw-shadow-alpha), transparent);
+    }
+  }
+  .blur-3xl {
+    --tw-blur: blur(var(--blur-3xl));
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .filter {
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .backdrop-blur-md {
+    --tw-backdrop-blur: blur(var(--blur-md));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .backdrop-blur-sm {
+    --tw-backdrop-blur: blur(var(--blur-sm));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .transition {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, visibility, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-colors {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .duration-300 {
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+  }
+  .duration-700 {
+    --tw-duration: 700ms;
+    transition-duration: 700ms;
+  }
+  .ease-in-out {
+    --tw-ease: var(--ease-in-out);
+    transition-timing-function: var(--ease-in-out);
+  }
+  .group-hover\:bg-white\/50 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        background-color: color-mix(in srgb, #fff 50%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          background-color: color-mix(in oklab, var(--color-white) 50%, transparent);
+        }
+      }
+    }
+  }
+  .group-hover\:text-\[\#CBACF9\] {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        color: #CBACF9;
+      }
+    }
+  }
+  .group-hover\:text-white {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        color: var(--color-white);
+      }
+    }
+  }
+  .group-focus\:ring-4 {
+    &:is(:where(.group):focus *) {
+      --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+  .group-focus\:ring-white {
+    &:is(:where(.group):focus *) {
+      --tw-ring-color: var(--color-white);
+    }
+  }
+  .group-focus\:outline-none {
+    &:is(:where(.group):focus *) {
+      --tw-outline-style: none;
+      outline-style: none;
+    }
+  }
+  .placeholder\:text-gray-500 {
+    &::placeholder {
+      color: var(--color-gray-500);
+    }
+  }
+  .after\:absolute {
+    &::after {
+      content: var(--tw-content);
+      position: absolute;
+    }
+  }
+  .after\:bottom-\[-8px\] {
+    &::after {
+      content: var(--tw-content);
+      bottom: -8px;
+    }
+  }
+  .after\:left-1\/2 {
+    &::after {
+      content: var(--tw-content);
+      left: calc(1/2 * 100%);
+    }
+  }
+  .after\:h-\[2px\] {
+    &::after {
+      content: var(--tw-content);
+      height: 2px;
+    }
+  }
+  .after\:w-0 {
+    &::after {
+      content: var(--tw-content);
+      width: calc(var(--spacing) * 0);
+    }
+  }
+  .after\:-translate-x-1\/2 {
+    &::after {
+      content: var(--tw-content);
+      --tw-translate-x: calc(calc(1/2 * 100%) * -1);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .after\:bg-\[\#CBACF9\] {
+    &::after {
+      content: var(--tw-content);
+      background-color: #CBACF9;
+    }
+  }
+  .after\:transition-all {
+    &::after {
+      content: var(--tw-content);
+      transition-property: all;
+      transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+      transition-duration: var(--tw-duration, var(--default-transition-duration));
+    }
+  }
+  .after\:duration-300 {
+    &::after {
+      content: var(--tw-content);
+      --tw-duration: 300ms;
+      transition-duration: 300ms;
+    }
+  }
+  .hover\:-translate-y-1 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-translate-y: calc(var(--spacing) * -1);
+        translate: var(--tw-translate-x) var(--tw-translate-y);
+      }
+    }
+  }
+  .hover\:scale-\[1\.02\] {
+    &:hover {
+      @media (hover: hover) {
+        scale: 1.02;
+      }
+    }
+  }
+  .hover\:border-\[\#CBACF9\] {
+    &:hover {
+      @media (hover: hover) {
+        border-color: #CBACF9;
+      }
+    }
+  }
+  .hover\:border-\[\#CBACF9\]\/50 {
+    &:hover {
+      @media (hover: hover) {
+        border-color: color-mix(in oklab, #CBACF9 50%, transparent);
+      }
+    }
+  }
+  .hover\:bg-\[\#24292F\]\/90 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in oklab, #24292F 90%, transparent);
+      }
+    }
+  }
+  .hover\:bg-\[\#CBACF9\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #CBACF9;
+      }
+    }
+  }
+  .hover\:bg-\[\#CBACF9\]\/10 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in oklab, #CBACF9 10%, transparent);
+      }
+    }
+  }
+  .hover\:bg-white\/20 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in srgb, #fff 20%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          background-color: color-mix(in oklab, var(--color-white) 20%, transparent);
+        }
+      }
+    }
+  }
+  .hover\:text-\[\#CBACF9\] {
+    &:hover {
+      @media (hover: hover) {
+        color: #CBACF9;
+      }
+    }
+  }
+  .hover\:text-black {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-black);
+      }
+    }
+  }
+  .hover\:text-gray-300 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-gray-300);
+      }
+    }
+  }
+  .hover\:text-white {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white);
+      }
+    }
+  }
+  .hover\:shadow-\[0_0_15px_rgba\(203\,172\,249\,0\.25\)\] {
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow: 0 0 15px var(--tw-shadow-color, rgba(203,172,249,0.25));
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
+    }
+  }
+  .hover\:shadow-lg {
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
+    }
+  }
+  .hover\:shadow-\[\#CBACF9\]\/20 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow-color: color-mix(in srgb, #CBACF9 20%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, #CBACF9 20%, transparent) var(--tw-shadow-alpha), transparent);
+        }
+      }
+    }
+  }
+  .hover\:after\:w-5 {
+    &:hover {
+      @media (hover: hover) {
+        &::after {
+          content: var(--tw-content);
+          width: calc(var(--spacing) * 5);
+        }
+      }
+    }
+  }
+  .focus\:border-\[\#CBACF9\] {
+    &:focus {
+      border-color: #CBACF9;
+    }
+  }
+  .focus\:ring-2 {
+    &:focus {
+      --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+  .focus\:ring-4 {
+    &:focus {
+      --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+  .focus\:ring-\[\#24292F\]\/50 {
+    &:focus {
+      --tw-ring-color: color-mix(in oklab, #24292F 50%, transparent);
+    }
+  }
+  .focus\:ring-\[\#CBACF9\]\/20 {
+    &:focus {
+      --tw-ring-color: color-mix(in oklab, #CBACF9 20%, transparent);
+    }
+  }
+  .focus\:outline-none {
+    &:focus {
+      --tw-outline-style: none;
+      outline-style: none;
+    }
+  }
+  .sm\:flex-row {
+    @media (width >= 40rem) {
+      flex-direction: row;
+    }
+  }
+  .md\:col-span-2 {
+    @media (width >= 48rem) {
+      grid-column: span 2 / span 2;
+    }
+  }
+  .md\:h-96 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 96);
+    }
+  }
+  .md\:grid-cols-2 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .md\:text-base {
+    @media (width >= 48rem) {
+      font-size: var(--text-base);
+      line-height: var(--tw-leading, var(--text-base--line-height));
+    }
+  }
+  .lg\:p-12 {
+    @media (width >= 64rem) {
+      padding: calc(var(--spacing) * 12);
+    }
+  }
+  .lg\:text-3xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+  }
+  .lg\:text-5xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
+    }
+  }
+  .lg\:text-6xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-6xl);
+      line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+  }
+  .\32 xl\:mx-10 {
+    @media (width >= 96rem) {
+      margin-inline: calc(var(--spacing) * 10);
+    }
+  }
+  .rtl\:rotate-180 {
+    &:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *) {
+      rotate: 180deg;
+    }
+  }
+  .rtl\:space-x-reverse {
+    &:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *) {
+      :where(& > :not(:last-child)) {
+        --tw-space-x-reverse: 1;
+      }
+    }
+  }
+  .dark\:bg-gray-700 {
+    @media (prefers-color-scheme: dark) {
+      background-color: var(--color-gray-700);
+    }
+  }
+  .dark\:bg-gray-800\/30 {
+    @media (prefers-color-scheme: dark) {
+      background-color: color-mix(in srgb, oklch(27.8% 0.033 256.848) 30%, transparent);
+      @supports (color: color-mix(in lab, red, red)) {
+        background-color: color-mix(in oklab, var(--color-gray-800) 30%, transparent);
+      }
+    }
+  }
+  .dark\:text-gray-800 {
+    @media (prefers-color-scheme: dark) {
+      color: var(--color-gray-800);
+    }
+  }
+  .dark\:group-hover\:bg-gray-800\/60 {
+    @media (prefers-color-scheme: dark) {
+      &:is(:where(.group):hover *) {
+        @media (hover: hover) {
+          background-color: color-mix(in srgb, oklch(27.8% 0.033 256.848) 60%, transparent);
+          @supports (color: color-mix(in lab, red, red)) {
+            background-color: color-mix(in oklab, var(--color-gray-800) 60%, transparent);
+          }
+        }
+      }
+    }
+  }
+  .dark\:group-focus\:ring-gray-800\/70 {
+    @media (prefers-color-scheme: dark) {
+      &:is(:where(.group):focus *) {
+        --tw-ring-color: color-mix(in srgb, oklch(27.8% 0.033 256.848) 70%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          --tw-ring-color: color-mix(in oklab, var(--color-gray-800) 70%, transparent);
+        }
+      }
+    }
+  }
+  .dark\:hover\:bg-\[\#050708\]\/30 {
+    @media (prefers-color-scheme: dark) {
+      &:hover {
+        @media (hover: hover) {
+          background-color: color-mix(in oklab, #050708 30%, transparent);
+        }
+      }
+    }
+  }
+  .dark\:focus\:ring-gray-500 {
+    @media (prefers-color-scheme: dark) {
+      &:focus {
+        --tw-ring-color: var(--color-gray-500);
+      }
+    }
+  }
+}
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-space-x-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-gradient-position {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-via {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-to {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-via-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --tw-gradient-via-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+@property --tw-gradient-to-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-inset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-ring-inset {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-offset-width {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --tw-ring-offset-color {
+  syntax: "*";
+  inherits: false;
+  initial-value: #fff;
+}
+@property --tw-ring-offset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-drop-shadow-size {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ease {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-content {
+  syntax: "*";
+  initial-value: "";
+  inherits: false;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
+      --tw-space-y-reverse: 0;
+      --tw-space-x-reverse: 0;
+      --tw-border-style: solid;
+      --tw-gradient-position: initial;
+      --tw-gradient-from: #0000;
+      --tw-gradient-via: #0000;
+      --tw-gradient-to: #0000;
+      --tw-gradient-stops: initial;
+      --tw-gradient-via-stops: initial;
+      --tw-gradient-from-position: 0%;
+      --tw-gradient-via-position: 50%;
+      --tw-gradient-to-position: 100%;
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+      --tw-tracking: initial;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-color: initial;
+      --tw-shadow-alpha: 100%;
+      --tw-inset-shadow: 0 0 #0000;
+      --tw-inset-shadow-color: initial;
+      --tw-inset-shadow-alpha: 100%;
+      --tw-ring-color: initial;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-inset-ring-color: initial;
+      --tw-inset-ring-shadow: 0 0 #0000;
+      --tw-ring-inset: initial;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-blur: initial;
+      --tw-brightness: initial;
+      --tw-contrast: initial;
+      --tw-grayscale: initial;
+      --tw-hue-rotate: initial;
+      --tw-invert: initial;
+      --tw-opacity: initial;
+      --tw-saturate: initial;
+      --tw-sepia: initial;
+      --tw-drop-shadow: initial;
+      --tw-drop-shadow-color: initial;
+      --tw-drop-shadow-alpha: 100%;
+      --tw-drop-shadow-size: initial;
+      --tw-backdrop-blur: initial;
+      --tw-backdrop-brightness: initial;
+      --tw-backdrop-contrast: initial;
+      --tw-backdrop-grayscale: initial;
+      --tw-backdrop-hue-rotate: initial;
+      --tw-backdrop-invert: initial;
+      --tw-backdrop-opacity: initial;
+      --tw-backdrop-saturate: initial;
+      --tw-backdrop-sepia: initial;
+      --tw-duration: initial;
+      --tw-ease: initial;
+      --tw-content: "";
+    }
+  }
+}
+</style>
+<style data-vite-dev-id="/Users/dickson/Workspace/portfolio/node_modules/@fontsource-variable/onest/index.css">/* onest-cyrillic-ext-wght-normal */
+@font-face {
+  font-family: 'Onest Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(/node_modules/@fontsource-variable/onest/files/onest-cyrillic-ext-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;
+}
+
+/* onest-cyrillic-wght-normal */
+@font-face {
+  font-family: 'Onest Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(/node_modules/@fontsource-variable/onest/files/onest-cyrillic-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;
+}
+
+/* onest-latin-ext-wght-normal */
+@font-face {
+  font-family: 'Onest Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(/node_modules/@fontsource-variable/onest/files/onest-latin-ext-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+
+/* onest-latin-wght-normal */
+@font-face {
+  font-family: 'Onest Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(/node_modules/@fontsource-variable/onest/files/onest-latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}</style>
+<style data-vite-dev-id="/Users/dickson/Workspace/portfolio/src/layouts/Layout.astro?astro&#38;type=style&#38;index=0&#38;lang.css">:root {
+		color-scheme: dark;
+	}
+
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: max-content;
+		font-family: "Onest Variable", sans-serif;
+	}</style>
+<style data-vite-dev-id="/Users/dickson/Workspace/portfolio/node_modules/aos/dist/aos.css">[data-aos][data-aos][data-aos-duration="50"],body[data-aos-duration="50"] [data-aos]{transition-duration:50ms}[data-aos][data-aos][data-aos-delay="50"],body[data-aos-delay="50"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="50"].aos-animate,body[data-aos-delay="50"] [data-aos].aos-animate{transition-delay:50ms}[data-aos][data-aos][data-aos-duration="100"],body[data-aos-duration="100"] [data-aos]{transition-duration:.1s}[data-aos][data-aos][data-aos-delay="100"],body[data-aos-delay="100"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="100"].aos-animate,body[data-aos-delay="100"] [data-aos].aos-animate{transition-delay:.1s}[data-aos][data-aos][data-aos-duration="150"],body[data-aos-duration="150"] [data-aos]{transition-duration:.15s}[data-aos][data-aos][data-aos-delay="150"],body[data-aos-delay="150"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="150"].aos-animate,body[data-aos-delay="150"] [data-aos].aos-animate{transition-delay:.15s}[data-aos][data-aos][data-aos-duration="200"],body[data-aos-duration="200"] [data-aos]{transition-duration:.2s}[data-aos][data-aos][data-aos-delay="200"],body[data-aos-delay="200"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="200"].aos-animate,body[data-aos-delay="200"] [data-aos].aos-animate{transition-delay:.2s}[data-aos][data-aos][data-aos-duration="250"],body[data-aos-duration="250"] [data-aos]{transition-duration:.25s}[data-aos][data-aos][data-aos-delay="250"],body[data-aos-delay="250"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="250"].aos-animate,body[data-aos-delay="250"] [data-aos].aos-animate{transition-delay:.25s}[data-aos][data-aos][data-aos-duration="300"],body[data-aos-duration="300"] [data-aos]{transition-duration:.3s}[data-aos][data-aos][data-aos-delay="300"],body[data-aos-delay="300"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="300"].aos-animate,body[data-aos-delay="300"] [data-aos].aos-animate{transition-delay:.3s}[data-aos][data-aos][data-aos-duration="350"],body[data-aos-duration="350"] [data-aos]{transition-duration:.35s}[data-aos][data-aos][data-aos-delay="350"],body[data-aos-delay="350"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="350"].aos-animate,body[data-aos-delay="350"] [data-aos].aos-animate{transition-delay:.35s}[data-aos][data-aos][data-aos-duration="400"],body[data-aos-duration="400"] [data-aos]{transition-duration:.4s}[data-aos][data-aos][data-aos-delay="400"],body[data-aos-delay="400"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="400"].aos-animate,body[data-aos-delay="400"] [data-aos].aos-animate{transition-delay:.4s}[data-aos][data-aos][data-aos-duration="450"],body[data-aos-duration="450"] [data-aos]{transition-duration:.45s}[data-aos][data-aos][data-aos-delay="450"],body[data-aos-delay="450"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="450"].aos-animate,body[data-aos-delay="450"] [data-aos].aos-animate{transition-delay:.45s}[data-aos][data-aos][data-aos-duration="500"],body[data-aos-duration="500"] [data-aos]{transition-duration:.5s}[data-aos][data-aos][data-aos-delay="500"],body[data-aos-delay="500"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="500"].aos-animate,body[data-aos-delay="500"] [data-aos].aos-animate{transition-delay:.5s}[data-aos][data-aos][data-aos-duration="550"],body[data-aos-duration="550"] [data-aos]{transition-duration:.55s}[data-aos][data-aos][data-aos-delay="550"],body[data-aos-delay="550"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="550"].aos-animate,body[data-aos-delay="550"] [data-aos].aos-animate{transition-delay:.55s}[data-aos][data-aos][data-aos-duration="600"],body[data-aos-duration="600"] [data-aos]{transition-duration:.6s}[data-aos][data-aos][data-aos-delay="600"],body[data-aos-delay="600"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="600"].aos-animate,body[data-aos-delay="600"] [data-aos].aos-animate{transition-delay:.6s}[data-aos][data-aos][data-aos-duration="650"],body[data-aos-duration="650"] [data-aos]{transition-duration:.65s}[data-aos][data-aos][data-aos-delay="650"],body[data-aos-delay="650"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="650"].aos-animate,body[data-aos-delay="650"] [data-aos].aos-animate{transition-delay:.65s}[data-aos][data-aos][data-aos-duration="700"],body[data-aos-duration="700"] [data-aos]{transition-duration:.7s}[data-aos][data-aos][data-aos-delay="700"],body[data-aos-delay="700"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="700"].aos-animate,body[data-aos-delay="700"] [data-aos].aos-animate{transition-delay:.7s}[data-aos][data-aos][data-aos-duration="750"],body[data-aos-duration="750"] [data-aos]{transition-duration:.75s}[data-aos][data-aos][data-aos-delay="750"],body[data-aos-delay="750"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="750"].aos-animate,body[data-aos-delay="750"] [data-aos].aos-animate{transition-delay:.75s}[data-aos][data-aos][data-aos-duration="800"],body[data-aos-duration="800"] [data-aos]{transition-duration:.8s}[data-aos][data-aos][data-aos-delay="800"],body[data-aos-delay="800"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="800"].aos-animate,body[data-aos-delay="800"] [data-aos].aos-animate{transition-delay:.8s}[data-aos][data-aos][data-aos-duration="850"],body[data-aos-duration="850"] [data-aos]{transition-duration:.85s}[data-aos][data-aos][data-aos-delay="850"],body[data-aos-delay="850"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="850"].aos-animate,body[data-aos-delay="850"] [data-aos].aos-animate{transition-delay:.85s}[data-aos][data-aos][data-aos-duration="900"],body[data-aos-duration="900"] [data-aos]{transition-duration:.9s}[data-aos][data-aos][data-aos-delay="900"],body[data-aos-delay="900"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="900"].aos-animate,body[data-aos-delay="900"] [data-aos].aos-animate{transition-delay:.9s}[data-aos][data-aos][data-aos-duration="950"],body[data-aos-duration="950"] [data-aos]{transition-duration:.95s}[data-aos][data-aos][data-aos-delay="950"],body[data-aos-delay="950"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="950"].aos-animate,body[data-aos-delay="950"] [data-aos].aos-animate{transition-delay:.95s}[data-aos][data-aos][data-aos-duration="1000"],body[data-aos-duration="1000"] [data-aos]{transition-duration:1s}[data-aos][data-aos][data-aos-delay="1000"],body[data-aos-delay="1000"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1000"].aos-animate,body[data-aos-delay="1000"] [data-aos].aos-animate{transition-delay:1s}[data-aos][data-aos][data-aos-duration="1050"],body[data-aos-duration="1050"] [data-aos]{transition-duration:1.05s}[data-aos][data-aos][data-aos-delay="1050"],body[data-aos-delay="1050"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1050"].aos-animate,body[data-aos-delay="1050"] [data-aos].aos-animate{transition-delay:1.05s}[data-aos][data-aos][data-aos-duration="1100"],body[data-aos-duration="1100"] [data-aos]{transition-duration:1.1s}[data-aos][data-aos][data-aos-delay="1100"],body[data-aos-delay="1100"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1100"].aos-animate,body[data-aos-delay="1100"] [data-aos].aos-animate{transition-delay:1.1s}[data-aos][data-aos][data-aos-duration="1150"],body[data-aos-duration="1150"] [data-aos]{transition-duration:1.15s}[data-aos][data-aos][data-aos-delay="1150"],body[data-aos-delay="1150"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1150"].aos-animate,body[data-aos-delay="1150"] [data-aos].aos-animate{transition-delay:1.15s}[data-aos][data-aos][data-aos-duration="1200"],body[data-aos-duration="1200"] [data-aos]{transition-duration:1.2s}[data-aos][data-aos][data-aos-delay="1200"],body[data-aos-delay="1200"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1200"].aos-animate,body[data-aos-delay="1200"] [data-aos].aos-animate{transition-delay:1.2s}[data-aos][data-aos][data-aos-duration="1250"],body[data-aos-duration="1250"] [data-aos]{transition-duration:1.25s}[data-aos][data-aos][data-aos-delay="1250"],body[data-aos-delay="1250"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1250"].aos-animate,body[data-aos-delay="1250"] [data-aos].aos-animate{transition-delay:1.25s}[data-aos][data-aos][data-aos-duration="1300"],body[data-aos-duration="1300"] [data-aos]{transition-duration:1.3s}[data-aos][data-aos][data-aos-delay="1300"],body[data-aos-delay="1300"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1300"].aos-animate,body[data-aos-delay="1300"] [data-aos].aos-animate{transition-delay:1.3s}[data-aos][data-aos][data-aos-duration="1350"],body[data-aos-duration="1350"] [data-aos]{transition-duration:1.35s}[data-aos][data-aos][data-aos-delay="1350"],body[data-aos-delay="1350"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1350"].aos-animate,body[data-aos-delay="1350"] [data-aos].aos-animate{transition-delay:1.35s}[data-aos][data-aos][data-aos-duration="1400"],body[data-aos-duration="1400"] [data-aos]{transition-duration:1.4s}[data-aos][data-aos][data-aos-delay="1400"],body[data-aos-delay="1400"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1400"].aos-animate,body[data-aos-delay="1400"] [data-aos].aos-animate{transition-delay:1.4s}[data-aos][data-aos][data-aos-duration="1450"],body[data-aos-duration="1450"] [data-aos]{transition-duration:1.45s}[data-aos][data-aos][data-aos-delay="1450"],body[data-aos-delay="1450"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1450"].aos-animate,body[data-aos-delay="1450"] [data-aos].aos-animate{transition-delay:1.45s}[data-aos][data-aos][data-aos-duration="1500"],body[data-aos-duration="1500"] [data-aos]{transition-duration:1.5s}[data-aos][data-aos][data-aos-delay="1500"],body[data-aos-delay="1500"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1500"].aos-animate,body[data-aos-delay="1500"] [data-aos].aos-animate{transition-delay:1.5s}[data-aos][data-aos][data-aos-duration="1550"],body[data-aos-duration="1550"] [data-aos]{transition-duration:1.55s}[data-aos][data-aos][data-aos-delay="1550"],body[data-aos-delay="1550"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1550"].aos-animate,body[data-aos-delay="1550"] [data-aos].aos-animate{transition-delay:1.55s}[data-aos][data-aos][data-aos-duration="1600"],body[data-aos-duration="1600"] [data-aos]{transition-duration:1.6s}[data-aos][data-aos][data-aos-delay="1600"],body[data-aos-delay="1600"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1600"].aos-animate,body[data-aos-delay="1600"] [data-aos].aos-animate{transition-delay:1.6s}[data-aos][data-aos][data-aos-duration="1650"],body[data-aos-duration="1650"] [data-aos]{transition-duration:1.65s}[data-aos][data-aos][data-aos-delay="1650"],body[data-aos-delay="1650"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1650"].aos-animate,body[data-aos-delay="1650"] [data-aos].aos-animate{transition-delay:1.65s}[data-aos][data-aos][data-aos-duration="1700"],body[data-aos-duration="1700"] [data-aos]{transition-duration:1.7s}[data-aos][data-aos][data-aos-delay="1700"],body[data-aos-delay="1700"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1700"].aos-animate,body[data-aos-delay="1700"] [data-aos].aos-animate{transition-delay:1.7s}[data-aos][data-aos][data-aos-duration="1750"],body[data-aos-duration="1750"] [data-aos]{transition-duration:1.75s}[data-aos][data-aos][data-aos-delay="1750"],body[data-aos-delay="1750"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1750"].aos-animate,body[data-aos-delay="1750"] [data-aos].aos-animate{transition-delay:1.75s}[data-aos][data-aos][data-aos-duration="1800"],body[data-aos-duration="1800"] [data-aos]{transition-duration:1.8s}[data-aos][data-aos][data-aos-delay="1800"],body[data-aos-delay="1800"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1800"].aos-animate,body[data-aos-delay="1800"] [data-aos].aos-animate{transition-delay:1.8s}[data-aos][data-aos][data-aos-duration="1850"],body[data-aos-duration="1850"] [data-aos]{transition-duration:1.85s}[data-aos][data-aos][data-aos-delay="1850"],body[data-aos-delay="1850"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1850"].aos-animate,body[data-aos-delay="1850"] [data-aos].aos-animate{transition-delay:1.85s}[data-aos][data-aos][data-aos-duration="1900"],body[data-aos-duration="1900"] [data-aos]{transition-duration:1.9s}[data-aos][data-aos][data-aos-delay="1900"],body[data-aos-delay="1900"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1900"].aos-animate,body[data-aos-delay="1900"] [data-aos].aos-animate{transition-delay:1.9s}[data-aos][data-aos][data-aos-duration="1950"],body[data-aos-duration="1950"] [data-aos]{transition-duration:1.95s}[data-aos][data-aos][data-aos-delay="1950"],body[data-aos-delay="1950"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="1950"].aos-animate,body[data-aos-delay="1950"] [data-aos].aos-animate{transition-delay:1.95s}[data-aos][data-aos][data-aos-duration="2000"],body[data-aos-duration="2000"] [data-aos]{transition-duration:2s}[data-aos][data-aos][data-aos-delay="2000"],body[data-aos-delay="2000"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2000"].aos-animate,body[data-aos-delay="2000"] [data-aos].aos-animate{transition-delay:2s}[data-aos][data-aos][data-aos-duration="2050"],body[data-aos-duration="2050"] [data-aos]{transition-duration:2.05s}[data-aos][data-aos][data-aos-delay="2050"],body[data-aos-delay="2050"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2050"].aos-animate,body[data-aos-delay="2050"] [data-aos].aos-animate{transition-delay:2.05s}[data-aos][data-aos][data-aos-duration="2100"],body[data-aos-duration="2100"] [data-aos]{transition-duration:2.1s}[data-aos][data-aos][data-aos-delay="2100"],body[data-aos-delay="2100"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2100"].aos-animate,body[data-aos-delay="2100"] [data-aos].aos-animate{transition-delay:2.1s}[data-aos][data-aos][data-aos-duration="2150"],body[data-aos-duration="2150"] [data-aos]{transition-duration:2.15s}[data-aos][data-aos][data-aos-delay="2150"],body[data-aos-delay="2150"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2150"].aos-animate,body[data-aos-delay="2150"] [data-aos].aos-animate{transition-delay:2.15s}[data-aos][data-aos][data-aos-duration="2200"],body[data-aos-duration="2200"] [data-aos]{transition-duration:2.2s}[data-aos][data-aos][data-aos-delay="2200"],body[data-aos-delay="2200"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2200"].aos-animate,body[data-aos-delay="2200"] [data-aos].aos-animate{transition-delay:2.2s}[data-aos][data-aos][data-aos-duration="2250"],body[data-aos-duration="2250"] [data-aos]{transition-duration:2.25s}[data-aos][data-aos][data-aos-delay="2250"],body[data-aos-delay="2250"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2250"].aos-animate,body[data-aos-delay="2250"] [data-aos].aos-animate{transition-delay:2.25s}[data-aos][data-aos][data-aos-duration="2300"],body[data-aos-duration="2300"] [data-aos]{transition-duration:2.3s}[data-aos][data-aos][data-aos-delay="2300"],body[data-aos-delay="2300"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2300"].aos-animate,body[data-aos-delay="2300"] [data-aos].aos-animate{transition-delay:2.3s}[data-aos][data-aos][data-aos-duration="2350"],body[data-aos-duration="2350"] [data-aos]{transition-duration:2.35s}[data-aos][data-aos][data-aos-delay="2350"],body[data-aos-delay="2350"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2350"].aos-animate,body[data-aos-delay="2350"] [data-aos].aos-animate{transition-delay:2.35s}[data-aos][data-aos][data-aos-duration="2400"],body[data-aos-duration="2400"] [data-aos]{transition-duration:2.4s}[data-aos][data-aos][data-aos-delay="2400"],body[data-aos-delay="2400"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2400"].aos-animate,body[data-aos-delay="2400"] [data-aos].aos-animate{transition-delay:2.4s}[data-aos][data-aos][data-aos-duration="2450"],body[data-aos-duration="2450"] [data-aos]{transition-duration:2.45s}[data-aos][data-aos][data-aos-delay="2450"],body[data-aos-delay="2450"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2450"].aos-animate,body[data-aos-delay="2450"] [data-aos].aos-animate{transition-delay:2.45s}[data-aos][data-aos][data-aos-duration="2500"],body[data-aos-duration="2500"] [data-aos]{transition-duration:2.5s}[data-aos][data-aos][data-aos-delay="2500"],body[data-aos-delay="2500"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2500"].aos-animate,body[data-aos-delay="2500"] [data-aos].aos-animate{transition-delay:2.5s}[data-aos][data-aos][data-aos-duration="2550"],body[data-aos-duration="2550"] [data-aos]{transition-duration:2.55s}[data-aos][data-aos][data-aos-delay="2550"],body[data-aos-delay="2550"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2550"].aos-animate,body[data-aos-delay="2550"] [data-aos].aos-animate{transition-delay:2.55s}[data-aos][data-aos][data-aos-duration="2600"],body[data-aos-duration="2600"] [data-aos]{transition-duration:2.6s}[data-aos][data-aos][data-aos-delay="2600"],body[data-aos-delay="2600"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2600"].aos-animate,body[data-aos-delay="2600"] [data-aos].aos-animate{transition-delay:2.6s}[data-aos][data-aos][data-aos-duration="2650"],body[data-aos-duration="2650"] [data-aos]{transition-duration:2.65s}[data-aos][data-aos][data-aos-delay="2650"],body[data-aos-delay="2650"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2650"].aos-animate,body[data-aos-delay="2650"] [data-aos].aos-animate{transition-delay:2.65s}[data-aos][data-aos][data-aos-duration="2700"],body[data-aos-duration="2700"] [data-aos]{transition-duration:2.7s}[data-aos][data-aos][data-aos-delay="2700"],body[data-aos-delay="2700"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2700"].aos-animate,body[data-aos-delay="2700"] [data-aos].aos-animate{transition-delay:2.7s}[data-aos][data-aos][data-aos-duration="2750"],body[data-aos-duration="2750"] [data-aos]{transition-duration:2.75s}[data-aos][data-aos][data-aos-delay="2750"],body[data-aos-delay="2750"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2750"].aos-animate,body[data-aos-delay="2750"] [data-aos].aos-animate{transition-delay:2.75s}[data-aos][data-aos][data-aos-duration="2800"],body[data-aos-duration="2800"] [data-aos]{transition-duration:2.8s}[data-aos][data-aos][data-aos-delay="2800"],body[data-aos-delay="2800"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2800"].aos-animate,body[data-aos-delay="2800"] [data-aos].aos-animate{transition-delay:2.8s}[data-aos][data-aos][data-aos-duration="2850"],body[data-aos-duration="2850"] [data-aos]{transition-duration:2.85s}[data-aos][data-aos][data-aos-delay="2850"],body[data-aos-delay="2850"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2850"].aos-animate,body[data-aos-delay="2850"] [data-aos].aos-animate{transition-delay:2.85s}[data-aos][data-aos][data-aos-duration="2900"],body[data-aos-duration="2900"] [data-aos]{transition-duration:2.9s}[data-aos][data-aos][data-aos-delay="2900"],body[data-aos-delay="2900"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2900"].aos-animate,body[data-aos-delay="2900"] [data-aos].aos-animate{transition-delay:2.9s}[data-aos][data-aos][data-aos-duration="2950"],body[data-aos-duration="2950"] [data-aos]{transition-duration:2.95s}[data-aos][data-aos][data-aos-delay="2950"],body[data-aos-delay="2950"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="2950"].aos-animate,body[data-aos-delay="2950"] [data-aos].aos-animate{transition-delay:2.95s}[data-aos][data-aos][data-aos-duration="3000"],body[data-aos-duration="3000"] [data-aos]{transition-duration:3s}[data-aos][data-aos][data-aos-delay="3000"],body[data-aos-delay="3000"] [data-aos]{transition-delay:0}[data-aos][data-aos][data-aos-delay="3000"].aos-animate,body[data-aos-delay="3000"] [data-aos].aos-animate{transition-delay:3s}[data-aos][data-aos][data-aos-easing=linear],body[data-aos-easing=linear] [data-aos]{transition-timing-function:cubic-bezier(.25,.25,.75,.75)}[data-aos][data-aos][data-aos-easing=ease],body[data-aos-easing=ease] [data-aos]{transition-timing-function:ease}[data-aos][data-aos][data-aos-easing=ease-in],body[data-aos-easing=ease-in] [data-aos]{transition-timing-function:ease-in}[data-aos][data-aos][data-aos-easing=ease-out],body[data-aos-easing=ease-out] [data-aos]{transition-timing-function:ease-out}[data-aos][data-aos][data-aos-easing=ease-in-out],body[data-aos-easing=ease-in-out] [data-aos]{transition-timing-function:ease-in-out}[data-aos][data-aos][data-aos-easing=ease-in-back],body[data-aos-easing=ease-in-back] [data-aos]{transition-timing-function:cubic-bezier(.6,-.28,.735,.045)}[data-aos][data-aos][data-aos-easing=ease-out-back],body[data-aos-easing=ease-out-back] [data-aos]{transition-timing-function:cubic-bezier(.175,.885,.32,1.275)}[data-aos][data-aos][data-aos-easing=ease-in-out-back],body[data-aos-easing=ease-in-out-back] [data-aos]{transition-timing-function:cubic-bezier(.68,-.55,.265,1.55)}[data-aos][data-aos][data-aos-easing=ease-in-sine],body[data-aos-easing=ease-in-sine] [data-aos]{transition-timing-function:cubic-bezier(.47,0,.745,.715)}[data-aos][data-aos][data-aos-easing=ease-out-sine],body[data-aos-easing=ease-out-sine] [data-aos]{transition-timing-function:cubic-bezier(.39,.575,.565,1)}[data-aos][data-aos][data-aos-easing=ease-in-out-sine],body[data-aos-easing=ease-in-out-sine] [data-aos]{transition-timing-function:cubic-bezier(.445,.05,.55,.95)}[data-aos][data-aos][data-aos-easing=ease-in-quad],body[data-aos-easing=ease-in-quad] [data-aos]{transition-timing-function:cubic-bezier(.55,.085,.68,.53)}[data-aos][data-aos][data-aos-easing=ease-out-quad],body[data-aos-easing=ease-out-quad] [data-aos]{transition-timing-function:cubic-bezier(.25,.46,.45,.94)}[data-aos][data-aos][data-aos-easing=ease-in-out-quad],body[data-aos-easing=ease-in-out-quad] [data-aos]{transition-timing-function:cubic-bezier(.455,.03,.515,.955)}[data-aos][data-aos][data-aos-easing=ease-in-cubic],body[data-aos-easing=ease-in-cubic] [data-aos]{transition-timing-function:cubic-bezier(.55,.085,.68,.53)}[data-aos][data-aos][data-aos-easing=ease-out-cubic],body[data-aos-easing=ease-out-cubic] [data-aos]{transition-timing-function:cubic-bezier(.25,.46,.45,.94)}[data-aos][data-aos][data-aos-easing=ease-in-out-cubic],body[data-aos-easing=ease-in-out-cubic] [data-aos]{transition-timing-function:cubic-bezier(.455,.03,.515,.955)}[data-aos][data-aos][data-aos-easing=ease-in-quart],body[data-aos-easing=ease-in-quart] [data-aos]{transition-timing-function:cubic-bezier(.55,.085,.68,.53)}[data-aos][data-aos][data-aos-easing=ease-out-quart],body[data-aos-easing=ease-out-quart] [data-aos]{transition-timing-function:cubic-bezier(.25,.46,.45,.94)}[data-aos][data-aos][data-aos-easing=ease-in-out-quart],body[data-aos-easing=ease-in-out-quart] [data-aos]{transition-timing-function:cubic-bezier(.455,.03,.515,.955)}[data-aos^=fade][data-aos^=fade]{opacity:0;transition-property:opacity,transform}[data-aos^=fade][data-aos^=fade].aos-animate{opacity:1;transform:translateZ(0)}[data-aos=fade-up]{transform:translate3d(0,100px,0)}[data-aos=fade-down]{transform:translate3d(0,-100px,0)}[data-aos=fade-right]{transform:translate3d(-100px,0,0)}[data-aos=fade-left]{transform:translate3d(100px,0,0)}[data-aos=fade-up-right]{transform:translate3d(-100px,100px,0)}[data-aos=fade-up-left]{transform:translate3d(100px,100px,0)}[data-aos=fade-down-right]{transform:translate3d(-100px,-100px,0)}[data-aos=fade-down-left]{transform:translate3d(100px,-100px,0)}[data-aos^=zoom][data-aos^=zoom]{opacity:0;transition-property:opacity,transform}[data-aos^=zoom][data-aos^=zoom].aos-animate{opacity:1;transform:translateZ(0) scale(1)}[data-aos=zoom-in]{transform:scale(.6)}[data-aos=zoom-in-up]{transform:translate3d(0,100px,0) scale(.6)}[data-aos=zoom-in-down]{transform:translate3d(0,-100px,0) scale(.6)}[data-aos=zoom-in-right]{transform:translate3d(-100px,0,0) scale(.6)}[data-aos=zoom-in-left]{transform:translate3d(100px,0,0) scale(.6)}[data-aos=zoom-out]{transform:scale(1.2)}[data-aos=zoom-out-up]{transform:translate3d(0,100px,0) scale(1.2)}[data-aos=zoom-out-down]{transform:translate3d(0,-100px,0) scale(1.2)}[data-aos=zoom-out-right]{transform:translate3d(-100px,0,0) scale(1.2)}[data-aos=zoom-out-left]{transform:translate3d(100px,0,0) scale(1.2)}[data-aos^=slide][data-aos^=slide]{transition-property:transform}[data-aos^=slide][data-aos^=slide].aos-animate{transform:translateZ(0)}[data-aos=slide-up]{transform:translate3d(0,100%,0)}[data-aos=slide-down]{transform:translate3d(0,-100%,0)}[data-aos=slide-right]{transform:translate3d(-100%,0,0)}[data-aos=slide-left]{transform:translate3d(100%,0,0)}[data-aos^=flip][data-aos^=flip]{backface-visibility:hidden;transition-property:transform}[data-aos=flip-left]{transform:perspective(2500px) rotateY(-100deg)}[data-aos=flip-left].aos-animate{transform:perspective(2500px) rotateY(0)}[data-aos=flip-right]{transform:perspective(2500px) rotateY(100deg)}[data-aos=flip-right].aos-animate{transform:perspective(2500px) rotateY(0)}[data-aos=flip-up]{transform:perspective(2500px) rotateX(-100deg)}[data-aos=flip-up].aos-animate{transform:perspective(2500px) rotateX(0)}[data-aos=flip-down]{transform:perspective(2500px) rotateX(100deg)}[data-aos=flip-down].aos-animate{transform:perspective(2500px) rotateX(0)}</style>
+<style data-vite-dev-id="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro?astro&#38;type=style&#38;index=0&#38;lang.css">.glow-button[data-astro-cid-7pewbour]{position:relative;display:flex;justify-content:center;align-items:center;gap:0.5rem;margin-top:2.5rem;padding:1.25rem 2.5rem;max-width:max-content;border-radius:0.5rem;background-color:#141428;border:1px solid #4b5563;overflow:hidden;transition:border-color 0.3s;text-decoration:none;color:white}.glow-button[data-astro-cid-7pewbour]:hover{border-color:#cbacf9}.glow-content[data-astro-cid-7pewbour]{position:relative;z-index:10;display:flex;align-items:center;gap:0.5rem}.glow-overlay[data-astro-cid-7pewbour]{position:absolute;top:0;left:100%;width:100%;height:100%;background:rgba(203,172,249,0.2);filter:blur(24px);animation:glow-slide 2s linear infinite;pointer-events:none}.cv-button[data-astro-cid-7pewbour]{display:flex;justify-content:center;align-items:center;gap:0.5rem;margin-top:2.5rem;padding:1.25rem 2.5rem;max-width:max-content;border-radius:0.5rem;background-color:#cbacf9;border:1px solid #4b5563;overflow:hidden;transition:border-color 0.3s;text-decoration:none;color:black;font-weight:500}.cv-button[data-astro-cid-7pewbour]:hover{border-color:#cbacf9;background-color:#a67bc0;color:white}@keyframes glow-slide{0%{left:100%}100%{left:-100%}}</style><script type="module" src="/@vite/client"></script>
+<script type="module" src="/@fs/Users/dickson/Workspace/portfolio/node_modules/astro/dist/runtime/client/dev-toolbar/entrypoint.js?v=ce8468b6"></script>
+<script>window.__astro_dev_toolbar__ = {"root":"/Users/dickson/Workspace/portfolio/","version":"5.18.2","debugInfo":"Astro                    v5.18.2\nNode                     v24.16.0\nSystem                   macOS (arm64)\nPackage Manager          npm\nOutput                   static\nAdapter                  none\nIntegrations             none"}</script>
+<script type="module" src="/src/styles/global.css"></script>
+<script type="module" src="/node_modules/@fontsource-variable/onest/index.css"></script>
+<script type="module" src="/src/layouts/Layout.astro?astro&type=style&index=0&lang.css"></script>
+<script type="module" src="/node_modules/aos/dist/aos.css"></script>
+<script type="module" src="/src/pages/es/index.astro?astro&type=style&index=0&lang.css"></script></head> <body data-astro-source-file="/Users/dickson/Workspace/portfolio/src/layouts/Layout.astro" data-astro-source-loc="20:7"> <div class="relative h-full w-full bg-slate-950" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/layouts/Layout.astro" data-astro-source-loc="21:51"> <div class="absolute inset-0 z-0 bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:150px_150px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/layouts/Layout.astro" data-astro-source-loc="23:285"></div> <div class="relative z-10" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/layouts/Layout.astro" data-astro-source-loc="25:30">  <main data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="18:11"> <header class="pt-6" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Navbar.astro" data-astro-source-loc="21:22"> <nav class="fixed top-6 left-1/2 -translate-x-1/2 z-50
+               px-8 py-3
+               rounded-full
+               bg-[#141428]/80
+               backdrop-blur-md
+               border border-[#CBACF9]/20
+               shadow-lg shadow-black/30" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Navbar.astro" data-astro-source-loc="30:7"> <ul class="flex items-center gap-8 text-sm md:text-base font-medium" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Navbar.astro" data-astro-source-loc="31:80"> <li data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Navbar.astro" data-astro-source-loc="32:20"> <a href="#home" class="relative text-[#CBACF9] hover:text-white transition-colors duration-300
+                           after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px]
+                           after:h-[2px] after:w-0 after:bg-[#CBACF9]
+                           after:transition-all after:duration-300
+                           hover:after:w-5" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Navbar.astro" data-astro-source-loc="40:27">Inicio</a> </li> <li data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Navbar.astro" data-astro-source-loc="43:20"> <a href="#about" class="relative text-[#CBACF9] hover:text-white transition-colors duration-300
+                           after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px]
+                           after:h-[2px] after:w-0 after:bg-[#CBACF9]
+                           after:transition-all after:duration-300
+                           hover:after:w-5" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Navbar.astro" data-astro-source-loc="51:27">Acerca de mí</a> </li> <li data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Navbar.astro" data-astro-source-loc="54:20"> <a href="#projects" class="relative text-[#CBACF9] hover:text-white transition-colors duration-300
+                           after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px]
+                           after:h-[2px] after:w-0 after:bg-[#CBACF9]
+                           after:transition-all after:duration-300
+                           hover:after:w-5" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Navbar.astro" data-astro-source-loc="62:27">Proyectos</a> </li> <li data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Navbar.astro" data-astro-source-loc="65:20"> <a href="#education" class="relative text-[#CBACF9] hover:text-white transition-colors duration-300
+                           after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px]
+                           after:h-[2px] after:w-0 after:bg-[#CBACF9]
+                           after:transition-all after:duration-300
+                           hover:after:w-5" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Navbar.astro" data-astro-source-loc="73:27">Educación</a> </li> <li data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Navbar.astro" data-astro-source-loc="76:20"> <a href="#contact" class="relative text-[#CBACF9] hover:text-white transition-colors duration-300
+                           after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px]
+                           after:h-[2px] after:w-0 after:bg-[#CBACF9]
+                           after:transition-all after:duration-300
+                           hover:after:w-5" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Navbar.astro" data-astro-source-loc="84:27">Contacto</a> </li> <li data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Navbar.astro" data-astro-source-loc="87:20"> <div class="w-px h-5 bg-[#CBACF9]/30" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Navbar.astro" data-astro-source-loc="88:22"></div> </li> <li data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Navbar.astro" data-astro-source-loc="90:20"> <!-- SELECTOR DE IDIOMA --> <div class="flex items-center gap-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Navbar.astro" data-astro-source-loc="92:58"> <a href="/" class="px-2 py-1 rounded-md transition text-[#CBACF9] hover:text-white" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Navbar.astro" data-astro-source-loc="100:27">
+🇬🇧 EN
+</a> <span class="text-white/20" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Navbar.astro" data-astro-source-loc="104:54">|</span> <a href="/es" class="px-2 py-1 rounded-md transition bg-[#CBACF9] text-black" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Navbar.astro" data-astro-source-loc="113:27">
+🇪🇸 ES
+</a> </div> </li> </ul> </nav> </header> <section id="home" class="scroll-mt-40" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="27:49"> <div class="mt-50 py-15 px-20 max-w-8xl mx-auto
+           grid md:grid-cols-2 gap-10 items-center" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="31:14"> <div data-aos="fade-right" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="32:44"> <h1 class="text-4xl lg:text-6xl font-extrabold leading-tight" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="35:22">
+👋🏻 Hola, soy <span class="text-[#CBACF9]" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="36:69">Dickson</span> </h1> <p class="mt-2 text-2xl lg:text-3xl text-yellow-100" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="39:74">
+Desarrollador Full-Stack 🇪🇸
+</p> <h2 class="mt-4 text-xl lg:text-3xl font-semibold text-[#CBACF9]" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="45:22">
+Construyendo Aplicaciones Seguras y Escalables
+</h2> <p class="mt-2 text-lg text-gray-300 max-w-2xl" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="49:69">
+Especializado en Angular y Spring Boot, creando
+                        aplicaciones web robustas.
+</p> <div class="flex mt-8 gap-4" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="53:50"> <a href="mailto:dickson17081999@gmail.com" target="_blank" data-aos="fade-up" data-aos-delay="100" class="p-3 rounded-full
+           bg-white/5
+           border border-white/10
+           text-gray-300
+           hover:text-[#CBACF9]
+           hover:bg-white/20
+           hover:-translate-y-1
+           hover:shadow-[0_0_15px_rgba(203,172,249,0.25)]
+           transition-all duration-300" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="68:26"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mail" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/CardIcon.astro" data-astro-source-loc="1:256"><path stroke="none" d="M0 0h24v24H0z" fill="none" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/CardIcon.astro" data-astro-source-loc="1:256"></path><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/CardIcon.astro" data-astro-source-loc="1:307"></path><path d="M3 7l9 6l9 -6" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/CardIcon.astro" data-astro-source-loc="1:399"></path></svg> </a> <a href="https://es.linkedin.com/in/dicksoncelauropena" target="_blank" data-aos="fade-up" data-aos-delay="200" class="p-3 rounded-full
+           bg-white/5
+           border border-white/10
+           text-gray-300
+           hover:text-[#CBACF9]
+           hover:bg-white/20
+           hover:-translate-y-1
+           hover:shadow-[0_0_15px_rgba(203,172,249,0.25)]
+           transition-all duration-300" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="85:26"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/LinkedinIcon.astro" data-astro-source-loc="1:266"><path stroke="none" d="M0 0h24v24H0z" fill="none" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/LinkedinIcon.astro" data-astro-source-loc="1:266"></path><path d="M8 11v5" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/LinkedinIcon.astro" data-astro-source-loc="1:317"></path><path d="M8 8v.01" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/LinkedinIcon.astro" data-astro-source-loc="1:337"></path><path d="M12 16v-5" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/LinkedinIcon.astro" data-astro-source-loc="1:358"></path><path d="M16 16v-3a2 2 0 1 0 -4 0" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/LinkedinIcon.astro" data-astro-source-loc="1:380"></path><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/LinkedinIcon.astro" data-astro-source-loc="1:417"></path></svg> </a> <a href="https://github.com/dickson1708" target="_blank" data-aos="fade-up" data-aos-delay="300" class="p-3 rounded-full
+           bg-white/5
+           border border-white/10
+           text-gray-300
+           hover:text-[#CBACF9]
+           hover:bg-white/20
+           hover:-translate-y-1
+           hover:shadow-[0_0_15px_rgba(203,172,249,0.25)]
+           transition-all duration-300" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="102:26"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/GithubIcon.astro" data-astro-source-loc="1:264"><path stroke="none" d="M0 0h24v24H0z" fill="none" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/GithubIcon.astro" data-astro-source-loc="1:264"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/GithubIcon.astro" data-astro-source-loc="1:315"></path></svg> </a> </div> <div class="flex flex-col sm:flex-row gap-4" data-aos="fade-up" data-aos-delay="400" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="110:22"> <!-- CTA principal --> <a href="#projects" class="glow-button" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="112:65"> <span class="glow-content" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="113:56">
+Ver mi trabajo
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/ArrowRightIcon.astro" data-astro-source-loc="1:270"><path stroke="none" d="M0 0h24v24H0z" fill="none" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/ArrowRightIcon.astro" data-astro-source-loc="1:270"></path><path d="M5 12l14 0" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/ArrowRightIcon.astro" data-astro-source-loc="1:321"></path><path d="M15 16l4 -4" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/ArrowRightIcon.astro" data-astro-source-loc="1:344"></path><path d="M15 8l4 4" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/ArrowRightIcon.astro" data-astro-source-loc="1:368"></path></svg> </span> <span class="glow-overlay" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="117:30"></span> </a> <!-- CTA secundario --> <a href="/cv.pdf" download class="cv-button" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="121:70"> <span class="flex items-center gap-1" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="122:67">
+Descargar CV
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-download" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/DownloadIcon.astro" data-astro-source-loc="1:250"><path stroke="none" d="M0 0h24v24H0z" fill="none" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/DownloadIcon.astro" data-astro-source-loc="1:250"></path><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/DownloadIcon.astro" data-astro-source-loc="1:302"></path><path d="M7 11l5 5l5 -5" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/DownloadIcon.astro" data-astro-source-loc="1:357"></path><path d="M12 4l0 12" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/DownloadIcon.astro" data-astro-source-loc="1:384"></path></svg> </span> </a> </div> </div> <div class="flex justify-center" data-aos="fade-left" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="130:71"> <img src="/assets/logo_portfolio.png" data-image-component="true" alt="Memoji de Dickson Celauro" loading="eager" data-astro-cid-7pewbour="true" decoding="async" fetchpriority="auto" width="900" height="900" data-astro-source-file="/Users/dickson/Workspace/portfolio/node_modules/astro/components/Image.astro" data-astro-source-loc="51:2"> </div> </div> </section> <section id="skills" class="py-15" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="142:44"> <div class="text-center text-4xl lg:text-5xl font-bold" data-aos="fade-down" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="146:14"> <h2 data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="147:21">Mi <span class="text-[#CBACF9]" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="147:53">Stack</span></h2> </div> <div class="flex flex-wrap justify-center items-center gap-6 bg-gray-800 p-10 mt-10 max-w-4xl mx-auto rounded-2xl shadow-xl" data-aos="zoom-in" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="152:14"> <img data-tooltip-target="angular-tooltip" src="/assets/skills/angular.png" alt="angular" width="60" height="60" data-aos="zoom-in" data-aos-delay="50" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="153:18"> <div id="angular-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Tooltip.astro" data-astro-source-loc="5:183"> Angular </div> <img data-tooltip-target="spring-tooltip" src="/assets/skills/springboot.png" alt="springboot" width="60" height="60" data-aos="zoom-in" data-aos-delay="100" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="163:18"> <div id="spring-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Tooltip.astro" data-astro-source-loc="5:183"> Springboot </div> <img data-tooltip-target="java-tooltip" src="/assets/skills/java.png" alt="java" width="60" height="60" data-aos="zoom-in" data-aos-delay="150" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="173:18"> <div id="java-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Tooltip.astro" data-astro-source-loc="5:183"> Java </div> <img data-tooltip-target="ts-tooltip" src="/assets/skills/typescript.png" alt="typescript" width="60" height="60" data-aos="zoom-in" data-aos-delay="200" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="183:18"> <div id="ts-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Tooltip.astro" data-astro-source-loc="5:183"> Typescript </div> <img data-tooltip-target="js-tooltip" src="/assets/skills/javascript.png" alt="javascript" width="60" height="60" data-aos="zoom-in" data-aos-delay="250" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="193:18"> <div id="js-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Tooltip.astro" data-astro-source-loc="5:183"> Javascript </div> <img data-tooltip-target="html-tooltip" src="/assets/skills/html.png" alt="html" width="60" height="60" data-aos="zoom-in" data-aos-delay="300" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="203:18"> <div id="html-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Tooltip.astro" data-astro-source-loc="5:183"> HTML </div> <img data-tooltip-target="css-tooltip" src="/assets/skills/css-3.png" alt="css" width="60" height="60" data-aos="zoom-in" data-aos-delay="350" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="213:18"> <div id="css-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Tooltip.astro" data-astro-source-loc="5:183"> CSS </div> <img data-tooltip-target="sass-tooltip" src="/assets/skills/sass.png" alt="sass" width="60" height="60" data-aos="zoom-in" data-aos-delay="400" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="223:18"> <div id="sass-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Tooltip.astro" data-astro-source-loc="5:183"> SASS </div> <img data-tooltip-target="tailwind-tooltip" src="/assets/skills/tailwindCss.png" alt="tailwindCss" width="60" height="60" data-aos="zoom-in" data-aos-delay="450" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="233:18"> <div id="tailwind-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Tooltip.astro" data-astro-source-loc="5:183"> Tailwind CSS </div> <img data-tooltip-target="bootstrap-tooltip" src="/assets/skills/bootstrap.png" alt="bootstrap" width="60" data-aos="zoom-in" data-aos-delay="500" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="243:18"> <div id="bootstrap-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Tooltip.astro" data-astro-source-loc="5:183"> Bootstrap </div> <img data-tooltip-target="astro-tooltip" src="/assets/skills/astro.png" alt="astro" width="60" height="60" data-aos="zoom-in" data-aos-delay="550" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="252:18"> <div id="astro-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Tooltip.astro" data-astro-source-loc="5:183"> Astro </div> <img data-tooltip-target="jhipster-tooltip" src="/assets/skills/jhipster.png" alt="jhipster" width="60" height="60" data-aos="zoom-in" data-aos-delay="600" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="262:18"> <div id="jhipster-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Tooltip.astro" data-astro-source-loc="5:183"> JHipster </div> <img data-tooltip-target="mysql-tooltip" src="/assets/skills/mysql.png" alt="mysql" width="60" height="60" data-aos="zoom-in" data-aos-delay="650" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="272:18"> <div id="mysql-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Tooltip.astro" data-astro-source-loc="5:183"> MySQL </div> <img data-tooltip-target="postgresql-tooltip" src="/assets/skills/postgresql.png" alt="postgresql" width="60" height="60" data-aos="zoom-in" data-aos-delay="700" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="282:18"> <div id="postgresql-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Tooltip.astro" data-astro-source-loc="5:183"> PostgreSQL </div> <img data-tooltip-target="git-tooltip" src="/assets/skills/git.png" alt="git" width="60" height="60" data-aos="zoom-in" data-aos-delay="750" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="292:18"> <div id="git-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Tooltip.astro" data-astro-source-loc="5:183"> Git </div> <img data-tooltip-target="github-tooltip" src="/assets/skills/github.png" alt="github" width="60" height="60" data-aos="zoom-in" data-aos-delay="800" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="302:18"> <div id="github-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Tooltip.astro" data-astro-source-loc="5:183"> Github </div> <img data-tooltip-target="bitbucket-tooltip" src="/assets/skills/bitbucket.webp" alt="bitbucket" width="60" height="60" data-aos="zoom-in" data-aos-delay="850" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="312:18"> <div id="bitbucket-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Tooltip.astro" data-astro-source-loc="5:183"> Bitbucket </div> <img data-tooltip-target="jira-tooltip" src="/assets/skills/jira.png" alt="jira" width="60" data-aos="zoom-in" data-aos-delay="900" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="322:18"> <div id="jira-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Tooltip.astro" data-astro-source-loc="5:183"> Jira </div> <img data-tooltip-target="sourcetree-tooltip" src="/assets/skills/sourcetree.webp" alt="sourcetree" width="80" height="80" data-aos="zoom-in" data-aos-delay="950" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="331:18"> <div id="sourcetree-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Tooltip.astro" data-astro-source-loc="5:183"> Sourcetree </div> </div> </section> <section id="about" class="py-15" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="344:43"> <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="347:14"> <div data-aos="fade-right" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="348:44"> <h2 class="text-4xl lg:text-5xl font-bold" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="349:64">
+Acerca <span class="text-[#CBACF9]" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="350:61">de Mí</span> </h2> <p class="mt-6 text-gray-300" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="353:51">
+Soy un Desarrollador de Software Web con un fuerte
+                        enfoque en las tecnologías Angular y Spring Boot,
+                        dedicado a construir aplicaciones web seguras,
+                        escalables y fáciles de mantener.
+</p> <p class="mt-4 text-gray-300" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="360:51">
+Tras graduarme en el Grado Superior de Desarrollo de
+                        Aplicaciones Web, continué potenciando mis habilidades a
+                        través de formación avanzada y programas especializados
+                        en desarrollo frontend y backend moderno. Mi experiencia
+                        abarca el ciclo completo de desarrollo de software,
+                        desde el diseño de interfaces de usuario adaptables
+                        hasta la implementación de lógica de negocio, APIs y
+                        soluciones de bases de datos.
+</p> <p class="mt-4 text-gray-300" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="371:51">
+Apasionado por la tecnología y el aprendizaje continuo,
+                        me esfuerzo por crear software de alta calidad que
+                        combine rendimiento, usabilidad y mantenibilidad a largo
+                        plazo.
+</p> </div> <div data-aos="fade-left" data-aos-delay="200" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="379:64"> <img src="/assets/portatil.png" data-image-component="true" alt="About me" data-astro-cid-7pewbour="true" loading="lazy" decoding="async" fetchpriority="auto" width="500" height="500" data-astro-source-file="/Users/dickson/Workspace/portfolio/node_modules/astro/components/Image.astro" data-astro-source-loc="51:2"> </div> <div class="md:col-span-2 text-center mt-4" data-aos="fade-up" data-aos-delay="100" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="392:18"> <p class="text-lg uppercase tracking-[0.3em] text-[#CBACF9]" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="395:22">
+Soluciones Full-Stack
+</p> <h3 class="mt-2 text-lg font-semibold text-white" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="399:71">
+Cómo transformo ideas en software
+</h3> </div> <div class="md:col-span-2 grid md:grid-cols-2 gap-4" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="404:70"> <div class="rounded-xl bg-[#141428] border border-white/10 p-8" data-aos="zoom-in-up" data-aos-delay="100" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="409:22"> <h3 class="font-bold text-white text-center text-lg" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="410:78">
+Desarrollo Frontend
+</h3> <div class="flex items-center gap-4 text-gray-300 text-sm" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="415:26"> <img src="/assets/skills/interfaz.apng.png" alt="Frontend" class="w-12" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="416:30"> <strong data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="421:37">
+Creación de interfaces de usuario modernas, responsivas y reutilizables.
+</strong> </div> </div> <div class="rounded-xl bg-[#141428] border border-white/10 p-8" data-aos="zoom-in-up" data-aos-delay="200" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="431:22"> <h3 class="font-bold text-white text-center text-lg" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="432:78">
+Ingeniería Backend
+</h3> <div class="flex items-center gap-4 text-gray-300 text-sm" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="437:26"> <img src="/assets/skills/backend.apng.png" alt="Backend" class="w-12" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="438:30"> <strong data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="443:37">
+Desarrollo de servicios backend seguros, escalables y mantenibles.
+</strong> </div> </div> <div class="rounded-xl bg-[#141428] border border-white/10 p-8" data-aos="zoom-in-up" data-aos-delay="300" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="453:22"> <h3 class="font-bold text-white text-center text-lg" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="454:78">
+Diseño de Base de Datos
+</h3> <div class="flex items-center gap-4 text-gray-300 text-sm" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="459:26"> <img src="/assets/skills/bbdd.apng.png" alt="Database" class="w-12" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="460:30"> <strong data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="465:37">
+Diseño de bases de datos relacionales eficientes y
+                                APIs RESTful.
+</strong> </div> </div> <div class="rounded-xl bg-[#141428] border border-white/10 p-8" data-aos="zoom-in-up" data-aos-delay="400" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="476:22"> <h3 class="font-bold text-white text-center text-lg" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="477:78">
+IA & Automatización
+</h3> <div class="flex items-center gap-4 text-gray-300 text-sm" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="482:26"> <img src="/assets/skills/IA.apng.png" alt="IA" class="w-12" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="483:30"> <strong data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="488:37">
+Integración de herramientas de Inteligencia Artificial para optimizar procesos y desarrollo.
+</strong> </div> </div> </div> </div> </section> <section id="projects" class="py-15 scroll-mt-32" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="497:59"> <div data-aos="fade-down" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="498:39"> <h2 class="text-center text-4xl lg:text-5xl font-bold" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="499:72">
+Proyectos <span class="text-[#CBACF9]" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="500:60">recientes</span> </h2> </div> <div class="flex flex-wrap justify-center 2xl:mx-10 gap-10 place-items-center mt-20" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="505:14"> <div data-aos="fade-up" data-aos-delay="100" ,="true" data-astro-cid-7pewbour="true" class="max-w-md bg-[#141428] border border-gray-200 rounded-lg shadow-sm" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="17:90"> <img src="/assets/projects/rentalcar_project.png" data-image-component="true" alt="App de Alquiler de Autos" loading="lazy" decoding="async" fetchpriority="auto" width="50" height="50" class="rounded-t-lg w-full h-auto" data-astro-source-file="/Users/dickson/Workspace/portfolio/node_modules/astro/components/Image.astro" data-astro-source-loc="51:2"> <div class="p-5" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="25:20"> <div class="flex justify-between items-center mb-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="26:57"> <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-200" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="27:72"> App de Alquiler de Autos </h5> <a href="https://github.com/dickson1708/RentACar" target="_blank" class="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 me-2 mb-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="34:8"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-code" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="46:13"><path stroke="none" d="M0 0h24v24H0z" fill="none" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="46:13"></path><path d="M7 8l-4 4l4 4" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="46:70"></path><path d="M17 8l4 4l-4 4" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="47:39"></path><path d="M14 4l-4 16" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="47:71"></path></svg> Código </a> </div> <p class="mb-3 font-normal text-gray-400" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="53:47">Plataforma de alquiler full-stack con autenticación, gestión CRUD, accesos basados en roles y flujo de trabajo para reserva de vehículos.</p> <div class="flex flex-wrap flex-col mt-5 gap-4" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="54:53"> <div class="flex items-center flex-wrap gap-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="55:54"> <img src="/assets/skills/angular.png" data-image-component="true" alt="skill" loading="lazy" decoding="async" fetchpriority="auto" width="50" height="50" class="border border-gray-800 rounded-3xl p-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/node_modules/astro/components/Image.astro" data-astro-source-loc="51:2"><img src="/assets/skills/springboot.png" data-image-component="true" alt="skill" loading="lazy" decoding="async" fetchpriority="auto" width="50" height="50" class="border border-gray-800 rounded-3xl p-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/node_modules/astro/components/Image.astro" data-astro-source-loc="51:2"><img src="/assets/skills/typescript.png" data-image-component="true" alt="skill" loading="lazy" decoding="async" fetchpriority="auto" width="50" height="50" class="border border-gray-800 rounded-3xl p-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/node_modules/astro/components/Image.astro" data-astro-source-loc="51:2"><img src="/assets/skills/java.png" data-image-component="true" alt="skill" loading="lazy" decoding="async" fetchpriority="auto" width="50" height="50" class="border border-gray-800 rounded-3xl p-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/node_modules/astro/components/Image.astro" data-astro-source-loc="51:2"><img src="/assets/skills/sass.png" data-image-component="true" alt="skill" loading="lazy" decoding="async" fetchpriority="auto" width="50" height="50" class="border border-gray-800 rounded-3xl p-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/node_modules/astro/components/Image.astro" data-astro-source-loc="51:2"><img src="/assets/skills/bootstrap.png" data-image-component="true" alt="skill" loading="lazy" decoding="async" fetchpriority="auto" width="50" height="50" class="border border-gray-800 rounded-3xl p-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/node_modules/astro/components/Image.astro" data-astro-source-loc="51:2"><img src="/assets/skills/mysql.png" data-image-component="true" alt="skill" loading="lazy" decoding="async" fetchpriority="auto" width="50" height="50" class="border border-gray-800 rounded-3xl p-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/node_modules/astro/components/Image.astro" data-astro-source-loc="51:2"> </div> <a href="/rental-car-app" target="_blank" class="inline-flex items-center text-lg font-medium text-[#CBACF9] hover:text-gray-300" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="72:8"> Ver Proyecto <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="81:10"> <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H8M17 7V16" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="82:12"></path> </svg> </a> </div> </div> </div> <div data-aos="fade-up" data-aos-delay="250" data-astro-cid-7pewbour="true" class="max-w-md bg-[#141428] border border-gray-200 rounded-lg shadow-sm" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="17:90"> <img src="/assets/projects/dealership_project.png" data-image-component="true" alt="App para Gestión de Concesionaria de Autos" loading="lazy" decoding="async" fetchpriority="auto" width="50" height="50" class="rounded-t-lg w-full h-auto" data-astro-source-file="/Users/dickson/Workspace/portfolio/node_modules/astro/components/Image.astro" data-astro-source-loc="51:2"> <div class="p-5" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="25:20"> <div class="flex justify-between items-center mb-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="26:57"> <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-200" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="27:72"> App para Gestión de Concesionaria de Autos </h5> <a href="https://bitbucket.org/dicksons-personal-projects/dealerapp/commits/branch/develop" target="_blank" class="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 me-2 mb-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="34:8"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-code" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="46:13"><path stroke="none" d="M0 0h24v24H0z" fill="none" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="46:13"></path><path d="M7 8l-4 4l4 4" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="46:70"></path><path d="M17 8l4 4l-4 4" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="47:39"></path><path d="M14 4l-4 16" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="47:71"></path></svg> Código </a> </div> <p class="mb-3 font-normal text-gray-400" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="53:47">Una aplicación full-stack para la gestión de concesionarias de autos, construida con JHipster, Angular y Java.</p> <div class="flex flex-wrap flex-col mt-5 gap-4" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="54:53"> <div class="flex items-center flex-wrap gap-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="55:54"> <img src="/assets/skills/angular.png" data-image-component="true" alt="skill" loading="lazy" decoding="async" fetchpriority="auto" width="50" height="50" class="border border-gray-800 rounded-3xl p-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/node_modules/astro/components/Image.astro" data-astro-source-loc="51:2"><img src="/assets/skills/springboot.png" data-image-component="true" alt="skill" loading="lazy" decoding="async" fetchpriority="auto" width="50" height="50" class="border border-gray-800 rounded-3xl p-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/node_modules/astro/components/Image.astro" data-astro-source-loc="51:2"><img src="/assets/skills/typescript.png" data-image-component="true" alt="skill" loading="lazy" decoding="async" fetchpriority="auto" width="50" height="50" class="border border-gray-800 rounded-3xl p-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/node_modules/astro/components/Image.astro" data-astro-source-loc="51:2"><img src="/assets/skills/java.png" data-image-component="true" alt="skill" loading="lazy" decoding="async" fetchpriority="auto" width="50" height="50" class="border border-gray-800 rounded-3xl p-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/node_modules/astro/components/Image.astro" data-astro-source-loc="51:2"><img src="/assets/skills/sass.png" data-image-component="true" alt="skill" loading="lazy" decoding="async" fetchpriority="auto" width="50" height="50" class="border border-gray-800 rounded-3xl p-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/node_modules/astro/components/Image.astro" data-astro-source-loc="51:2"><img src="/assets/skills/bootstrap.png" data-image-component="true" alt="skill" loading="lazy" decoding="async" fetchpriority="auto" width="50" height="50" class="border border-gray-800 rounded-3xl p-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/node_modules/astro/components/Image.astro" data-astro-source-loc="51:2"><img src="/assets/skills/mysql.png" data-image-component="true" alt="skill" loading="lazy" decoding="async" fetchpriority="auto" width="50" height="50" class="border border-gray-800 rounded-3xl p-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/node_modules/astro/components/Image.astro" data-astro-source-loc="51:2"> </div> <a href="/car-dealership-app" target="_blank" class="inline-flex items-center text-lg font-medium text-[#CBACF9] hover:text-gray-300" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="72:8"> Ver Proyecto <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="81:10"> <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H8M17 7V16" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="82:12"></path> </svg> </a> </div> </div> </div> <div data-aos="fade-up" data-aos-delay="400" data-astro-cid-7pewbour="true" class="max-w-md bg-[#141428] border border-gray-200 rounded-lg shadow-sm" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="17:90"> <img src="/assets/projects/gladiadoras_project.png" data-image-component="true" alt="Equipo deportivo de Kickingball" loading="lazy" decoding="async" fetchpriority="auto" width="50" height="50" class="rounded-t-lg w-full h-auto" data-astro-source-file="/Users/dickson/Workspace/portfolio/node_modules/astro/components/Image.astro" data-astro-source-loc="51:2"> <div class="p-5" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="25:20"> <div class="flex justify-between items-center mb-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="26:57"> <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-200" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="27:72"> Equipo deportivo de Kickingball </h5> <a href="https://github.com/dickson1708/GladiadorasKickingball" target="_blank" class="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 me-2 mb-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="34:8"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-code" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="46:13"><path stroke="none" d="M0 0h24v24H0z" fill="none" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="46:13"></path><path d="M7 8l-4 4l4 4" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="46:70"></path><path d="M17 8l4 4l-4 4" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="47:39"></path><path d="M14 4l-4 16" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="47:71"></path></svg> Código </a> </div> <p class="mb-3 font-normal text-gray-400" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="53:47">Aplicación web frontend para un equipo de deporte español, construida con HTML, CSS, JS y Bootstrap.</p> <div class="flex flex-wrap flex-col mt-5 gap-4" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="54:53"> <div class="flex items-center flex-wrap gap-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="55:54"> <img src="/assets/skills/html.png" data-image-component="true" alt="skill" loading="lazy" decoding="async" fetchpriority="auto" width="50" height="50" class="border border-gray-800 rounded-3xl p-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/node_modules/astro/components/Image.astro" data-astro-source-loc="51:2"><img src="/assets/skills/css-3.png" data-image-component="true" alt="skill" loading="lazy" decoding="async" fetchpriority="auto" width="50" height="50" class="border border-gray-800 rounded-3xl p-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/node_modules/astro/components/Image.astro" data-astro-source-loc="51:2"><img src="/assets/skills/javascript.png" data-image-component="true" alt="skill" loading="lazy" decoding="async" fetchpriority="auto" width="50" height="50" class="border border-gray-800 rounded-3xl p-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/node_modules/astro/components/Image.astro" data-astro-source-loc="51:2"> </div> <a href="https://www.gladiadoraskickingball.com/" target="_blank" class="inline-flex items-center text-lg font-medium text-[#CBACF9] hover:text-gray-300" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="72:8"> Ver Proyecto <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="81:10"> <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H8M17 7V16" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/ProjectCard.astro" data-astro-source-loc="82:12"></path> </svg> </a> </div> </div> </div> </div> </section> <section id="education" class="pt-15 scroll-mt-46" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="565:60"> <div class="text-center text-4xl lg:text-5xl font-bold" data-aos="fade-down" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="569:14"> <h2 data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="570:21">Edu<span class="text-[#CBACF9]" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="570:53">cación</span></h2> </div> <div class="py-10" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="572:32"> <div class="mt-5" data-aos="fade-right" data-astro-cid-7pewbour="true" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/EducationCard.astro" data-astro-source-loc="9:29"> <div class="relative overflow-hidden flex flex-col justify-center items-center m-auto max-w-xl rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm hover:border-[#CBACF9]/50 transition-all duration-300" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/EducationCard.astro" data-astro-source-loc="12:6"> <!-- Barra lateral --> <div class="absolute left-0 top-0 h-full w-1 bg-[#CBACF9]" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/EducationCard.astro" data-astro-source-loc="14:10"></div> <!-- Glow decorativo --> <div class="absolute -left-10 top-1/2 h-24 w-24 -translate-y-1/2 rounded-full bg-[#CBACF9]/10 blur-3xl" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/EducationCard.astro" data-astro-source-loc="19:10"></div> <span class="flex justify-center items-center gap-2 py-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/EducationCard.astro" data-astro-source-loc="22:67"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-school" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/SchoolIcon.astro" data-astro-source-loc="1:248"><path stroke="none" d="M0 0h24v24H0z" fill="none" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/SchoolIcon.astro" data-astro-source-loc="1:248"></path><path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/SchoolIcon.astro" data-astro-source-loc="1:300"></path><path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/SchoolIcon.astro" data-astro-source-loc="1:344"></path></svg> <h3 class="text-xl font-semibold text-center" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/EducationCard.astro" data-astro-source-loc="24:59"> Grado Superior en Desarrollo de Aplicaciones Web </h3> </span> <span class="flex justify-center items-center gap-2 py-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/EducationCard.astro" data-astro-source-loc="29:67"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/MapIcon.astro" data-astro-source-loc="1:249"><path stroke="none" d="M0 0h24v24H0z" fill="none" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/MapIcon.astro" data-astro-source-loc="1:249"></path><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/MapIcon.astro" data-astro-source-loc="1:301"></path><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/MapIcon.astro" data-astro-source-loc="1:348"></path></svg> <p class="text-gray-400 text-center" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/EducationCard.astro" data-astro-source-loc="31:50"> Cesur, Madrid </p> </span> <span class="flex justify-center items-center gap-2 py-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/EducationCard.astro" data-astro-source-loc="36:67"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-calendar" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/CalendarIcon.astro" data-astro-source-loc="1:250"><path stroke="none" d="M0 0h24v24H0z" fill="none" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/CalendarIcon.astro" data-astro-source-loc="1:250"></path><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/CalendarIcon.astro" data-astro-source-loc="1:302"></path><path d="M16 3v4" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/CalendarIcon.astro" data-astro-source-loc="1:393"></path><path d="M8 3v4" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/CalendarIcon.astro" data-astro-source-loc="1:413"></path><path d="M4 11h16" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/CalendarIcon.astro" data-astro-source-loc="1:432"></path><path d="M11 15h1" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/CalendarIcon.astro" data-astro-source-loc="1:453"></path><path d="M12 15v3" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/CalendarIcon.astro" data-astro-source-loc="1:474"></path></svg> <p class="text-md text-[#CBACF9] text-center" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/EducationCard.astro" data-astro-source-loc="38:59"> Sep 2023 - Jun 2025 </p> </span> <a href="/public/certificates/FP.png" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex items-center gap-2 rounded-lg border border-[#CBACF9]/30 px-4 py-2 text-sm font-medium text-[#CBACF9] transition-all duration-300 hover:bg-[#CBACF9] hover:text-black" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/EducationCard.astro" data-astro-source-loc="50:18"> Ver Diploma <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/EducationCard.astro" data-astro-source-loc="59:22"> <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H8M17 7V16" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/EducationCard.astro" data-astro-source-loc="60:26"></path> </svg> </a> </div> </div> <div class="mt-5" data-aos="fade-left" data-astro-cid-7pewbour="true" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/EducationCard.astro" data-astro-source-loc="9:29"> <div class="relative overflow-hidden flex flex-col justify-center items-center m-auto max-w-xl rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm hover:border-[#CBACF9]/50 transition-all duration-300" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/EducationCard.astro" data-astro-source-loc="12:6"> <!-- Barra lateral --> <div class="absolute left-0 top-0 h-full w-1 bg-[#CBACF9]" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/EducationCard.astro" data-astro-source-loc="14:10"></div> <!-- Glow decorativo --> <div class="absolute -left-10 top-1/2 h-24 w-24 -translate-y-1/2 rounded-full bg-[#CBACF9]/10 blur-3xl" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/EducationCard.astro" data-astro-source-loc="19:10"></div> <span class="flex justify-center items-center gap-2 py-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/EducationCard.astro" data-astro-source-loc="22:67"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-school" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/SchoolIcon.astro" data-astro-source-loc="1:248"><path stroke="none" d="M0 0h24v24H0z" fill="none" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/SchoolIcon.astro" data-astro-source-loc="1:248"></path><path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/SchoolIcon.astro" data-astro-source-loc="1:300"></path><path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/SchoolIcon.astro" data-astro-source-loc="1:344"></path></svg> <h3 class="text-xl font-semibold text-center" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/EducationCard.astro" data-astro-source-loc="24:59"> Bachillerato en Ciencias </h3> </span> <span class="flex justify-center items-center gap-2 py-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/EducationCard.astro" data-astro-source-loc="29:67"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/MapIcon.astro" data-astro-source-loc="1:249"><path stroke="none" d="M0 0h24v24H0z" fill="none" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/MapIcon.astro" data-astro-source-loc="1:249"></path><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/MapIcon.astro" data-astro-source-loc="1:301"></path><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/MapIcon.astro" data-astro-source-loc="1:348"></path></svg> <p class="text-gray-400 text-center" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/EducationCard.astro" data-astro-source-loc="31:50"> U.E.P Colegio Belagua, Caracas </p> </span> <span class="flex justify-center items-center gap-2 py-2" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/EducationCard.astro" data-astro-source-loc="36:67"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-calendar" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/CalendarIcon.astro" data-astro-source-loc="1:250"><path stroke="none" d="M0 0h24v24H0z" fill="none" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/CalendarIcon.astro" data-astro-source-loc="1:250"></path><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/CalendarIcon.astro" data-astro-source-loc="1:302"></path><path d="M16 3v4" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/CalendarIcon.astro" data-astro-source-loc="1:393"></path><path d="M8 3v4" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/CalendarIcon.astro" data-astro-source-loc="1:413"></path><path d="M4 11h16" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/CalendarIcon.astro" data-astro-source-loc="1:432"></path><path d="M11 15h1" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/CalendarIcon.astro" data-astro-source-loc="1:453"></path><path d="M12 15v3" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/CalendarIcon.astro" data-astro-source-loc="1:474"></path></svg> <p class="text-md text-[#CBACF9] text-center" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/EducationCard.astro" data-astro-source-loc="38:59"> Sep 2011 - Jun 2016 </p> </span> <a href="/public/certificates/bachillerato.png" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex items-center gap-2 rounded-lg border border-[#CBACF9]/30 px-4 py-2 text-sm font-medium text-[#CBACF9] transition-all duration-300 hover:bg-[#CBACF9] hover:text-black" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/EducationCard.astro" data-astro-source-loc="50:18"> Ver Diploma <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/EducationCard.astro" data-astro-source-loc="59:22"> <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H8M17 7V16" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/EducationCard.astro" data-astro-source-loc="60:26"></path> </svg> </a> </div> </div> </div> <div class="mt-10" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="590:32"> <div id="indicators-carousel" class="relative w-full" data-carousel="static" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Carousel.astro" data-astro-source-loc="5:78"> <!-- Carousel wrapper --> <div class="relative h-56 overflow-hidden rounded-lg md:h-96" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Carousel.astro" data-astro-source-loc="7:67"> <!-- Item 1 --> <div class="hidden duration-700 ease-in-out" data-carousel-item="active" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Carousel.astro" data-astro-source-loc="9:82"> <img src="/assets/studies/FPII.png" data-image-component="true" alt="Formación Profesional" loading="lazy" decoding="async" fetchpriority="auto" width="800" height="450" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" data-astro-source-file="/Users/dickson/Workspace/portfolio/node_modules/astro/components/Image.astro" data-astro-source-loc="51:2"></div> <!-- Item 2 --> <div class="hidden duration-700 ease-in-out" data-carousel-item data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Carousel.astro" data-astro-source-loc="13:73"> <img src="/assets/studies/bachillerato.png" data-image-component="true" alt="Bachillerato" loading="lazy" decoding="async" fetchpriority="auto" width="800" height="450" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" data-astro-source-file="/Users/dickson/Workspace/portfolio/node_modules/astro/components/Image.astro" data-astro-source-loc="51:2"></div> </div> <!-- Slider indicators --> <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Carousel.astro" data-astro-source-loc="18:102"> <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Carousel.astro" data-astro-source-loc="19:10"></button> <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Carousel.astro" data-astro-source-loc="20:10"></button> </div> <!-- Slider controls --> <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Carousel.astro" data-astro-source-loc="23:167"> <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Carousel.astro" data-astro-source-loc="24:275"> <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Carousel.astro" data-astro-source-loc="25:164"> <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Carousel.astro" data-astro-source-loc="26:18"></path> </svg> <span class="sr-only" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Carousel.astro" data-astro-source-loc="28:35">Previous</span> </span> </button> <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Carousel.astro" data-astro-source-loc="31:165"> <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Carousel.astro" data-astro-source-loc="32:275"> <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Carousel.astro" data-astro-source-loc="33:164"> <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Carousel.astro" data-astro-source-loc="34:18"></path> </svg> <span class="sr-only" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/Carousel.astro" data-astro-source-loc="36:35">Next</span> </span> </button> </div> </div> </section> <section id="contact" class="bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="598:10"> <div class="py-15 gap-6 flex flex-col justify-center items-center" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="599:80"> <h2 class="text-center text-5xl font-bold tracking-tight text-[#CBACF9]" data-aos="fade-down" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="603:18">
+¡Trabajemos juntos!
+</h2> <p class="text-lg text-gray-300" data-aos="fade-up" data-aos-delay="150" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="610:18">
+¡Estoy actualmente abierto a nuevas oportunidades — hablemos!
+</p> <div class="flex justify-center" data-aos="zoom-in" data-aos-delay="250" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="617:18"> <a href="mailto:dickson17081999@gmail.com" class="group flex items-center gap-4 bg-gray-800 border border-[#CBACF9]/30 hover:border-[#CBACF9] hover:bg-[#CBACF9]/10 transition-all rounded-xl p-6 shadow-lg" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="621:22"> <div class="w-8 h-8 flex items-center justify-center text-[#EA4335] group-hover:text-white transition" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="624:26"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-gmail w-full h-full" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/MaiIcon.astro" data-astro-source-loc="10:7"><path stroke="none" d="M0 0h24v24H0z" fill="none" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/MaiIcon.astro" data-astro-source-loc="10:7"></path><path d="M16 20h3a1 1 0 0 0 1 -1v-14a1 1 0 0 0 -1 -1h-3v16z" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/MaiIcon.astro" data-astro-source-loc="10:64"></path><path d="M5 20h3v-16h-3a1 1 0 0 0 -1 1v14a1 1 0 0 0 1 1z" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/MaiIcon.astro" data-astro-source-loc="11:72"></path><path d="M16 4l-4 4l-4 -4" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/MaiIcon.astro" data-astro-source-loc="12:69"></path><path d="M4 6.5l8 7.5l8 -7.5" data-astro-source-file="/Users/dickson/Workspace/portfolio/src/components/icons/MaiIcon.astro" data-astro-source-loc="13:38"></path></svg> </div> <span class="text-lg font-medium text-white group-hover:text-[#CBACF9] transition" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="629:26">
+dickson17081999@gmail.com
+</span> </a> </div> <div class="max-w-3xl mx-auto px-6" data-aos="fade-up" data-aos-delay="350" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="638:18"> <div class="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm p-8 lg:p-12" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="641:22"> <div class="text-center mb-10" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="642:56"> <h2 class="text-4xl font-bold" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="643:60">
+Contacta <span class="text-[#CBACF9]" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="644:71">conmigo</span> </h2> <p class="mt-4 text-gray-300 max-w-xl mx-auto" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="647:76">
+¿Tienes un proyecto en mente o una oportunidad de trabajo? Rellena el formulario de abajo y te contactaré lo antes posible!
+</p> </div> <form class="space-y-6" action="https://api.web3forms.com/submit" method="POST" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="656:26"> <div data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="657:34"> <input type="hidden" name="access_key" value="9459bb1a-5b01-4aa6-8ea6-38355ac480fc" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="658:34"> <label for="name" class="block mb-2 text-sm text-gray-300" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="666:34">
+Nombre
+</label> <input id="name" name="name" type="text" placeholder="Dickson Celauro" class="w-full rounded-xl border border-white/10 bg-black/20 px-4 py-3 text-white placeholder:text-gray-500 focus:outline-none focus:border-[#CBACF9] focus:ring-2 focus:ring-[#CBACF9]/20 transition" required data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="670:34"> </div> <div data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="680:34"> <label for="email" class="block mb-2 text-sm text-gray-300" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="684:34">
+Correo Electrónico
+</label> <input id="email" name="email" type="email" placeholder="dickson@ejemplo.com" class="w-full rounded-xl border border-white/10 bg-black/20 px-4 py-3 text-white placeholder:text-gray-500 focus:outline-none focus:border-[#CBACF9] focus:ring-2 focus:ring-[#CBACF9]/20 transition" required data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="688:34"> </div> <div data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="698:34"> <label for="message" class="block mb-2 text-sm text-gray-300" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="702:34">
+Mensaje
+</label> <textarea id="message" rows="6" placeholder="Dime sobre tu proyecto..." name="message" class="w-full rounded-xl border border-white/10 bg-black/20 px-4 py-3 text-white placeholder:text-gray-500 focus:outline-none focus:border-[#CBACF9] focus:ring-2 focus:ring-[#CBACF9]/20 transition resize-none" required data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="706:34"></textarea> </div> <button type="submit" class="w-full rounded-xl bg-[#CBACF9] px-6 py-3 font-medium text-black transition hover:scale-[1.02] hover:shadow-lg hover:shadow-[#CBACF9]/20" data-astro-cid-7pewbour data-astro-source-file="/Users/dickson/Workspace/portfolio/src/pages/es/index.astro" data-astro-source-loc="718:30">
+Enviar
+</button> </form> </div> </div> </div> </section> </main>   </div> </div> <script type="module" src="/src/layouts/Layout.astro?astro&type=script&index=0&lang.ts"></script> <script type="module" src="/src/layouts/Layout.astro?astro&type=script&index=1&lang.ts"></script> </body> </html> 

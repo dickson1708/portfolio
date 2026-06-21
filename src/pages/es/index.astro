@@ -12,6 +12,30 @@ import GithubIcon from "../../components/icons/GithubIcon.astro";
 import EducationCard from "../../components/EducationCard.astro";
 import DownloadIcon from "../../components/icons/DownloadIcon.astro";
 import Navbar from "../../components/Navbar.astro";
+import LogoPortfolio from "../../assets/logo_portfolio.webp";
+import AngularIcon from "../../assets/skills/angular.svg";
+import SpringIcon from "../../assets/skills/spring.svg";
+import JavaIcon from "../../assets/skills/java.svg";
+import TypeScriptIcon from "../../assets/skills/typescript.svg";
+import JavaScriptIcon from "../../assets/skills/javascript.svg";
+import HTMLIcon from "../../assets/skills/HTML.svg";
+import CSSIcon from "../../assets/skills/CSS.svg";
+import SassIcon from "../../assets/skills/sass.svg";
+import TailwindIcon from "../../assets/skills/tailwind.svg";
+import BootstrapIcon from "../../assets/skills/bootstrap.svg";
+import AstroIcon from "../../assets/skills/astro.svg";
+import JhipsterIcon from "../../assets/skills/jhipster.svg";
+import MysqlIcon from "../../assets/skills/mysql.svg";
+import PostgresqlIcon from "../../assets/skills/postgresql.svg";
+import GitIcon from "../../assets/skills/git.svg";
+import GitHubIcon from "../../assets/skills/github.svg";
+import BitbucketIcon from "../../assets/skills/bitbucket.svg";
+import JiraIcon from "../../assets/skills/jira.svg";
+import SourcetreeIcon from "../../assets/skills/sourcetree.svg";
+import PortatilImage from "../../assets/portatil.png";
+import CarRentalApp from "../../assets/projects/rentalcar_project.webp";
+import DealershipApp from "../../assets/projects/dealership_project.webp";
+import KickingballApp from "../../assets/projects/gladiadoras_project.webp";
 ---
 
 <Layout>
@@ -129,11 +153,12 @@ import Navbar from "../../components/Navbar.astro";
 
                 <div class="flex justify-center" data-aos="fade-left">
                     <Image
-                        src="/assets/logo_portfolio.png"
+                        src={LogoPortfolio}
                         alt="Memoji de Dickson Celauro"
                         loading="eager"
                         width={900}
-                        height={900}
+                        height={600}
+                        class="w-full h-auto"
                     />
                 </div>
             </div>
@@ -150,29 +175,29 @@ import Navbar from "../../components/Navbar.astro";
                 class="flex flex-wrap justify-center items-center gap-6 bg-gray-800 p-10 mt-10 max-w-4xl mx-auto rounded-2xl shadow-xl"
                 data-aos="zoom-in"
             >
-                <img
+                <Image
                     data-tooltip-target="angular-tooltip"
-                    src="/assets/skills/angular.png"
+                    src={AngularIcon}
                     alt="angular"
-                    width="60"
-                    height="60"
-                    data-aos="zoom-in"
-                    data-aos-delay="50"
-                />
-                <Tooltip id="angular-tooltip" content="Angular" />
-                <img
-                    data-tooltip-target="spring-tooltip"
-                    src="/assets/skills/springboot.png"
-                    alt="springboot"
                     width="60"
                     height="60"
                     data-aos="zoom-in"
                     data-aos-delay="100"
                 />
-                <Tooltip id="spring-tooltip" content="Springboot" />
-                <img
+                <Tooltip id="angular-tooltip" content="Angular" />
+                <Image
+                    data-tooltip-target="spring-tooltip"
+                    src={SpringIcon}
+                    alt="spring"
+                    width="60"
+                    height="60"
+                    data-aos="zoom-in"
+                    data-aos-delay="100"
+                />
+                <Tooltip id="spring-tooltip" content="Spring" />
+                <Image
                     data-tooltip-target="java-tooltip"
-                    src="/assets/skills/java.png"
+                    src={JavaIcon}
                     alt="java"
                     width="60"
                     height="60"
@@ -180,9 +205,9 @@ import Navbar from "../../components/Navbar.astro";
                     data-aos-delay="150"
                 />
                 <Tooltip id="java-tooltip" content="Java" />
-                <img
+                <Image
                     data-tooltip-target="ts-tooltip"
-                    src="/assets/skills/typescript.png"
+                    src={TypeScriptIcon}
                     alt="typescript"
                     width="60"
                     height="60"
@@ -190,9 +215,9 @@ import Navbar from "../../components/Navbar.astro";
                     data-aos-delay="200"
                 />
                 <Tooltip id="ts-tooltip" content="Typescript" />
-                <img
+                <Image
                     data-tooltip-target="js-tooltip"
-                    src="/assets/skills/javascript.png"
+                    src={JavaScriptIcon}
                     alt="javascript"
                     width="60"
                     height="60"
@@ -200,9 +225,9 @@ import Navbar from "../../components/Navbar.astro";
                     data-aos-delay="250"
                 />
                 <Tooltip id="js-tooltip" content="Javascript" />
-                <img
+                <Image
                     data-tooltip-target="html-tooltip"
-                    src="/assets/skills/html.png"
+                    src={HTMLIcon}
                     alt="html"
                     width="60"
                     height="60"
@@ -210,9 +235,9 @@ import Navbar from "../../components/Navbar.astro";
                     data-aos-delay="300"
                 />
                 <Tooltip id="html-tooltip" content="HTML" />
-                <img
+                <Image
                     data-tooltip-target="css-tooltip"
-                    src="/assets/skills/css-3.png"
+                    src={CSSIcon}
                     alt="css"
                     width="60"
                     height="60"
@@ -220,9 +245,9 @@ import Navbar from "../../components/Navbar.astro";
                     data-aos-delay="350"
                 />
                 <Tooltip id="css-tooltip" content="CSS" />
-                <img
+                <Image
                     data-tooltip-target="sass-tooltip"
-                    src="/assets/skills/sass.png"
+                    src={SassIcon}
                     alt="sass"
                     width="60"
                     height="60"
@@ -230,9 +255,9 @@ import Navbar from "../../components/Navbar.astro";
                     data-aos-delay="400"
                 />
                 <Tooltip id="sass-tooltip" content="SASS" />
-                <img
+                <Image
                     data-tooltip-target="tailwind-tooltip"
-                    src="/assets/skills/tailwindCss.png"
+                    src={TailwindIcon}
                     alt="tailwindCss"
                     width="60"
                     height="60"
@@ -240,18 +265,19 @@ import Navbar from "../../components/Navbar.astro";
                     data-aos-delay="450"
                 />
                 <Tooltip id="tailwind-tooltip" content="Tailwind CSS" />
-                <img
+                <Image
                     data-tooltip-target="bootstrap-tooltip"
-                    src="/assets/skills/bootstrap.png"
+                    src={BootstrapIcon}
                     alt="bootstrap"
                     width="60"
+                    height="60"
                     data-aos="zoom-in"
                     data-aos-delay="500"
                 />
                 <Tooltip id="bootstrap-tooltip" content="Bootstrap" />
-                <img
+                <Image
                     data-tooltip-target="astro-tooltip"
-                    src="/assets/skills/astro.png"
+                    src={AstroIcon}
                     alt="astro"
                     width="60"
                     height="60"
@@ -259,9 +285,9 @@ import Navbar from "../../components/Navbar.astro";
                     data-aos-delay="550"
                 />
                 <Tooltip id="astro-tooltip" content="Astro" />
-                <img
+                <Image
                     data-tooltip-target="jhipster-tooltip"
-                    src="/assets/skills/jhipster.png"
+                    src={JhipsterIcon}
                     alt="jhipster"
                     width="60"
                     height="60"
@@ -269,9 +295,9 @@ import Navbar from "../../components/Navbar.astro";
                     data-aos-delay="600"
                 />
                 <Tooltip id="jhipster-tooltip" content="JHipster" />
-                <img
+                <Image
                     data-tooltip-target="mysql-tooltip"
-                    src="/assets/skills/mysql.png"
+                    src={MysqlIcon}
                     alt="mysql"
                     width="60"
                     height="60"
@@ -279,9 +305,9 @@ import Navbar from "../../components/Navbar.astro";
                     data-aos-delay="650"
                 />
                 <Tooltip id="mysql-tooltip" content="MySQL" />
-                <img
+                <Image
                     data-tooltip-target="postgresql-tooltip"
-                    src="/assets/skills/postgresql.png"
+                    src={PostgresqlIcon}
                     alt="postgresql"
                     width="60"
                     height="60"
@@ -289,9 +315,9 @@ import Navbar from "../../components/Navbar.astro";
                     data-aos-delay="700"
                 />
                 <Tooltip id="postgresql-tooltip" content="PostgreSQL" />
-                <img
+                <Image
                     data-tooltip-target="git-tooltip"
-                    src="/assets/skills/git.png"
+                    src={GitIcon}
                     alt="git"
                     width="60"
                     height="60"
@@ -299,9 +325,9 @@ import Navbar from "../../components/Navbar.astro";
                     data-aos-delay="750"
                 />
                 <Tooltip id="git-tooltip" content="Git" />
-                <img
+                <Image
                     data-tooltip-target="github-tooltip"
-                    src="/assets/skills/github.png"
+                    src={GitHubIcon}
                     alt="github"
                     width="60"
                     height="60"
@@ -309,9 +335,9 @@ import Navbar from "../../components/Navbar.astro";
                     data-aos-delay="800"
                 />
                 <Tooltip id="github-tooltip" content="Github" />
-                <img
+                <Image
                     data-tooltip-target="bitbucket-tooltip"
-                    src="/assets/skills/bitbucket.webp"
+                    src={BitbucketIcon}
                     alt="bitbucket"
                     width="60"
                     height="60"
@@ -319,21 +345,22 @@ import Navbar from "../../components/Navbar.astro";
                     data-aos-delay="850"
                 />
                 <Tooltip id="bitbucket-tooltip" content="Bitbucket" />
-                <img
+                <Image
                     data-tooltip-target="jira-tooltip"
-                    src="/assets/skills/jira.png"
+                    src={JiraIcon}
                     alt="jira"
                     width="60"
+                    height="60"
                     data-aos="zoom-in"
                     data-aos-delay="900"
                 />
                 <Tooltip id="jira-tooltip" content="Jira" />
-                <img
+                <Image
                     data-tooltip-target="sourcetree-tooltip"
-                    src="/assets/skills/sourcetree.webp"
+                    src={SourcetreeIcon}
                     alt="sourcetree"
-                    width="80"
-                    height="80"
+                    width="70"
+                    height="70"
                     data-aos="zoom-in"
                     data-aos-delay="950"
                 />
@@ -378,7 +405,7 @@ import Navbar from "../../components/Navbar.astro";
 
                 <div data-aos="fade-left" data-aos-delay="200">
                     <Image
-                        src="/assets/portatil.png"
+                        src={PortatilImage}
                         alt="About me"
                         width={500}
                         height={500}
@@ -414,7 +441,7 @@ import Navbar from "../../components/Navbar.astro";
                             class="flex items-center gap-4 text-gray-300 text-sm"
                         >
                             <img
-                                src="/assets/skills/interfaz.apng.png"
+                                src="/interfaz.apng.png"
                                 alt="Frontend"
                                 class="w-12"
                             />
@@ -436,7 +463,7 @@ import Navbar from "../../components/Navbar.astro";
                             class="flex items-center gap-4 text-gray-300 text-sm"
                         >
                             <img
-                                src="/assets/skills/backend.apng.png"
+                                src="/backend.apng.png"
                                 alt="Backend"
                                 class="w-12"
                             />
@@ -458,7 +485,7 @@ import Navbar from "../../components/Navbar.astro";
                             class="flex items-center gap-4 text-gray-300 text-sm"
                         >
                             <img
-                                src="/assets/skills/bbdd.apng.png"
+                                src="/database.apng.png"
                                 alt="Database"
                                 class="w-12"
                             />
@@ -481,7 +508,7 @@ import Navbar from "../../components/Navbar.astro";
                             class="flex items-center gap-4 text-gray-300 text-sm"
                         >
                             <img
-                                src="/assets/skills/IA.apng.png"
+                                src="/IA.apng.png"
                                 alt="IA"
                                 class="w-12"
                             />
@@ -508,16 +535,16 @@ import Navbar from "../../components/Navbar.astro";
                     data-aos-delay="100"
                     title="App de Alquiler de Autos"
                     description="Plataforma de alquiler full-stack con autenticación, gestión CRUD, accesos basados en roles y flujo de trabajo para reserva de vehículos."
-                    image="/assets/projects/rentalcar_project.png"
+                    image={CarRentalApp}
                     link="/rental-car-app"
                     skills={[
-                        "/assets/skills/angular.png",
-                        "/assets/skills/springboot.png",
-                        "/assets/skills/typescript.png",
-                        "/assets/skills/java.png",
-                        "/assets/skills/sass.png",
-                        "/assets/skills/bootstrap.png",
-                        "/assets/skills/mysql.png",
+                        AngularIcon,
+                        SpringIcon,
+                        TypeScriptIcon,
+                        JavaIcon,
+                        SassIcon,
+                        BootstrapIcon,
+                        MysqlIcon,
                     ]}
                     githubLink="https://github.com/dickson1708/RentACar",
                     btnCode="Código",
@@ -528,16 +555,16 @@ import Navbar from "../../components/Navbar.astro";
                     data-aos-delay="250"
                     title="App para Gestión de Concesionaria de Autos"
                     description="Una aplicación full-stack para la gestión de concesionarias de autos, construida con JHipster, Angular y Java."
-                    image="/assets/projects/dealership_project.png"
+                    image={DealershipApp}
                     link="/car-dealership-app"
                     skills={[
-                        "/assets/skills/angular.png",
-                        "/assets/skills/springboot.png",
-                        "/assets/skills/typescript.png",
-                        "/assets/skills/java.png",
-                        "/assets/skills/sass.png",
-                        "/assets/skills/bootstrap.png",
-                        "/assets/skills/mysql.png",
+                        AngularIcon,
+                        SpringIcon,
+                        TypeScriptIcon,
+                        JavaIcon,
+                        SassIcon,
+                        BootstrapIcon,
+                        MysqlIcon,
                     ]}
                     githubLink="https://bitbucket.org/dicksons-personal-projects/dealerapp/commits/branch/develop"
                     btnCode="Código"
@@ -548,12 +575,12 @@ import Navbar from "../../components/Navbar.astro";
                     data-aos-delay="400"
                     title="Equipo deportivo de Kickingball"
                     description="Aplicación web frontend para un equipo de deporte español, construida con HTML, CSS, JS y Bootstrap."
-                    image="/assets/projects/gladiadoras_project.png"
+                    image={KickingballApp}
                     link="https://www.gladiadoraskickingball.com/"
                     skills={[
-                        "/assets/skills/html.png",
-                        "/assets/skills/css-3.png",
-                        "/assets/skills/javascript.png",
+                        HTMLIcon,
+                        CSSIcon,
+                        JavaScriptIcon,
                     ]}
                     githubLink="https://github.com/dickson1708/GladiadorasKickingball"
                     btnCode="Código"
@@ -724,85 +751,4 @@ import Navbar from "../../components/Navbar.astro";
             </div>
         </section>
     </main>
-
-    <style>
-        .glow-button {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 0.5rem;
-            margin-top: 2.5rem;
-            padding: 1.25rem 2.5rem;
-            max-width: max-content;
-            border-radius: 0.5rem;
-            background-color: #141428;
-            border: 1px solid #4b5563;
-            /* gray-700 */
-            overflow: hidden;
-            transition: border-color 0.3s;
-            text-decoration: none;
-            color: white;
-        }
-
-        .glow-button:hover {
-            border-color: #cbacf9;
-        }
-
-        .glow-content {
-            position: relative;
-            z-index: 10;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .glow-overlay {
-            position: absolute;
-            top: 0;
-            left: 100%;
-            width: 100%;
-            height: 100%;
-            background: rgba(203, 172, 249, 0.2);
-            /* violeta translúcido */
-            filter: blur(24px);
-            animation: glow-slide 2s linear infinite;
-            pointer-events: none;
-        }
-
-        .cv-button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 0.5rem;
-            margin-top: 2.5rem;
-            padding: 1.25rem 2.5rem;
-            max-width: max-content;
-            border-radius: 0.5rem;
-            background-color: #cbacf9;
-            border: 1px solid #4b5563;
-            /* gray-700 */
-            overflow: hidden;
-            transition: border-color 0.3s;
-            text-decoration: none;
-            color: black;
-            font-weight: 500;
-        }
-
-        .cv-button:hover {
-            border-color: #cbacf9;
-            background-color: #a67bc0;
-            color: white;
-        }
-
-        @keyframes glow-slide {
-            0% {
-                left: 100%;
-            }
-
-            100% {
-                left: -100%;
-            }
-        }
-    </style>
 </Layout>
